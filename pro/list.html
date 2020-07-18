@@ -1,1152 +1,431 @@
-﻿<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="renderer" content="webkit">
-
-<title>迪信云聚 - 商品列表 - 最大的通讯零售生态圈</title>
-	<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
-	<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
-<!--[if lt IE 9]>
-	<script type="text/javascript" src"/static/js/html5.js"></script>
-<![endif]-->
- <link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
-<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
-<link rel="stylesheet" type="text/css" href="..\static\css\Font-Awesome-3.2.1\css\font-awesome.css">
-
-<!-- <script src="/static/js/index-min.js" type="text/javascript"></script> 
-
- 
- <script type="text/javascript" src="/static/js/jquery-sx.min.js"></script> -->
-<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="..\static\js\jquery.SuperSlide.2.1.1.js"></script>
-	
-	
-	
-	<!--  -->
-<!-- <script type="text/javascript"
-	src="/static/js/list/kkpager.min.js"></script> 
- <script type="text/javascript"
-	src="/static/js/list/kkpager.js"></script>
- 
- <link rel="stylesheet" type="text/css" href="/static/css/kkpager_blue.css" /> -->
-<style>
-
-
-.ico-phone a{
-	color:#fff;
-}
-
-.ico-parts a{
-
-	color:#fff;}
-	
-	.ico-card a{
-
-	color:#fff;} 
-	
-	.ico-system a{
-
-	color:#fff;}
-.header-menu-btn{
-	position:"relative";
-}
-
-
-.wk_active{
-color:#d71317;
-}
-.wk_active1{
-color:#d71317 !important;
-border:1px solid #d71317 !important;
-}
-.qq_active1{
-background-color:#F1F1F1;
-color:#CCCCCC !important;
-border:0px solid #d71317 !important
-}
-
-
-</style>
-</head>
-
-
-<script>
-
-
-
-
-</script>
-
-
-
-
-
-
-<script type="text/javascript">
-//拿取到品牌字符串
-$(function() {
-
-/*****************************************************************************************************************/
-		var pages=36; //总页数
-		var pageNumHtml="";
-		for(var i=1;i<=pages;i++){
-			pageNumHtml=pageNumHtml+ "<a href=\"javascript:void(0)\" onclick=\"page(this)\" id=\""+i+"\">"+i+"</a>";
-			//pageNumHtml=pageNumHtml+"<a href=\"javascript:void(0)\" onclick=\"page(this)\" id=\"\">首页 </a>\n" +
-		}
-		console.log("pageNumHtml:"+pageNumHtml);
-		var svar="<a href=\"javascript:void(0)\" onclick=\"page(this)\" id=\"1\">首页 </a>" +
-				"<a href=\"javascript:void(0)\" onclick=\"leftPage()\" id=\"previous\">上一页</a>";
-		var evar="<a href=\"javascript:void(0)\"onclick=\"rightPage()\" id=\"next\">下一页</a>"+
-	        	 "<a href=\"javascript:void(0)\" onclick=\"page(this)\" id=\"0\">尾页</a>";
-		pageNumHtml=svar+pageNumHtml+evar;
-		//$("#pageC").html(pageNumHtml);
-		console.log("pageNumHtml:"+pageNumHtml);
-/*							//分页显示在这里
-        var pageNum=$("#pageNum").val();
-        var number=0;
-        var lase=$("#zd").val();
-        var lasepage1=lase;
-        console.log($("#pageC a"));
-
-
-        var a1=$("#1").html();
-        var a2=$("#2").html();
-        var a3=$("#3").html();
-        var a4=$("#4").html();
-        var a5=$("#5").html();
-
-
-    if(pageNum>=(lasepage1-3)){
-            if(pageNum>5){
-                $("#5").html(lasepage1);
-                $("#4").html(parseInt(lasepage1)-parseInt(1));
-                $("#3").html(parseInt(lasepage1)-parseInt(2));
-                $("#2").html(parseInt(lasepage1)-parseInt(3));
-                $("#1").html(parseInt(lasepage1)-parseInt(4));
-            }else{
-
-
-
-                $("#1").html(1);
-                $("#2").html(2);
-                $("#3").html(3);
-                $("#4").html(4);
-                $("#5").html(5);
-                if(pageNum==5){
-
-                    $("#5").html(6);
-                    $("#4").html(5);
-                    $("#3").html(4);
-                    $("#2").html(3);
-                    $("#1").html(2);
-                }
-
-                var num=parseInt(5)-parseInt(lasepage1);
-
-                switch(num){
-                case "0":
-                    break;
-                case 1:
-
-                    $("#5").addClass("qq_active1");
-                    $("#5").removeAttr("onclick");
-                    //$("#5").parent().removeChild($("#5"));
-                    $("#5").remove();
-
-                    break;
-                case 2:
-
-                    $("#4").addClass("qq_active1");
-                    $("#5").addClass("qq_active1");
-                    $("#4").removeAttr("onclick");
-                    $("#5").removeAttr("onclick");
-                    $("#5").remove();
-                    $("#4").remove();
-                    break;
-                case 3:
-
-                    $("#3").addClass("qq_active1");
-                    $("#4").addClass("qq_active1");
-                    $("#5").addClass("qq_active1");
-                    $("#3").removeAttr("onclick");
-                    $("#4").removeAttr("onclick");
-                    $("#5").removeAttr("onclick");
-                    $("#5").remove();
-                    $("#4").remove();
-                    $("#3").remove();
-                    break;
-                case 4:
-
-                    $("#2").addClass("qq_active1");
-                    $("#3").addClass("qq_active1");
-                    $("#4").addClass("qq_active1");
-                    $("#5").addClass("qq_active1");
-                    $("#2").removeAttr("onclick");
-                    $("#3").removeAttr("onclick");
-                    $("#4").removeAttr("onclick");
-                    $("#5").removeAttr("onclick");
-                    $("#5").remove();
-                    $("#4").remove();
-                    $("#3").remove();
-                    $("#2").remove();
-                    break;
-
-                }
-            }
-
-        }else{
-            if(pageNum>3){
-
-                number=pageNum-3;
-                $("#1").html(parseInt(a1)+parseInt(number));
-                $("#2").html(parseInt(a2)+parseInt(number));
-                $("#3").html(parseInt(a3)+parseInt(number));
-                $("#4").html(parseInt(a4)+parseInt(number));
-                $("#5").html(parseInt(a5)+parseInt(number));
-
-            }else{
-                $("#1").html(1);
-                $("#2").html(2);
-                $("#3").html(3);
-                $("#4").html(4);
-                $("#5").html(5);
-            }
-        }
-        if(pageNum==lasepage1){
-            $("#last").addClass("qq_active1");
-            $("#last").removeAttr("onclick");
-            $("#next").addClass("qq_active1");
-            $("#next").removeAttr("onclick");
-
-        }
-        if(pageNum==1){
-            $("#previous").addClass("qq_active1");
-            $("#previous").removeAttr("onclick");
-            $("#first").addClass("qq_active1");
-            $("#first").removeAttr("onclick");
-
-        }
-
-        $.each($("#pageC a"),function(i){
-
-            if(i==0||i==1||i==$("#pageC a").length||i==$("#pageC a").length-1){
-
-                return true;
-            }else{
-                console.log($(this).text());
-                $(this).attr("pageNum",$(this).text());
-            }
-    });
-
-
-
-
-        if(data.pageNo!=null){
-
-            //alert(data.pageNo);//打印下一页的码值2
-            $("#pageInputContentList").val();//给input一个value属性用来记录当前页，获取到input中的value值1
-            //alert($("#pageInputContentList").val());//打印当前value的值1
-            $("#pageInputContentList").val(data.pageNo);//用当前页的码来修改value的值，2
-        var a=data.pageNo;
-
-        $.each($("#pageC a"),function(i){
-
-            if(i==0||i==1||i==$("#pageC a").length||i==$("#pageC a").length-1){
-
-                return true;
-            }else{
-            //	console.log($(this).text());
-                var b=$(this).attr("pageNum");
-
-                if(a==b){
-                //	console.log($(this));
-                    $(this).addClass("wk_active1");
-                }
-            }
-    });
-
-
-
-
-        /////alert("回调回来写入的4参数："+$("#pageInputContentList").val());
-            //console.log($("#pageInputContentList"));
-            //var a =$("#pageInputContentList").val();
-            ///	pageInputContentList.setAttribute("name",data.pageNo);
-
-    }*/
-	
-	
-/*******************************************************************************************************************/	
-	});
-
-function leftPage(){
-	var name=$("#pd").val();
-	/*	alert("list:"+name);*/
-	/*alert("1"+val+"2");
-    */
-	if(name==0){
-		orderBy="3";
-	}
-	if(name==1){
-		orderBy="2";
-	}
-	var offi=$("#officeI").val();
-
-	pageNo= $("#pageInputContentList").val();
-	/*alert("left");*/
-	if(pageNo<=1){
-		pageNo=1;
-	}else{
-		pageNo=pageNo-1;
-	}
-	/*alert("页面"+pageNo);*/
-	/*var json="pageNo:"+pageNo;
-
-	if(currOrderBy!=null){
-	json+=","+'"currOrderBy:"'+	currOrderBy
-	}
-	if(currselect!=null){
-		json+=","+'"currselect:"'+	currselect
-		}*/
-	/*	alert(json);
-        selectData(json);*/
-	if(pageNo==1){
-		/*	alert("已经第一页了不能翻页了");*/
-		pageNo=1;
-		if(offi!=0){
-			queryOffice(offi);
-		}else{
-
-			queryList();
-		}
-
-	}else{
-		if(offi!=0){
-			queryOffice(offi);
-		}else{
-
-			queryList();
-		}
-	}
-
-	pageInputContentList.setAttribute("name",pageNo);
-}
-
-/**************************************************左上右下*****************************************************************/
-function rightPage(){
-	var pageNo= $("#pageNo").val(); //当前页
-    var pageNum=$("#pages").val();//总页数
-
-	if(pageNo<pageNum){
-		pageNo++;
-	}
-
-	var offi=$("#officeI").val();
-	var lastPage=$("#zd").val();
-	pageNo= $("#pageInputContentList").val();
-
-////// alert(lastPage);
-
-	/*alert("最后一页："+lastPage);*/
-	if(pageNo<lastPage){
-
-		pageNo++;
-
-		//alert(pageNo);
-	}
-	else{
-		pageNo=lastPage;
-		//alert("等于最后一页"+pageNo);
-	}
-
-	/*	alert("页面"+pageNo);*/
-	/*var json="pageNo:"+pageNo;*/
-	if(offi!=0){
-		queryOffice(offi);
-	}else{
-
-		queryList();
-	}
-
-}
-
-
-	//封装点击事件到隐藏域
-	function loop(s) {
-		
-
-		var text = $(s).text();
-
-		//alert("text" + text);
-		//创建class为selectedShow对象
-		var selectedShow = $(".selectedShow");
-		//alert("selectedShow" + selectedShow);
-		//搜索当前dl标签的位置
-		var textTypeIndex = $(s).parents("dl").index();
-		//alert("textTypeIndex" + textTypeIndex);
-		//把textType赋值为当前对象的父元素dd的第一个dt元素的内容    也就是拿到当前的索引条件是什么
-		var textType = $(s).parent("dd").siblings("dt").text();
-		//alert("textType" + textType);
-		//排列地址
-		index = textTypeIndex - (2);
-		//alert("index" + index);
-		//显示出隐藏的元素clearDd
-		$(".clearDd").show();
-		//在新创建的selectedShow里根据排列地址进行展示
-		$(".selectedShow").eq(index).show();
-		//在当前元素上增加一个selected 同事他的兄弟元素去掉这个class
-		$(s).addClass("selected").siblings().removeClass("selected");
-		//在selectedShow元素的排列地址上创建span写入索引条件
-		selectedShow.eq(index).find("span").text(textType);
-
-		//在selectedShow元素的排列地址上创建label写入索引内容
-		selectedShow.eq(index).find("label").text(text);
-		//当前显示的标签减去隐藏的标签
-		var show = $(".selectedShow").length - $(".selectedShow:hidden").length;
-		//若果显示的比隐藏的多
-		if (show > 1) {
-			//就把清除筛选展示出来 
-			$(".eliminateCriteria").show();
-		}
-	}
-	
-	
-	
-	function findbrand1(event){
-		var e=event||window.event;
-		var target=e.target||e.srcElement;
-		//兼容ie	
-			var target=$(target)||$(e.srcElement) ;
-				console.log(target);
-				var brand=target.html();
-				var brandId=target.attr("values2");
-				var ctx=$("#ctx").val();
-				 var b=$("#bname").val();
-				 var bid=$("#bname").attr("values2");
-				var url ="json={'categoryId':'"+bid+"','category':'"+b+"','brandId':'"+brandId+"','brand':'"+brand+"','orderBy':'0','pageNo':'1'}";
-				var encodedUrl = encodeURIComponent(url);
-			
-				//alert(encodedUrl);
-				////alert(ctx);
-				location.href=ctx+"/pro/list?"+encodedUrl;		
-		
-	}
-
-	function category1(event){
-		var e=event||window.event;
-		var target=e.target||e.srcElement;
-		
-		//兼容ie	
-			var target=$(target)||$(e.srcElement) ;
-				console.log(target);
-				var s=target.html();
-				var cid=target.attr("values2");
-				
-				var ctx=$("#ctx").val();
-				var url ="json={'categoryId':'"+cid+"','category':'"+s+"','orderBy':'0','pageNo':'1'}";
-				var encodedUrl = encodeURIComponent(url);
-			//	alert(encodedUrl);
-				////alert(ctx);
-				location.href=ctx+"/pro/list?"+encodedUrl;	
-	}
-
-	function accessories(event){
-		var e=event||window.event;
-		var target=e.target||e.srcElement;
-		//兼容ie	
-			var target=$(target)||$(e.srcElement) ;
-				console.log(target);
-				var s=target.html();
-				var brandId=target.attr("values2");
-				 var c=$("#cname").val();
-				var ctx=$("#ctx").val();
-				var cid=$("#cname").attr("values2");
-				
-				var url ="json={'categoryId':'"+cid+"','category':'"+c+"','brand':'"+s+"','brandId':'"+brandId+"','orderBy':'0','pageNo':'1'}";
-				var encodedUrl = encodeURIComponent(url);
-			//	alert(encodedUrl);
-				////alert(ctx);
-				location.href=ctx+"/pro/list?"+encodedUrl;	
-	}
-</script>
-
-<body>
-	<input type="hidden" id="pageInputContentList" value="1">
-
-<!-- 头部所有 -->
-<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
-<link rel="stylesheet" type="text/css" href="..\static\css\commons\header.css">
-
-<script src="..\static\js\index-min.js" type="text/javascript"></script>
-<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
-<script src="..\static\layer\layer.js" type="text/javascript"></script>
-<script src="..\static\js\commons\header.js" type="text/javascript"></script>
-
-
-<div class="i-topwrap w100p border-b-1">
-    <div class="i-top w">
-        <div class="fl i-top-left">
-    		<span class="mr-10 fl">
-                 <!-- 迪信云聚商城 -->
-迪信云聚商城            </span>
-            <div class="date">
-                <span>
-                	<!-- -->
-                </span>
-                <span>
-                    <script type="text/javascript">
-                    	
-                    	document.write(new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日')
-                    </script>
-                </span>
-            </div>
-
-        </div>
-        <input type="hidden" id="status" value="">
-        <div class="fr i-top-right">
-            <ul>
-
-
-
-
-
-
-                    <li id="login">
-                        <a href="..\user\indexlogin.html">
-                            <!-- 登录 -->
-登录                        </a>
-                    </li>
-                    <li id="login4" class="space"></li>
-                    <li id="login3">
-                        <a href="..\user\indexregister.html" class="active">
-                            <!-- 注册 -->
-注册                        </a>
-                    </li>    
-
-
-
-
-
-
-                    <li style="display:none">
-                        <a>
-                            <!-- 消息 -->
-消息                        </a>
-                    </li>
-                <li class="space"></li>
-                <li class="dropdown">
-                    <a href="#"><!-- 云聚APP -->云聚APP</a>
-                    <div class="drop-ewm">
-                        <p><!-- 扫一扫，下载云聚客户端 -->扫一扫，下载云聚客户端</p>
-                        <img src="..\static\images\i-ewm_04.png">
-                    </div>
-                </li>
-                <li class="space"></li>
-                <li><a href="http://old.dixinyunju.com"><!-- 旧版入口 -->旧版入口</a></li>
-
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<div class="register-pop">
-    <h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a>
-    </h3>
-    <div class="reg-pop-con">
-        <span class="reg-pop-bg"></span>
-        <p class="mt-20"><!-- 您已成为云聚注册会员 -->您已成为云聚注册会员</p>
-        <p><!-- 签约会员可享受更多服务~ -->签约会员可享受更多服务~</p>
-    </div>
-    <div class="reg-btnbox">
-        <a href="javascript:void(0);" onclick="closebtn();"><!-- 以后再说 -->以后再说</a>
-        <a href="..\user\register.html?tzbz=0" class="reg-btn2">
-            <!-- 马上签约预订 -->马上签约预订</a>
-    </div>
-</div>
-
-
-
-<div class="ny-header-wrap w100p">
-
-<!-- 头部所有 -->
-		<header class="i-header w">
-
-			<h1 class=" fl ny-logo mt-30">
-				<a href="..\index.html"><img src="..\static\images\ny-logo.png"></a>
-			</h1>
-
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN" xmlns="http://wwww.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="renderer" content="webkit" />
+		<title>迪信云聚 -首页- 最大的通讯零售生态圈</title>
+		<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售" />
+		<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。" />
+		<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<![endif]-->
+		<link rel="stylesheet" type="text/css" href="../static/css/pc-reset.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/home.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/index\index.css" />
+		<script src="../static/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="../static/js/index-min.js" type="text/javascript"></script>
+		<script src="../static/js/placeholder-jr-min.js" type="text/javascript"></script>
+		<script src="../static/js/jquery-getui.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../static/js/jquery.SuperSlide.2.1.1.js"></script>
+		<script type="text/javascript" src="../static/js/index\index.js"></script>
+	</head>
+
+	<body class="i-body home">
+		<!-- 头部所有 -->
+		<link rel="stylesheet" type="text/css" href="static\layer\mobile\need\layer.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/commons\header.css" />
+		<script src="../static/js/index-min.js" type="text/javascript"></script>
+		<script src="../static/js/placeholder-jr-min.js" type="text/javascript"></script>
+		<script src="static\layer\layer.js" type="text/javascript"></script>
+		<script src="../static/js/commons\header.js" type="text/javascript"></script>
+
+		<div class="i-topwrap w100p border-b-1">
+			<div class="i-top w">
+				<div class="fl i-top-left">
+					<span class="mr-10 fl">
+						<!-- 迪信云聚商城 --> 迪信云聚商城 </span>
+					<div class="date">
+						<span>
+							<!-- --> </span>
+						<span>
+							<script type="text/javascript">
+
+								document.write(new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日')
+							</script> </span>
+					</div>
+				</div>
+				<input type="hidden" id="status" value="" />
+				<div class="fr i-top-right">
+					<ul>
+						<li class="dropdown"> <a href="#">
+								<!-- 云聚APP -->小程序商城</a>
+							<div class="drop-ewm">
+								<p>
+									<img src="../static/images/i-ewm_04.png" />
+									<!-- 扫一扫，下载云聚客户端 -->
+									<div class="label">米格优品</div>
+								</p>
+								</>
+						</li>
+						<li id="login"> <a href="user\indexlogin.html">
+								<!-- 登录 --> 登录 </a> </li>
+						<!-- <li id="login4" class="space"></li>  -->
+						<li id="login3"> <a href="user\indexregister.html">
+								<!-- 注册 --> 注册 </a> </li>
+						<li style=""> <a href="">
+								<!-- 消息 --> 消息通知 </a> </li>
+						<!-- <li class="space"></li>  -->
+
+						<!-- <li class="space" style="display:none"></li>  -->
+						<li style="display:none"><a href="http://old.dixinyunju.com">
+								<!-- 旧版入口 -->旧版入口</a></li>
+						<li>
+							<div class="icon-cart">
+								<img src="../static/images/icon-cart.png" /> <a href="/shop/tocart">
+									<!-- 旧版入口 -->购物车</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="register-pop">
+			<h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a> </h3>
+			<div class="reg-pop-con">
+				<span class="reg-pop-bg"></span>
+				<p class="mt-20">
+					<!-- 您已成为云聚注册会员 -->您已成为云聚注册会员</p>
+				<p>
+					<!-- 签约会员可享受更多服务~ -->签约会员可享受更多服务~</p>
+			</div>
+			<div class="reg-btnbox">
+				<a href="javascript:void(0);" onclick="closebtn();">
+					<!-- 以后再说 -->以后再说</a>
+				<a href="user\register.html?tzbz=0" class="reg-btn2">
+					<!-- 马上签约预订 -->马上签约预订</a>
+			</div>
+		</div>
+		<!-- 头部所有 -->
+		<div class="i-header w" style="overflow:hidden;display:block;">
+			<span class="fl i-logo" style="position:inherit;left:0;margin-left:0;display:block;"> <a href=""><img src="../static/images/i-logo.png" /></a> </span>
 			<div class="i-header-r fl">
-
 				<div class="i-header-rtop cl">
 					<div class="i-search-box fl">
 						<div class="i-search">
-	<script src="..\static\js\commons\search.js" type="text/javascript"></script>
-
-
-
-<input type="text" id="goodName" name="goodName" value="请输入关键字" class="i-search-txt fl">
-<input type="button" value="" class="i-search-btn fr" id="globelSearch" onclick="searchGood();">
-							
-<input type="hidden" id="ctxpath" value="">						
-							
+							<!-- 搜索框 -->
+							<script src="../static/js/commons\search.js" type="text/javascript"></script>
+							<input type="text" id="goodName" name="goodName" class="i-search-txt fl" />
+							<input type="button" value="" class="i-search-btn fr" id="globelSearch" onclick="searchGood();" />
+							<input type="hidden" id="ctxpath" value="" />
 						</div>
 						<div class="i-search-hot mt-10">
-							<!-- <a href="#">华为</a> <a href="#">小米</a> <a href="#">三星</a> <a
-								href="#">TCL</a> <a href="#">智能配件</a> <a href="#">保险卡</a> -->
 						</div>
 					</div>
 					<!--i-search-box end-->
-<script src="..\static\js\commons\shop.js" type="text/javascript"></script>	
-												
-<div class="i-shopping fl">
-
-
-	<a href="/shop/tocart"><!-- 我的购物车 -->我的购物车</a> <span id="shopNum" hidden="">0</span>
-</div>					<!-- <div class="i-shopping fl">
-						<a href="/pc/shop/tocart">我的购物车</a> <span>15</span>
-					</div> -->
-
+					<script src="../static/js/commons\shop.js" type="text/javascript"></script>
 				</div>
-
-					<nav class="i-nav mt-15 ml-20">
-				
-				<a href="..\index.html">首页</a><span class="space"></span>
-				<a href="..\index\news.html">云聚新闻</a><span class="space"></span> 
-	        	<a href="..\index\college.html">云聚商学院</a><span class="space"></span> 
-				<a href="..\index\finance.html">云聚消费金融</a><span class="space"></span> 
-				<a href="..\index\insurance.html">云聚碎屏保</a> <span class="space"></span> 
-				<a href="..\index\software.html">云聚进销存</a> <span class="space"></span> 
-				<a href="..\index\store.html">门店形象升级</a> <span class="space"></span> 
-				<a href="..\index\old.html">以旧换新</a>
-			</nav>
-			</div>
-			<div class="ny-header-menubox">
-			<a href="#" class="header-menu-btn"> <i><img src="..\static\images\ico-menu.png"></i> <!-- 全部商品分类 -->全部商品分类</a>
-				<div class="i-header-menu ny-header-menu">
-					<dl>
-								<dt class="ico-phone" style="background:url('http://image.51xiu.cc:800//lease/commodity/category/31b196f2980b4d9c802f8076cd1b33001.jpg'); background-repeat: no-repeat;">
-									<a href="javascript:void(0);" onclick="category1(event)" values2="00001"> 电脑整机	</a>
-								</dt>
-								<dd>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00001-00003">平板电脑</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00001-00002">笔记本</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00001-00001">台式机</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00001-00005">服务器/工作站</a>
-								</dd>
-								<dt class="ico-phone" style="background:url('http://image.51xiu.cc:800//lease/commodity/category/31b196f2980b4d9c802f8076cd1b33001.jpg'); background-repeat: no-repeat;">
-									<a href="javascript:void(0);" onclick="category1(event)" values2="00002"> 电脑配件	</a>
-								</dt>
-								<dd>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00002-00013">CD/DVD刻录盘卡</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00002-00026">UPS电源</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00002-00017">U盘</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00002-00011">主板</a>
-								</dd>
-								<dt class="ico-phone" style="background:url('http://image.51xiu.cc:800//lease/commodity/category/31b196f2980b4d9c802f8076cd1b33001.jpg'); background-repeat: no-repeat;">
-									<a href="javascript:void(0);" onclick="category1(event)" values2="00003"> 网络产品	</a>
-								</dt>
-								<dd>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00003-00001">路由器</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00003-00002">网卡</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00003-00007">网络配件</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00003-00004">网络存储</a>
-								</dd>
-								<dt class="ico-phone" style="background:url('http://image.51xiu.cc:800//lease/commodity/category/31b196f2980b4d9c802f8076cd1b33001.jpg'); background-repeat: no-repeat;">
-									<a href="javascript:void(0);" onclick="category1(event)" values2="00004"> 通信器材	</a>
-								</dt>
-								<dd>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00004-00001">手机</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00004-00003">对讲机</a>
-										<a href="javascript:void(0);" onclick="category1(event);" values2="00004-00002">电话机</a>
-								</dd>
-					</dl>
-				</div>
-			</div><!--ny-header-menubox end-->
-
-		</header>
-
-</div>
-	
-	<div class="ny-crumbs w">
-		<i></i><a href=""><!-- 首页 -->首页</a> > <a href="list.html"> <!-- 商品列表 -->商品列表</a>
-	</div>
-	<main class="ny-main w mb-60">
-	<div class="list-m1">
-		<div class="selectNumberScreen">
-			<form action="/api/pro/selectlist" method="post" onsubmit="queryList()">
-				<div id="selectList" class="screenBox screenBackground">
-					<dl class="listIndex" attr="">
-						<dt><!-- 分类 -->分类</dt>
-						<dd class="list-pp-box1" id="category">
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00001" values1="电脑整机">电脑整机</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00002" values1="电脑配件">电脑配件</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00003" values1="网络产品">网络产品</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00004" values1="通信器材">通信器材</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00005" values1="摄影摄像">摄影摄像</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00006" values1="数码配件">数码配件</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00007" values1="办公设备">办公设备</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00008" values1="文具耗材">文具耗材</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00009" values1="文体器材">文体器材</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00010" values1="学习书籍">学习书籍</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00011" values1="大型家电">大型家电</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00012" values1="厨房电器">厨房电器</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00013" values1="生活电器">生活电器</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00014" values1="健康卫生">健康卫生</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00015" values1="纺织箱包">纺织箱包</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00016" values1="日常用品">日常用品</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00017" values1="粮油食品">粮油食品</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00018" values1="办公家具">办公家具</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00019" values1="工具器材">工具器材</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00020" values1="五金装饰">五金装饰</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00021" values1="工程建材">工程建材</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" categoryvalues="00022" values1="汽车用品">汽车用品</a>
-							<!-- <span><a href="javascript:void(0)" values2="" values1="">全国</a></span>
-						<a href="javascript:void(0)" values2="" values1="" attrval="">品牌手机</a>
-						<a href="javascript:void(0)" values2="" values1="" attrval="">云聚碎屏险</a>  -->
-							<div class="pp-more-btn">
-								<!-- 更多 -->更多<i></i>
-							</div>
-						</dd>
-					</dl>
-
-					<dl class="listIndex" attr="">
-						<dt><!-- 品牌 -->品牌</dt>
-						<dd class="list-pp-box" id="brand">
-
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0069" values1="">卓力</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0054" values1="">木槿生活</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0050" values1="">苏泊尔</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0065" values1="">卓品</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0059" values1="">新北洋</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0060" values1="">亚坦文具</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0068" values1="">口吕品电子</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0067" values1="">华迈环保</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0056" values1="">立白</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0058" values1="">探路者</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0066" values1="">悉硕电子</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0052" values1="">奥凯盛</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0061" values1="">公牛</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0064" values1="">杭州融今</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0062" values1="">伊利</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0053" values1="">米阁优品</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0057" values1="">搜狗</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0063" values1="">纽曼</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0055" values1="">莱克</a>
-									<a href="javascript:void(0)" onclick="changeGoods(this);" brandvalues="BD0051" values1="">荣事达</a>
-							<!--<span><a href="javascript:void(0)" values2="" values1="">全国</a></span>
-						 <a href="javascript:void(0)" values2="" values1="" attrval="">苹果</a>
-						<a href="javascript:void(0)" values2="" values1="" attrval="">诺基亚</a> -->
-							<div class="pp-more-btn">
-								<!-- 更多 -->更多<i></i>
-							</div>
-						</dd>
-					</dl>
-
-
-				</div>
-
-				<div class="hasBeenSelected">
-					<dl>
-
-						<dd style="display: none" class="clearDd">
-							<div class="clearList"></div>
-							<div style="display: none;" class="eliminateCriteria"><!-- 清除筛选条件 -->清除筛选条件</div>
-						</dd>
-					</dl>
-				</div>
-		</div>
-
-	</div>
-	<!--list-m1 end-->
-	<div class="list-con mt-10">
-		<div class="list-con-head cl">
-
-			<div class="fr listcon-pagebox">
-				<span><!-- 共 -->共<font>178</font><!-- 件商品 -->件商品
-				</span>
-				<div class="listcon-page fr ml-15">
-			
-					<span><em>1</em>/36</span>
-						<!-- 如果有上页，currentPage=下一页 -->
-						<a href="javascript:void(0)" onclick="newPage(0)" id="previous"></a>
-				</div>
+				<nav class="i-nav mt-15 ml-20">
+					<a href="index.html" class="active">首页</a>
+					<span class="space"></span>
+					<a href="index\news.html">云聚新闻</a>
+					<span class="space"></span>
+					<a href="index\college.html">云聚商学院</a>
+					<span class="space"></span>
+					<a href="index\finance.html">云聚消费金融</a>
+					<span class="space"></span>
+					<a href="index\insurance.html">云聚碎屏保</a>
+					<span class="space"></span>
+					<a href="index\software.html">云聚进销存</a>
+					<span class="space"></span>
+					<a href="index\store.html">门店形象升级</a>
+					<span class="space"></span>
+					<a href="index\old.html">以旧换新</a>
+				</nav>
 			</div>
 		</div>
-		<!--list-con-head end-->
-		<div class="list-listbox" id="contentList">
-			<ul class="list-listbox-ul cl" id="content">
-					<li class="list-item">
-						<div class="list-pic">
-							<a href="..\goods\goodsDetails-101.html?goodsId=e3ca42d721ab47d99fd0a45e3a813a69" target="_blank"><img src="http://image.51xiu.cc:800//lease/commodity/img/fedae5c42b364a3f9b35c437c07b5df6.jpg"></a>
-						</div>
-						<div class="list-itemtxt">
-							<div class="i-m1-price mt-20">
-								<span><em><!-- 建议价格 -->建议零售价：￥</em>199</span>
-							</div>
-							<p>
-								<a href="..\goods\goodsDetails-101.html?goodsId=e3ca42d721ab47d99fd0a45e3a813a69" target="_blank">苏泊尔3L家用智能预约全自动多功能迷你电饭锅</a>
-							</p>
-							<div class="i-m1-shop">
-										<!-- 自营 -->
-								
-							</div>
-						</div>
+
+		<ul class="category w">
+			<li>
+				<div class="type">
+					<img src="../static/images/icon-kinds.png" alt="">
+					<span>分类</span>
+				</div>
+				<ul id="category-products" class="content"> </ul>
+			</li>
+			<li>
+				<div class="type">
+					<img src="../static/images/icon-pinpai.png" alt="">
+					<span>分类</span>
+				</div>
+				<ul id="category-brand" class="content hidden"> </ul>
+				<a href="javascript:void(0)" class="more" id="brand-more">更多<img src="../static/images/ico-jt-x.png" alt=""></a>
+			</li>
+		</ul>
+
+		<main style="background-color:#F5F5F5;">
+			<section class="section w" style="padding-top:20px">
+				<ul class="content">
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
 					</li>
-					<li class="list-item">
-						<div class="list-pic">
-							<a href="..\goods\goodsDetails-102.html?goodsId=fcd501e68e6b49f7a508bd0b12e499f2" target="_blank"><img src="http://image.51xiu.cc:800//lease/commodity/img/cee4527164fd413688e499a89fbb3974.jpg"></a>
-						</div>
-						<div class="list-itemtxt">
-							<div class="i-m1-price mt-20">
-								<span><em><!-- 建议价格 -->建议零售价：￥</em>499</span>
-							</div>
-							<p>
-								<a href="..\goods\goodsDetails-102.html?goodsId=fcd501e68e6b49f7a508bd0b12e499f2" target="_blank">苏泊尔4L家用智能可预约大容量电饭锅</a>
-							</p>
-							<div class="i-m1-shop">
-										<!-- 自营 -->
-								
-							</div>
-						</div>
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
 					</li>
-					<li class="list-item">
-						<div class="list-pic">
-							<a href="..\goods\goodsDetails-103.html?goodsId=e78889e7a5724aa183f808f323b36cc1" target="_blank"><img src="http://image.51xiu.cc:800//lease/commodity/img/5a502167ed224ec88512e4a2495e0149.jpg"></a>
-						</div>
-						<div class="list-itemtxt">
-							<div class="i-m1-price mt-20">
-								<span><em><!-- 建议价格 -->建议零售价：￥</em>399</span>
-							</div>
-							<p>
-								<a href="..\goods\goodsDetails-103.html?goodsId=e78889e7a5724aa183f808f323b36cc1" target="_blank">苏泊尔4L豪华智能球釜内胆预约定时煮饭锅</a>
-							</p>
-							<div class="i-m1-shop">
-										<!-- 自营 -->
-								
-							</div>
-						</div>
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
 					</li>
-					<li class="list-item">
-						<div class="list-pic">
-							<a href="..\goods\goodsDetails-104.html?goodsId=3333540575744c618653a00c794cf9e7" target="_blank"><img src="http://image.51xiu.cc:800//lease/commodity/img/1a1fc4b42af145049b695203caee3711.jpg"></a>
-						</div>
-						<div class="list-itemtxt">
-							<div class="i-m1-price mt-20">
-								<span><em><!-- 建议价格 -->建议零售价：￥</em>699</span>
-							</div>
-							<p>
-								<a href="..\goods\goodsDetails-104.html?goodsId=3333540575744c618653a00c794cf9e7" target="_blank">苏泊尔IH电磁加热球釜内胆电饭锅</a>
-							</p>
-							<div class="i-m1-shop">
-										<!-- 自营 -->
-								
-							</div>
-						</div>
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
 					</li>
-					<li class="list-item">
-						<div class="list-pic">
-							<a href="..\goods\goodsDetails-105.html?goodsId=6fa6634310254cb9abc0ab53348cdf82" target="_blank"><img src="http://image.51xiu.cc:800//lease/commodity/img/67dc2333bf8d4635a45e94599886d5fd.jpg"></a>
-						</div>
-						<div class="list-itemtxt">
-							<div class="i-m1-price mt-20">
-								<span><em><!-- 建议价格 -->建议零售价：￥</em>799</span>
-							</div>
-							<p>
-								<a href="..\goods\goodsDetails-105.html?goodsId=6fa6634310254cb9abc0ab53348cdf82" target="_blank">苏泊尔4L容量家用IH电磁加热智能电饭煲</a>
-							</p>
-							<div class="i-m1-shop">
-										<!-- 自营 -->
-								
-							</div>
-						</div>
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
 					</li>
-
-
-			</ul>
-
-		</div>
-		
-	<!-- <div id="kkpager"></div> -->
-		
-		
-		<div class="ny-page mt-50" id="pageC">
-			<a href="javascript:void(0)" onclick="newPage(1)" id="first"><!-- 首页 -->首页</a>
-			<!-- 判断是否有上一页 -->
-			<!-- 循环显示页码 -->
-					     <a href="javascript:void(0)" onclick="newPage(1)" class="wk_active1">1</a>
-						<a href="javascript:void(0)" onclick="newPage(2)">2</a>
-						<a href="javascript:void(0)" onclick="newPage(3)">3</a>
-						<a href="javascript:void(0)" onclick="newPage(4)">4</a>
-						<a href="javascript:void(0)" onclick="newPage(5)">5</a>
-			<!-- 判断是否有下一页 -->
-					<!-- 如果有上页，currentPage=下一页 -->
-				<a href="javascript:void(0)" onclick="newPage(2)" id="previous"><!-- 下一页-->下一页</a>
-			<!-- 跳转尾页，当前页currentPage=最大页数 -->
-			<a href="javascript:void(0)" onclick="newPage(36)" id="last"><!-- 尾页-->尾页</a>
-		</div>
-
-		<!-- 	<div id="pageToolbar"></div> -->
-	</div>
-	<!--list-con end-->
-
-	<div class="list-reco mt-50 picScroll"></div>
-	<!--l-reco end--> </main>
-
-<!-- 底部所有 -->
-<script src="..\static\js\commons\footer.js" type="text/javascript"></script>
-
-<footer class="mt-40 i-footer w100p">
-	<div class="i-ensure-wrap w100p">
-		<div class="i-ensure w cl">
-			<ul>
-				<li>
-					<i class="i-ensure-ico1"></i>
-					<h4><!-- 正品保障 -->正品保障</h4>
-					<p><!-- 正规代理，行货保障 -->正规代理，行货保障</p>
-				</li>
-				<li>
-					<i class="i-ensure-ico2"></i>
-					<h4><!-- 品种齐全 -->品种齐全</h4>
-					<p><!-- 配货齐全，品类丰富 -->配货齐全，品类丰富</p>
-				</li>
-				<li>
-					<i class="i-ensure-ico3"></i>
-					<h4><!-- 闪电发货 -->闪电发货</h4>
-					<p><!-- 当天下单，次日到达 -->当天下单，次日到达</p>
-				</li>
-				<li>
-					<i class="i-ensure-ico4"></i>
-					<h4><!-- 款到发货 -->款到发货</h4>
-					<p><!-- 款到发货，安全便捷 -->款到发货，安全便捷</p>
-				</li>
-				<li>
-					<i class="i-ensure-ico5"></i>
-					<h4><!-- 售后保障 -->售后保障</h4>
-					<p><!-- 快速售后，服务保障 -->快速售后，服务保障</p>
-				</li>
-				<li>
-					<i class="i-ensure-ico6"></i>
-					<h4><!-- 贴心服务 -->贴心服务</h4>
-					<p><!-- 在线客服，专属服务 -->在线客服，专属服务</p>
-				</li>
-			</ul>
-		</div>
-	</div><!--i-ensure-wrop end-->
-	<div class="footer-link w cl">
-		<div class="footer-menu fl">
-			<ul>
-				<li>
-					<h4><!-- 订货指南 -->订货指南</h4>
-					<p><a href="..\index\text.html?sort=1"><!-- 订货流程 -->订货流程</a></p>
-					<p><a href="..\index\text-1.html?sort=2"><!-- 物流方式 -->物流方式</a></p>
-					<p><a href="..\index\text-2.html?sort=3"><!-- 常见问题 -->常见问题</a></p>
-				</li>
-				<li>
-					<h4><!-- 合作权益 -->合作权益</h4>
-					<p><a href="..\index\text-3.html?sort=4"><!-- 入驻政策 -->入驻政策</a></p>
-					<p><a href="..\index\text-4.html?sort=5"><!-- 会员权益 -->会员权益</a></p>
-					<p><a href="..\index\text-5.html?sort=6"><!-- 特色服务 -->特色服务</a></p>
-				</li>
-				<li>
-					<h4><!-- 支付方式 -->支付方式</h4>
-					<p><a href="..\index\text-6.html?sort=7"><!-- 公司转账 -->公司转账</a></p>
-					<p><a href="..\index\text-7.html?sort=8"><!-- 在线支付 -->在线支付</a></p>
-					<p><a href="..\index\text-8.html?sort=9"><!-- 发票问题 -->发票问题</a></p>
-				</li>
-				<li>
-					<h4><!-- 联系我们 -->联系我们</h4>
-					<p><a href="..\index\text-9.html?sort=10"><!-- 云聚介绍 -->云聚介绍</a></p>
-					<p><a href="..\index\news.html" target="_blank"><!-- 云聚新闻 -->云聚新闻</a></p>
-					<p><a href="..\index\text-10.html?sort=11"><!-- 联系客服 -->联系客服</a></p>
-				</li>
-			</ul>
-		</div><!--footer-menu end-->
-		<div class="footer-ewm fl">
-			<span>
-				<img src="..\static\images\i-ewm_04.png">
-				<p><!-- 云聚APP -->云聚APP</p>
-			</span>
-			<span>
-				<img src="..\static\images\i-ewm_05.png">
-				<p style="font-size:12px;"><!-- 关注微信公众号 -->关注微信公众号</p>
-			</span>
-		</div>
-		<div class="footer-contact fr">
-			<div class="footer-phonebox">
-				<i></i>
-				<h3><!-- 全国统一服务热线 -->全国统一服务热线</h3>
-				<p><!-- 周一至周五上午9:00-下午18:00 -->周一至周五上午9:00-下午18:00
-</p>
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
+					</li>
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
+					</li>
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
+					</li>
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
+					</li>
+					<li>
+						<a href="/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f">
+							<img src="http://image.51xiu.cc:800//lease/commodity/img/cc890d18c2564c5c8ea4f0918174f726.jpg" alt="">
+							<div class="name">武夷山金骏眉18罐 小泡罐装礼盒</div>
+							<div class="price">169元</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<script src="../static/js/commons\footer.js" type="text/javascript"></script>
+		<footer class="pt-40 i-footer w100p">
+			<div class="i-ensure-wrap w100p">
+				<div class="i-ensure w cl">
+					<ul>
+						<li> <i class="i-ensure-ico1"></i>
+							<h4>
+								<!-- 正品保障 -->正品保障</h4>
+						</li>
+						<li> <i class="i-ensure-ico2"></i>
+							<h4>
+								<!-- 品种齐全 -->品种齐全</h4>
+						</li>
+						<li> <i class="i-ensure-ico3"></i>
+							<h4>
+								<!-- 闪电发货 -->闪电发货</h4>
+						</li>
+						<li> <i class="i-ensure-ico5"></i>
+							<h4>
+								<!-- 售后保障 -->售后保障</h4>
+						</li>
+						<li> <i class="i-ensure-ico6"></i>
+							<h4>
+								<!-- 贴心服务 -->贴心服务</h4>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="footer-phone">400-700-8800</div>
-		</div>
-	
-	</div><!--footer-link end-->
-	
-	<div class="footer-copy w100p">
-		<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
-	</div>
-	
-</footer>
-<div class="topbar-show w100p">
-	<div class="w top-show">
-		<h1 class="top-show-logo fl mt-5">
-			<a href="..\index.html"><img src="..\static\images\top-show-logo.png"></a>
-		</h1>
-	</div>
-	<div class="i-search top-show-search fl">
-		<!-- <input type="text" id="goodNames" name="goodNames" value="请输入关键字"
+			<!--i-ensure-wrop end-->
+			<div class="footer-link w cl">
+				<!--footer-menu end-->
+				<div class="footer-ewm">
+					<img src="../static/images/i-ewm_04.png" />
+					<p style="font-size:12px;">
+						<!-- 关注微信公众号 -->微信线上商城<br> “米阁优品”</p>
+					<div class="divider"></div>
+				</div>
+
+
+				<div>
+					京ICP备17006091号 <br />北京迪信云聚科技有限公司Copyright ©2017
+					<div class="divider"></div>
+				</div>
+
+				<div class="footer-contact">
+					<div class="footer-phone">
+						400-700-8800
+					</div>
+					<span>（周一至周五 9:00-18:00）</span>
+				</div>
+
+			</div>
+			<!--footer-link end-->
+			<div class="footer-copy w100p" style="display: none;">
+				<p>京ICP备17006091号 北京迪信云聚科技有限公司Copyright &copy;2017</p>
+			</div>
+		</footer>
+		<div class="topbar-show w100p">
+			<div class="w top-show">
+				<h1 class="top-show-logo fl mt-5"> <a href="index.html"><img src="../static/images/top-show-logo.png" /></a> </h1>
+			</div>
+			<div class="i-search top-show-search fl">
+				<!-- <input type="text" id="goodNames" name="goodNames" value="请输入关键字"
 								onfocus="if (value =='请输入关键字'){value =''}"
 								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" /> -->
-		<input type="text" id="goodNames" name="goodNames" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl">
-							<input type="button" value="" class="i-search-btn fr" id="globelSearch2" onclick="searchGoods();">
-	</div>
-<!-- 底部所有 -->
-	<!-- <script type="text/javascript" src="/static/js/list/list.js"></script> -->
-<input type="hidden" id="zd" value="">
-<input type="hidden" id="pd" value="0">
-<input type="hidden" id="pe" value="0">
-<input type="hidden" id="pf" value="0">
-<input type="hidden" id="ctx" value="">
-<input type="hidden" id="officeI" value="0">
-<input type="hidden" id="category1" value="">
+				<input type="text" id="goodNames" name="goodNames" class="i-search-txt fl" />
+				<input type="button" value="" class="i-search-btn fr" id="globelSearch2" onclick="searchGoods();" />
+			</div>
+			<input type="hidden" id="ctxpath" value="" />
+			<input type="hidden" id="ctxpath" value="" />
+			<script type="text/javascript">
+				jQuery(".ladyScroll").slide({
+					mainCell: ".dlList",
+					effect: "leftLoop",
+					vis: 5,
+					// autoPlay : true
+				});
+				jQuery(".focusBox").slide({
+					mainCell: ".pic",
+					effect: "left",
+					autoPlay: true,
+					delayTime: 300
+				});
+				$(".ladyScroll2").slide({
+					mainCell: ".dlList",
+					effect: "leftLoop",
+					vis: 5,
+					autoPlay: true
+				});
 
-<input type="hidden" id="cid" value="">
-<input type="hidden" id="bid" value="">
-<input type="hidden" id="pages" value="36">
-<input type="hidden" id="pageNo" value="1">
-<input type="hidden" id="prices" value="">
-	
-	<!-- <script type="text/javascript">
-//生成分页控件  
+				var menus = [
+					{ name: '电脑整机', value: '00001', url: '', children: '台式机、笔记本、平板电脑、一体机、服务器/工作站' },
+					{ name: '电脑配件', url: '', children: 'CPU、SSD固态硬盘、电源、机箱、内存、电脑散热器、声卡/扩展卡、显卡、显示器、硬盘、主板、装机配件、CD/DVD刻录盘卡、刻录机/光驱、鼠标、键盘、U盘、移动硬盘、鼠标垫、摄像头、线缆、硬盘盒、手写板、电脑工具、电脑清洁、UPS电源、网络仪表仪器、外置盒、服务器机柜、服务器CPU、服务器内存、服务器硬盘、服务器机箱' },
+					{ name: '网络产品', url: '', children: '路由器、网卡、交换机、网络存储、4G/3G上网、网络盒子、网络配件' },
+					{ name: '通信器材', url: '', children: '手机、电话机、对讲机' },
+					{ name: '摄影摄像', url: '', children: '数码相机、单电/微单相机、单反相机、摄像机、镜头、户外器材、影棚器材、数码相框、拍立得、运动相机' },
+					{ name: '数码配件', url: '', children: '存储卡、读卡器、滤镜、闪光灯/手柄、相机包、三脚架/云台、相机清洁/贴膜、机身附件、镜头附件、电池/充电器、移动电源、数码支架' },
+					{ name: '办公设备', url: '', children: '打印机、传真设备、投影机、碎纸机、投影配件、多功能一体机、验钞/点钞机、扫描设备、复印机、考勤机、会议音频视频、保险柜、铁皮柜、装订/封装机、安防监控、白板、录音笔、收音机' },
+					{ name: '文具耗材', url: '', children: '硒鼓/墨粉、墨盒、色带、纸类、笔类、文件管理、本册/便签、计算器、财会用品、办公文具、画具画材、学生文具' },
+					{ name: '文体器材', url: '', children: '篮球类、足球类、乒乓球类、羽毛球类、排球类、网球类、台球类、棋牌类、书法用品、户外（野营）装备、健身器材' },
+					{ name: '学习书籍', url: '', children: '政治读物、军事历史、教育考试、经济管理、文学艺术' },
+					{ name: '大型家电', url: '', children: '平板电视、空调、冰箱、洗衣机、家庭影院、DVD/电视盒子、迷你音响、油烟机、电热水器、消毒柜、家电配件、冷柜/冰吧、燃气灶、燃气热水器、洗碗机、展示柜' },
+					{ name: '厨房电器', url: '', children: '电压力锅、电饭煲、豆浆机、面包机、咖啡机、微波炉、榨汁机/原汁机、电烤箱、煮蛋器、酸奶机、电水壶/热水瓶、电炖锅、多用途锅、养生壶/煎药壶、厨房秤、料理机、电饼铛、电磁炉、电烧烤炉、果蔬解毒机、面条机' },
+					{ name: '生活电器', url: '', children: '取暖电器、净化器、加湿器、吸尘器/除螨仪、清洁机、除湿机、收录/音机、干衣机、电风扇、挂烫机/熨斗、冷风扇、净水器、饮水机、扫地机器人、生活电器配件、毛球修剪器、其他生活电器、插线板/插座' },
+					{ name: '健康卫生', url: '', children: '剃须刀、剃/脱毛器、口腔护理、电吹风、理发器、按摩椅、按摩器、足浴盆、血压计、健康秤、血糖仪、体温计、便携式制氧机' },
+					{ name: '纺织箱包', url: '', children: '床垫、被褥、被套、床单、窗帘窗纱、蚊帐、凉席、毛巾、浴巾、桌布、电脑包、拉杆箱、双肩包、提包、旅行包、腰包、手套' },
+					{ name: '日常用品', url: '', children: '家庭清洁、皮具护理、清洁工具、驱虫用品、一次性用品、衣物清洁、纸品湿巾、沐浴、润肤、手足、护发、套装、洗发、雨伞雨具、水壶、杯子' },
+					{ name: '粮油食品', url: '', children: '茶、烘焙原料、有机食品、米面杂粮、食用油、调味品、方便食用、牛奶乳品、饮料、成人奶粉、冲饮谷物、蜂蜜/柚子茶、咖啡/奶茶、饮用水、饼干蛋糕、干货、糖果/巧克力、健身食品、运动饮料' },
+					{ name: '办公家具', url: '', children: '桌子、椅子、柜子、储物收纳、床、床垫、沙发、茶几、鞋架/衣帽架' },
+					{ name: '工具器材', url: '', children: '电动工具、手动工具、测量工具、仪器仪表、电子锁、工具配件、工具组套、包装耗材、标签耗材、搬运工具、货架、安全防护器材' },
+					{ name: '五金装饰', url: '', children: '厨房卫浴、灯饰照明、墙地面材料、装饰材料、闹铃、电料配件、监控安防、电线/电缆、接线板/插排、开头插座、配电箱/断路器、智能家居、机械、家用五金、劳防用品' },
+					{ name: '工程建材', url: '', children: '袋装水泥、油漆、板材、防水涂料、防水卷材、五金制品及焊接材料、铝合金门窗、塑钢门窗、消火栓、灭火器、阀门、工程散热器、变压器' },
+					{ name: '汽车用品', url: '', children: '安全自驾、美容清洗、洗车装饰、倒车雷达、维修保养、导航仪、安全预警仪、时尚影音、行车记录仪、车载净化器、车载电源、蓝牙设备、车载吸尘器、车载冰箱、玻璃水、安全座椅、充气泵、车辆防盗设备应急救援、车载保温箱、车机、车载电器配件、车载电台、车载生活电器、驾驶辅助、逆变器' }
+				]
 
-kkpager.generPageHtml({
-	pno : '',
-	mode : 'click', //设置为click模式
-	//总页码  
-	total : '',  
-	//总数据条数  
-	totalRecords : '',
-	//点击页码、页码输入框跳转、以及首页、下一页等按钮都会调用click
-	//适用于不刷新页面，比如ajax
-	click : function(n){
-		//点击下一页
- 		$("#pre").click(function(){
-			alert("首页");
-		});
-		
-		
-		
-			alert($(this).firstPageTipText);
-		alert("没进去");
-	
-		
-		
-		this.selectPage(n);
-	},
-	//getHref是在click模式下链接算法，一般不需要配置，默认代码如下
-	getHref : function(n){
-		return '#';
-	}
-	
-});
-</script>  -->
-<script type="text/javascript">
+				$('#category-products').html(menus.map((item) => `
+						<li values2="${item.value}"><a class="menu">${item.name}</a>
+							<ul class="submenu">${item.children.split('、').map(submenu => `<li>${submenu}</li>`).join('')}<div class="arrow"></div></ul>
+						</li>`
+				)
+				);
 
-/*function course(event){
-	var event=event||window.event;
-	var target=event.target||event.srcElement;
-	//兼容ie	
-		var target=$(target)||$(e.srcElement) ;
-			console.log(target);
-			var s=target.html();
-			 var c=$("#course").val();
-			 var ctx=$("#ctx").val();
-			var url ="json={'category':'"+c+"','orderBy':'0','pageNo':'1'}";
-			var encodedUrl = encodeURIComponent(url);
-	//	alert(c);
-			////alert(ctx);
-	location.href=ctx+"/pro/list?"+encodedUrl;	
-}
-function system(event){
-	var event=event||window.event;
-	var target=event.target||event.srcElement;
-	//兼容ie	
-		var target=$(target)||$(e.srcElement) ;
-			console.log(target);
-			var s=target.html();
-			 var c=$("#system").val();
-			 var ctx=$("#ctx").val();
-			var url ="json={'category':'"+c+"','orderBy':'0','pageNo':'1'}";
-			var encodedUrl = encodeURIComponent(url);
-			//alert(c);
-			//	alert(encodedUrl);
-			////alert(ctx);
-			//alert(ctx+"/pro/list?"+url);
-			location.href=ctx+"/pro/list?"+encodedUrl;	
-}*/
+				$('#menus> li').on('click', category1);
+				$('.submenu>li').on('click', category1);
 
-function changeGoods(o) {
-	$(o).addClass('selected').siblings().removeClass('selected');
-	var bid = $(o).attr("brandValues");
-	var cid = $(o).attr("categoryValues");
-	var  prices= $(o).attr("values2");
-	console.log("prices:"+prices);
+				const brand = [
+					'卓力',
+					'木槿生活',
+					'苏泊尔',
+					'卓品',
+					'新北洋',
+					'亚坦文具',
+					'口吕品电子',
+					'华迈环保',
+					'立白',
+					'探路者',
+					'悉硕电子',
+					'奥凯盛',
+					'公牛',
+					'杭州融今',
+					'伊利',
+					'米阁优品',
+					'搜狗',
+					'纽曼',
+					'莱克',
+					'荣事达',
+				]
 
-	if (cid != null && cid != "") {
-		if (cid == $("#cid").val()) {
-			$("#cid").val("");
-			$(o).removeClass('selected');
-			cid="";
-		} else {
-			$("#cid").val(cid);
-		}
-	} else {
-		cid = $("#cid").val();
-	}
-	if (bid!=null && bid!=""){
-		//$("#bid").val(bid);
-		if (bid == $("#bid").val()) {
-			$("#bid").val("");
-			bid="";
-			$(o).removeClass('selected');
-		} else {
-			$("#bid").val(bid);
-		}
+				$('#category-brand').html(brand.map((item) => `
+						<li>${item}	</li>`
+				)
+				);
 
-	}else{
-		bid=$("#bid").val();
-	}
-	if (prices!=null && prices!="" ){
-		$("#prices").val(prices);
-	}else{
-		prices=$("#prices").val();
-	}
+        var timeout = null;
+				$('#brand-more').on('click', function() {
+					$('#category-brand').toggleClass('hidden');
+				});
 
-	var pageNo=$("#pageNo").val();
-	console.log("cid:"+cid);
-	console.log("bid:"+bid);
-	var url ="json={'prices':'"+prices+"', 'categoryId':'"+cid+"','brandId':'"+bid+"','pageNo':'"+pageNo+"'}";
-	var encodedUrl = encodeURIComponent(url);
-	location.href=$("#ctx").val()+"/pro/list?"+encodedUrl;
-	console.log("url:"+$("#ctx").val()+"/pro/list?"+encodedUrl);
-}
+				$('#category-products>li').hover(function(e) {
+					clearTimeout(timeout);
+					$('.submenu').hide();
+					var p = $(e.currentTarget).position();
+					$(e.currentTarget).find('.submenu').css({top: p.top + 'px', display: 'flex'}).find('.arrow').css({left: (p.left + 28) + 'px'});
+				},function(e) {
+					$(e.currentTarget).find('.submenu').hover(function(){
+						clearTimeout(timeout);
+            $(this).css({display: 'flex'});
+					},function(){
+            $(this).hide();
+					});
+				  timeout = setTimeout(()=>{
+				    $(e.currentTarget).find('.submenu').hide();
+					}, 300);
+				})
 
+				var data = JSON.parse(decodeURIComponent(window.location.search.substr(1)).substr(5));
+				var index = menus.findIndex(item=>item.name === data.menu);
+				if(data.menu) {
+				   $('#category-products>li').eq(index).addClass('active');
+				}
+				if(data.submenu) {
+					var subIndex = menus[index].children.split('、').findIndex(item=>item === data.submenu);
+          $('#category-products>li').eq(index).find('.submenu>li').eq(subIndex).addClass('active');
+				}
 
-function newPage(pageNo) {
-	var  bid=$("#bid").val();
-	var  cid=$("#cid").val();
-	var url ="json={'categoryId':'"+cid+"','brandId':'"+bid+"','pageNo':'"+pageNo+"'}";
-	var encodedUrl = encodeURIComponent(url);
-	location.href=$("#ctx").val()+"/pro/list?"+encodedUrl;
-}
+				$('#category-products>li>a').on('click', function(e) {
+					e.stopPropagation();
+          $(this).parent().toggleClass('active').siblings().removeClass('active');
+				});
 
+				$('#category-products .submenu>li').on('click', function(e) {
+					e.stopPropagation();
+					$(this).parent().parent().addClass('active').siblings().removeClass('active');
+          $(this).toggleClass('active').siblings().removeClass('active');
+				});
+			</script>
+	</body>
 
-</script>
-
-</div></body>
 </html>
-

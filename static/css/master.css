@@ -165,7 +165,7 @@
 }
 
 .i-topwrap {
-	background: #333333;
+	background: #fff;
 }
 
 .i-topwrap,
@@ -175,7 +175,7 @@
 }
 
 .i-top-left {
-	color: #bfbfbf;
+	color: #666;
 	font-size: 12px;
 	width: 400px;
 }
@@ -220,7 +220,6 @@
 .i-top-right li a{
 	font-size: 12px;
 	line-height: 34px;
-	color:#bfbfbf;
 }
 .i-top-right li.space{
 	height: 34px;
