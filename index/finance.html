@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<title>迪信云聚 - 消费金融 - 最大的通讯零售生态圈 </title>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+
+
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script type="text/javascript" src="..\static\js\jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="..\static\js\index\index.js"></script>
+
+
+<style>
+.brandColor{
+color:#fff !important;
+}
+
+
+</style>
+</head>
+<script type="text/javascript">
+window.onload=function(){
+var msg="";
+	if(msg!=""){
+	layer.msg(msg);
+	}
+}
+</script>
+<body>
+
+<!-- 头部所有 -->
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\commons\header.css">
+
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script src="..\static\js\commons\header.js" type="text/javascript"></script>
+
+
+<div class="i-topwrap w100p border-b-1">
+    <div class="i-top w">
+        <div class="fl i-top-left">
+    		<span class="mr-10 fl">
+                 <!-- 迪信云聚商城 -->
+迪信云聚商城            </span>
+            <div class="date">
+                <span>
+                	<!-- -->
+                </span>
+                <span>
+                    <script type="text/javascript">
+                    	
+                    	document.write(new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日')
+                    </script>
+                </span>
+            </div>
+
+        </div>
+        <input type="hidden" id="status" value="">
+        <div class="fr i-top-right">
+            <ul>
+
+
+
+
+
+
+                    <li id="login">
+                        <a href="..\user\indexlogin.html">
+                            <!-- 登录 -->
+登录                        </a>
+                    </li>
+                    <li id="login4" class="space"></li>
+                    <li id="login3">
+                        <a href="..\user\indexregister.html" class="active">
+                            <!-- 注册 -->
+注册                        </a>
+                    </li>    
+
+
+
+
+
+
+                    <li style="display:none">
+                        <a>
+                            <!-- 消息 -->
+消息                        </a>
+                    </li>
+                <li class="space"></li>
+                <li class="dropdown">
+                    <a href="#"><!-- 云聚APP -->云聚APP</a>
+                    <div class="drop-ewm">
+                        <p><!-- 扫一扫，下载云聚客户端 -->扫一扫，下载云聚客户端</p>
+                        <img src="..\static\images\i-ewm_04.png">
+                    </div>
+                </li>
+                <li class="space"></li>
+                <li><a href="http://old.dixinyunju.com"><!-- 旧版入口 -->旧版入口</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="register-pop">
+    <h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a>
+    </h3>
+    <div class="reg-pop-con">
+        <span class="reg-pop-bg"></span>
+        <p class="mt-20"><!-- 您已成为云聚注册会员 -->您已成为云聚注册会员</p>
+        <p><!-- 签约会员可享受更多服务~ -->签约会员可享受更多服务~</p>
+    </div>
+    <div class="reg-btnbox">
+        <a href="javascript:void(0);" onclick="closebtn();"><!-- 以后再说 -->以后再说</a>
+        <a href="..\user\register.html?tzbz=0" class="reg-btn2">
+            <!-- 马上签约预订 -->马上签约预订</a>
+    </div>
+</div>
+
+
+
+<!-- 头部所有 -->
+<div class="ny-header-wrap w100p">
+	<header class="i-header w">
+		
+		<h1 class=" fl ny-logo mt-30">
+			<a href="..\index.html"><img src="..\static\images\ny-logo.png"></a>
+		</h1>
+		
+		<div class="i-header-r fl">
+			
+			<div class="i-header-rtop cl">
+				<div class="i-search-box fl">
+					<div class="i-search">
+						<!-- 搜索框 -->
+	<script src="..\static\js\commons\search.js" type="text/javascript"></script>
+
+
+
+<input type="text" id="goodName" name="goodName" value="请输入关键字" class="i-search-txt fl">
+<input type="button" value="" class="i-search-btn fr" id="globelSearch" onclick="searchGood();">
+							
+<input type="hidden" id="ctxpath" value="">						
+					</div>
+					<div class="i-search-hot mt-10">
+						<!--<a href="#">华为</a>
+						<a href="#">小米</a>
+						<a href="#">三星</a>
+						<a href="#">TCL</a>
+						<a href="#">智能配件</a>
+						<a href="#">保险卡</a>  -->
+					</div>
+				</div><!--i-search-box end-->
+<script src="..\static\js\commons\shop.js" type="text/javascript"></script>	
+												
+<div class="i-shopping fl">
+
+
+	<a href="/shop/tocart"><!-- 我的购物车 -->我的购物车</a> <span id="shopNum" hidden="">0</span>
+</div>				
+			</div>
+			
+			<nav class="i-nav mt-15 ml-20">
+				
+				<a href="..\index.html">首页</a><span class="space"></span>
+				<a href="news.html">云聚新闻</a><span class="space"></span> 
+	        	<a href="college.html">云聚商学院</a><span class="space"></span> 
+				<a href="finance.html" class="active">云聚消费金融</a><span class="space"></span> 
+				<a href="insurance.html">云聚碎屏保</a> <span class="space"></span> 
+				<a href="software.html">云聚进销存</a> <span class="space"></span> 
+				<a href="store.html">门店形象升级</a> <span class="space"></span> 
+				<a href="old.html">以旧换新</a>
+			</nav>
+
+		</div>
+<!--ny-header-menubox end-->
+		
+	</header>
+</div>
+
+<div class="old-banner-wrap w100p">
+	<div class="old-banner w">
+		<img src="..\static\images\fi-banner_02.png">
+	</div>
+</div>
+<main class="ny-main w100p mb-60">
+	<div class="old-banner-wrap w100p" style="position:relative;">
+		<div class="old-banner w">
+			<img src="..\static\images\PC_01-02.png" height="100%">
+		</div>
+		<a href="..\static\pdf\download.pdf" download="花呗分期培训资料" style="width:100%;height:20%;position:absolute;left: 0;bottom:0;z-index:888888888;"></a>
+	</div>
+	
+	
+	
+	<div style="width:86%;padding:1% 7%;border:1px solid #CCCCCC;margin : 10px auto;height:auto;background:#fff;border-left:none;border-right:none;">
+		<div style="width:100%;">
+			<div style="width:100%;border-bottom:1px dashed #CCCCCC;height:100px;">
+				<div style="float: left;width:70%;height:100%;">
+					<div style="height:80px;margin-top:10px;line-height:80px;">
+						<div style="width:60px;height:60px;float: left;background:url(../static/images/PC_01_19.png) no-repeat;background-size:100% 100%;background-position:center;margin-top:5px;"></div>
+						<div style="float: left;margin-top:5px;margin-left: 10px;height:70px;line-height: 70px;">
+							<div style="height:40px;line-height: 40px;"><h3>花呗分期</h3></div>
+							<div style="height:30px;line-height: 12px;color:#CCCCCC;"><h4>如果你无法简介你的想法，那只说明你还不了解他</h4></div>
+						</div>
+					</div>
+				</div>
+				<div style="float: left;width:30%;height:100%;">
+					<div style="height:80px;margin-top:10px;line-height:80px;float: right;">
+					<form action="/finance/toAddNew" method="post">
+							<input type="submit" value="" style="width:100px;height:40px;background:url(../static/images/PC_01_07.png) no-repeat; background-size:100% 100%;background-position:center;margin-right: 10px;margin-top:-15px;border-radius: 4px;">
+					</form>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div style="width:100%;" class="clearfix">
+				
+				
+				
+				<div style="clear:both"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+
+<!-- 底部所有 -->
+<script src="..\static\js\commons\footer.js" type="text/javascript"></script>
+
+<footer class="mt-40 i-footer w100p">
+	<div class="i-ensure-wrap w100p">
+		<div class="i-ensure w cl">
+			<ul>
+				<li>
+					<i class="i-ensure-ico1"></i>
+					<h4><!-- 正品保障 -->正品保障</h4>
+					<p><!-- 正规代理，行货保障 -->正规代理，行货保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico2"></i>
+					<h4><!-- 品种齐全 -->品种齐全</h4>
+					<p><!-- 配货齐全，品类丰富 -->配货齐全，品类丰富</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico3"></i>
+					<h4><!-- 闪电发货 -->闪电发货</h4>
+					<p><!-- 当天下单，次日到达 -->当天下单，次日到达</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico4"></i>
+					<h4><!-- 款到发货 -->款到发货</h4>
+					<p><!-- 款到发货，安全便捷 -->款到发货，安全便捷</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico5"></i>
+					<h4><!-- 售后保障 -->售后保障</h4>
+					<p><!-- 快速售后，服务保障 -->快速售后，服务保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico6"></i>
+					<h4><!-- 贴心服务 -->贴心服务</h4>
+					<p><!-- 在线客服，专属服务 -->在线客服，专属服务</p>
+				</li>
+			</ul>
+		</div>
+	</div><!--i-ensure-wrop end-->
+	<div class="footer-link w cl">
+		<div class="footer-menu fl">
+			<ul>
+				<li>
+					<h4><!-- 订货指南 -->订货指南</h4>
+					<p><a href="text.html?sort=1"><!-- 订货流程 -->订货流程</a></p>
+					<p><a href="text-1.html?sort=2"><!-- 物流方式 -->物流方式</a></p>
+					<p><a href="text-2.html?sort=3"><!-- 常见问题 -->常见问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 合作权益 -->合作权益</h4>
+					<p><a href="text-3.html?sort=4"><!-- 入驻政策 -->入驻政策</a></p>
+					<p><a href="text-4.html?sort=5"><!-- 会员权益 -->会员权益</a></p>
+					<p><a href="text-5.html?sort=6"><!-- 特色服务 -->特色服务</a></p>
+				</li>
+				<li>
+					<h4><!-- 支付方式 -->支付方式</h4>
+					<p><a href="text-6.html?sort=7"><!-- 公司转账 -->公司转账</a></p>
+					<p><a href="text-7.html?sort=8"><!-- 在线支付 -->在线支付</a></p>
+					<p><a href="text-8.html?sort=9"><!-- 发票问题 -->发票问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 联系我们 -->联系我们</h4>
+					<p><a href="text-9.html?sort=10"><!-- 云聚介绍 -->云聚介绍</a></p>
+					<p><a href="news.html" target="_blank"><!-- 云聚新闻 -->云聚新闻</a></p>
+					<p><a href="text-10.html?sort=11"><!-- 联系客服 -->联系客服</a></p>
+				</li>
+			</ul>
+		</div><!--footer-menu end-->
+		<div class="footer-ewm fl">
+			<span>
+				<img src="..\static\images\i-ewm_04.png">
+				<p><!-- 云聚APP -->云聚APP</p>
+			</span>
+			<span>
+				<img src="..\static\images\i-ewm_05.png">
+				<p style="font-size:12px;"><!-- 关注微信公众号 -->关注微信公众号</p>
+			</span>
+		</div>
+		<div class="footer-contact fr">
+			<div class="footer-phonebox">
+				<i></i>
+				<h3><!-- 全国统一服务热线 -->全国统一服务热线</h3>
+				<p><!-- 周一至周五上午9:00-下午18:00 -->周一至周五上午9:00-下午18:00
+</p>
+			</div>
+			<div class="footer-phone">400-700-8800</div>
+		</div>
+	
+	</div><!--footer-link end-->
+	
+	<div class="footer-copy w100p">
+		<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+	</div>
+	
+</footer>
+<div class="topbar-show w100p">
+	<div class="w top-show">
+		<h1 class="top-show-logo fl mt-5">
+			<a href="..\index.html"><img src="..\static\images\top-show-logo.png"></a>
+		</h1>
+	</div>
+	<div class="i-search top-show-search fl">
+		<!-- <input type="text" id="goodNames" name="goodNames" value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" /> -->
+		<input type="text" id="goodNames" name="goodNames" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl">
+							<input type="button" value="" class="i-search-btn fr" id="globelSearch2" onclick="searchGoods();">
+	</div>
+
+<input type="hidden" id="ctxpath" value="">
+		<input type="hidden" id="ctxpath" value="">
+		
+		
+<script type="text/javascript">
+
+	function toAdd(){
+	
+		window.loaction = "/finance/toAddNew"
+	}
+	
+</script>
+</div></body>
+</html>
+

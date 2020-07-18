@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<title>迪信云聚 - 文章 - 最大的通讯零售生态圈</title>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$(".per-left").css("display","none");
+});
+</script>
+</head>
+
+<body class="i-body">
+  
+<script type="text/javascript">
+
+
+function getKey()  
+{  
+    if(event.keyCode==13){  
+    	$("#searchleft1").click();
+    }     
+}  
+			$.ajax({
+				url : "/order/statecount",
+				type:"post",
+				dataType:"json", 
+				//async:false,
+				data : "",
+				success:function(data){
+					if(data.status == "success"){
+						//console.log(data.data);
+						//console.log(data.data.sta_all);
+						//全部订单数量
+						$("#sta_all").text("("+data.data.sta_all+")");
+						//待付款订单数量
+						$("#sta_0").text("("+data.data.sta_0+")");
+						//待发货订单数量
+						$("#sta_1").text("("+data.data.sta_1+")");
+						//待收货订单数量
+						$("#sta_2").text("("+data.data.sta_2+")");
+						//已完成订单数量
+						$("#sta_3").text("("+data.data.sta_3+")");
+						//已取消订单数量
+						$("#sta_4").text("("+data.data.sta_4+")");
+						//已退货订单数量
+						$("#sta_7").text("("+data.data.sta_7+")");
+					}
+			   } 
+			});
+			
+		
+
+	function searchGoodLeft1() {
+		window.event.returnValue=false;
+		var ids = [];
+		var good = document.getElementById("goodName").value;
+		if (good == null || good == "" || good == "请输入关键字"||good=="Please enter a keyword") {
+			ids.push("{'goodsName':'','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href  = ctxpath + "/pro/list?" + encodedUrl;
+		} else {
+			ids.push("{'goodsName':'" + good + "','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'" + good
+					+ "','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href = ctxpath + "/pro/list?" + encodedUrl;
+		}
+	}
+	function post(URL, PARAMS) {
+		var temp = document.createElement("form");
+		temp.action = URL;
+		temp.method = "post";
+		temp.style.display = "none";
+		for ( var x in PARAMS) {
+			var opt = document.createElement("textarea");
+			opt.name = x;
+			opt.value = PARAMS[x];
+			// alert(opt.name)        
+			temp.appendChild(opt);
+		}
+		document.body.appendChild(temp);
+		temp.submit();
+		return temp;
+	}
+	
+	
+</script>
+    <!-- 头部所有 -->
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\commons\header.css">
+
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script src="..\static\js\commons\header.js" type="text/javascript"></script>
+
+
+<div class="i-topwrap w100p border-b-1">
+    <div class="i-top w">
+        <div class="fl i-top-left">
+    		<span class="mr-10 fl">
+                 <!-- 迪信云聚商城 -->
+迪信云聚商城            </span>
+            <div class="date">
+                <span>
+                	<!-- -->
+                </span>
+                <span>
+                    <script type="text/javascript">
+                    	
+                    	document.write(new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日')
+                    </script>
+                </span>
+            </div>
+
+        </div>
+        <input type="hidden" id="status" value="">
+        <div class="fr i-top-right">
+            <ul>
+
+
+
+
+
+
+                    <li id="login">
+                        <a href="..\user\indexlogin.html">
+                            <!-- 登录 -->
+登录                        </a>
+                    </li>
+                    <li id="login4" class="space"></li>
+                    <li id="login3">
+                        <a href="..\user\indexregister.html" class="active">
+                            <!-- 注册 -->
+注册                        </a>
+                    </li>    
+
+
+
+
+
+
+                    <li style="display:none">
+                        <a>
+                            <!-- 消息 -->
+消息                        </a>
+                    </li>
+                <li class="space"></li>
+                <li class="dropdown">
+                    <a href="#"><!-- 云聚APP -->云聚APP</a>
+                    <div class="drop-ewm">
+                        <p><!-- 扫一扫，下载云聚客户端 -->扫一扫，下载云聚客户端</p>
+                        <img src="..\static\images\i-ewm_04.png">
+                    </div>
+                </li>
+                <li class="space"></li>
+                <li><a href="http://old.dixinyunju.com"><!-- 旧版入口 -->旧版入口</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="register-pop">
+    <h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a>
+    </h3>
+    <div class="reg-pop-con">
+        <span class="reg-pop-bg"></span>
+        <p class="mt-20"><!-- 您已成为云聚注册会员 -->您已成为云聚注册会员</p>
+        <p><!-- 签约会员可享受更多服务~ -->签约会员可享受更多服务~</p>
+    </div>
+    <div class="reg-btnbox">
+        <a href="javascript:void(0);" onclick="closebtn();"><!-- 以后再说 -->以后再说</a>
+        <a href="..\user\register.html?tzbz=0" class="reg-btn2">
+            <!-- 马上签约预订 -->马上签约预订</a>
+    </div>
+</div>
+
+
+
+<div class="ny-header-wrap w100p per-header-wrap">
+	<header class="i-header w">
+		
+		<h1 class=" fl ny-logo mt-30">
+			<a href="..\index.html"><img src="..\static\images\per-logo.png"></a>
+		</h1>
+		<!--  
+		<div class="per-logo2 fl"><a href="/">返回首页</a></div>
+		-->
+		<div class="i-header-r fr">
+			
+			<div class="i-header-rtop cl">
+				<div class="i-search-box fl">
+					<div class="i-search">
+						<form>
+							<!-- <input type="text" id="goodName" name="goodName"value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();"/> -->
+						<input type="text" id="goodName" name="goodName" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();">
+							<a href="#"><input type="button" value="" id="searchleft1" class="i-search-btn fr" onclick="searchGoodLeft1();"></a>
+						</form>
+					</div>
+				</div><!--i-search-box end-->
+<script src="..\static\js\commons\shop.js" type="text/javascript"></script>	
+												
+<div class="i-shopping fl">
+
+
+	<a href="/shop/tocart"><!-- 我的购物车 -->我的购物车</a> <span id="shopNum" hidden="">0</span>
+</div>			</div>
+		</div>	
+			
+	</header>
+</div>
+
+<main class="ny-main w mb-60 mt-20">
+	<div class="per-con cl">
+		<div class="per-left fl">
+			<div class="per-left-menu">
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-order.png"></i><!-- 全部订单 -->全部订单</h3>
+				<ul>
+				
+				<li><a href="/order/queryorderpage"><!-- 全部订单 -->全部订单<font id="sta_all"></font></a></li>
+				<li><a href="/order/queryorderpage?s=0"><!-- 待付款订单 -->待付款订单<font id="sta_0"></font></a></li>
+				<li><a href="/order/queryorderpage?s=1"><!-- 待发货订单 -->待发货订单<font id="sta_1"></font></a></li>
+				<li><a href="/order/queryorderpage?s=2"><!-- 待收货订单 -->待收货订单<font id="sta_2"></font></a></li>
+				<li><a href="/order/queryorderpage?s=7"><!-- 已退货订单 -->已退货订单<font id="sta_7"></font></a></li>
+				<li><a href="/order/queryorderpage?s=3"><!-- 已完成订单 -->已完成订单<font id="sta_3"></font></a></li>
+				<li><a href="/order/queryorderpage?s=4"><!-- 已取消订单 -->已取消订单<font id="sta_4"></font></a></li>
+				
+					
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-user.png"></i><!-- 账户管理 -->账户管理</h3>
+				<ul>
+					<li><a href="/user/personal"><!-- 个人信息 -->个人信息</a></li>
+					
+					
+					<li><a href="/user/decorate"><!-- 店铺装修 -->我的店铺</a></li>
+					<li><a href="..\business\myClass.html"><!-- 我的课程 -->我的课程</a></li>
+					<li><a href="..\user\voucherl.html"><!-- 我的抵用券 -->我的抵用券</a></li>
+					<li><a href="..\user\security.html"><!-- 账户安全 -->账户安全</a></li>
+					<li><a href="/order/sysinfo"><!-- 系统消息 -->系统消息</a></li>
+
+				
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-service.png"></i><!-- 售后服务 -->售后服务</h3>
+				<ul>
+				<!-- 	<li><a href="#">返修退换货</a></li>
+					<li><a href="#">咨询服务</a></li> -->
+					<li><a href="..\user\proposal.html"><!-- 意见建议 -->意见建议</a></li>
+					
+				</ul>
+			</div>
+			
+		</div><!--per-left end-->
+
+		<div class="per-right fr" style="width:100%;">
+			<h2 class="per-r-tit mt-15">
+			特色服务
+			</h2>
+			<div style="padding:10px 20px 0px 30px;">
+          <p class="wk_red" style="margin:20px 0;padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 20px;">
+	<span style="color:#b22222;">特色服务一：云聚商学院</span></p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	整合迪信通内部优秀管理经验，输出成体系的管理模式给云聚伙伴。</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【培训内容】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	迪信通内部实战型精英讲师团队，通过A/B类线下培训、线上培训、云聚训练营、店长门店实习、私教模式实时等方式，为伙伴提供实操性方案。</p>
+<p class="wk_red" style="margin:20px 0;padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 20px;">
+	<span style="color:#b22222;">特色服务二：数字化产品</span></p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	迪信云聚提供消费金融、手机保险、增值分发、以旧换新、供应链金融等多方面数字化产品帮助云聚伙伴实现利润最大化，并提高其服务能力。</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【消费金融】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	迪信云聚独家专享</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	奖励叠加发放，利润更丰厚</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	最具优势的消费金融产品</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	货款实时到账</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	受众人群广</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【手机保险】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	多种保险内容，更多高利润保险可选择</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	实物卡+虚拟卡多种形式结合</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	购险方便、索赔快</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	支持全球版本手机、平板电脑</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	全国连锁联保/支持异地维</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【增值分发】哎呦/迪风助手</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	解决店内给顾客下载软件无法好评、无收益等问题</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	模块定制化，可以实现最优销售现返模式</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	现返实时发放，奖励到人，提高员工积极性</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	通过内容营销、活动推荐引导顾客安装</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	可同时操作，通过一个客户端同时服务多名顾客</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	PC版本即可，无需其他额外工具辅助，5分钟快速完成</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	软件激活、留存率最大化</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【以旧换新】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	二手机回收</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	增加额外利润</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【供应链金融】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	自动售货机</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	解决资金周转、库存等问题</p>
+<p class="wk_red" style="margin:20px 0;padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 20px;">
+	<span style="color:#b22222;">特色服务三：物理化产品</span></p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	云聚伙伴可以享受迪信通的直供产品、包销产品、自有产品。从而解决目前产品线单一，同制率过高的问题，让云聚店成为正品行货的代名词。</p>
+<p class="wk_red" style="margin:20px 0;padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 20px;">
+	<span style="color:#b22222;">特色服务四：云聚扶持</span></p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【系统ERP】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	精准的数据管理</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	针对性数据分析</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	有效降低经营成本</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【现返工具】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	史上最精准的现返管理工具</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	多功能模块化实用工具</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【门店升级装修】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	对所有云聚门店进行统一标识</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	同时还有专业设计师做店内针对性装修设计指导</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【市场营销】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	丰富的市场宣传和全国统一营销活动</p>
+<p class="wk_red" style="margin:20px 0;padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 20px;">
+	<span style="color:#b22222;">特色服务五：云聚资源</span></p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【专卖店品牌授权】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	甄选合规商户受邀与品牌商合作开设专卖店</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【电子货柜&mdash;供应链金融】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	无需采购成本，减少资金占用</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	各品牌新品一手货源优先有货</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	后台数据监控，确保库存良好</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	24小时自助售货，减少人力成本</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【云聚优品】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	为有意向的商户提供优质的异业资源</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	标准化操作流程</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	完整的供应链支持</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	吸引年轻客群，实现盈利+引流双重目的</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【运营商政策】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	整合资源 包销产品 统谈政策 共享收益</p>
+<p class="wk_black" style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal; font-size: 16px;">
+	【云聚O2O】</p>
+<p style="padding: 0px; line-height: 32px; color: rgb(102, 102, 102); text-indent: 2em; font-family: 微软雅黑, Arial, sans-serif, &quot;Microsoft YaHei&quot;; white-space: normal;">
+	通过线上引流，提升门店销量，增加门店店员与顾客接触的机会 通过线下专家服务，提升顾客满意度，增强顾客粘性，促进再次购物</p>
+			</div>
+			
+			
+			
+		</div><!--per-right end-->
+		
+		
+	
+	
+
+
+
+</div></main>
+
+<!-- 底部所有 -->
+<script src="..\static\js\commons\footer.js" type="text/javascript"></script>
+
+<footer class="mt-40 i-footer w100p">
+	<div class="i-ensure-wrap w100p">
+		<div class="i-ensure w cl">
+			<ul>
+				<li>
+					<i class="i-ensure-ico1"></i>
+					<h4><!-- 正品保障 -->正品保障</h4>
+					<p><!-- 正规代理，行货保障 -->正规代理，行货保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico2"></i>
+					<h4><!-- 品种齐全 -->品种齐全</h4>
+					<p><!-- 配货齐全，品类丰富 -->配货齐全，品类丰富</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico3"></i>
+					<h4><!-- 闪电发货 -->闪电发货</h4>
+					<p><!-- 当天下单，次日到达 -->当天下单，次日到达</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico4"></i>
+					<h4><!-- 款到发货 -->款到发货</h4>
+					<p><!-- 款到发货，安全便捷 -->款到发货，安全便捷</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico5"></i>
+					<h4><!-- 售后保障 -->售后保障</h4>
+					<p><!-- 快速售后，服务保障 -->快速售后，服务保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico6"></i>
+					<h4><!-- 贴心服务 -->贴心服务</h4>
+					<p><!-- 在线客服，专属服务 -->在线客服，专属服务</p>
+				</li>
+			</ul>
+		</div>
+	</div><!--i-ensure-wrop end-->
+	<div class="footer-link w cl">
+		<div class="footer-menu fl">
+			<ul>
+				<li>
+					<h4><!-- 订货指南 -->订货指南</h4>
+					<p><a href="text.html?sort=1"><!-- 订货流程 -->订货流程</a></p>
+					<p><a href="text-1.html?sort=2"><!-- 物流方式 -->物流方式</a></p>
+					<p><a href="text-2.html?sort=3"><!-- 常见问题 -->常见问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 合作权益 -->合作权益</h4>
+					<p><a href="text-3.html?sort=4"><!-- 入驻政策 -->入驻政策</a></p>
+					<p><a href="text-4.html?sort=5"><!-- 会员权益 -->会员权益</a></p>
+					<p><a href="text-5.html?sort=6"><!-- 特色服务 -->特色服务</a></p>
+				</li>
+				<li>
+					<h4><!-- 支付方式 -->支付方式</h4>
+					<p><a href="text-6.html?sort=7"><!-- 公司转账 -->公司转账</a></p>
+					<p><a href="text-7.html?sort=8"><!-- 在线支付 -->在线支付</a></p>
+					<p><a href="text-8.html?sort=9"><!-- 发票问题 -->发票问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 联系我们 -->联系我们</h4>
+					<p><a href="text-9.html?sort=10"><!-- 云聚介绍 -->云聚介绍</a></p>
+					<p><a href="news.html" target="_blank"><!-- 云聚新闻 -->云聚新闻</a></p>
+					<p><a href="text-10.html?sort=11"><!-- 联系客服 -->联系客服</a></p>
+				</li>
+			</ul>
+		</div><!--footer-menu end-->
+		<div class="footer-ewm fl">
+			<span>
+				<img src="..\static\images\i-ewm_04.png">
+				<p><!-- 云聚APP -->云聚APP</p>
+			</span>
+			<span>
+				<img src="..\static\images\i-ewm_05.png">
+				<p style="font-size:12px;"><!-- 关注微信公众号 -->关注微信公众号</p>
+			</span>
+		</div>
+		<div class="footer-contact fr">
+			<div class="footer-phonebox">
+				<i></i>
+				<h3><!-- 全国统一服务热线 -->全国统一服务热线</h3>
+				<p><!-- 周一至周五上午9:00-下午18:00 -->周一至周五上午9:00-下午18:00
+</p>
+			</div>
+			<div class="footer-phone">400-700-8800</div>
+		</div>
+	
+	</div><!--footer-link end-->
+	
+	<div class="footer-copy w100p">
+		<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+	</div>
+	
+</footer>
+<div class="topbar-show w100p">
+	<div class="w top-show">
+		<h1 class="top-show-logo fl mt-5">
+			<a href="..\index.html"><img src="..\static\images\top-show-logo.png"></a>
+		</h1>
+	</div>
+	<div class="i-search top-show-search fl">
+		<!-- <input type="text" id="goodNames" name="goodNames" value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" /> -->
+		<input type="text" id="goodNames" name="goodNames" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl">
+							<input type="button" value="" class="i-search-btn fr" id="globelSearch2" onclick="searchGoods();">
+	</div>
+<input type="hidden" id="ctxpath" value="">
+</div></body>
+</html>

@@ -1,0 +1,847 @@
+﻿<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<title>迪信云聚 - 新闻中心 - 最大的通讯零售生态圈</title>
+
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link href="..\static\css\basic1.css" rel="stylesheet">
+<link href="..\static\css\common1.css" rel="stylesheet">
+<link href="..\static\css\news.css" rel="stylesheet">
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script type="text/javascript">
+function b() {
+	h = $(window).height(),
+	t = $(document).scrollTop(),
+	t > h ? $("#moquu_top").show() : $("#moquu_top").hide()
+}
+$(document).ready(function() {
+	b();
+	$("#moquu_top").click(function() {
+		$(document).scrollTop(0);
+	});
+	$(".per-left").css("display","none");
+
+
+	var pageNum="1";//当前页数
+	var number=0;
+	var lase="2";//总页数
+	var lasepage1=lase;
+
+
+	var a1=$("#1").html();
+	var a2=$("#2").html();
+	var a3=$("#3").html();
+	var a4=$("#4").html();
+	var a5=$("#5").html();
+
+
+	if(pageNum>=(lasepage1-3)){
+		if(pageNum>5){
+			$("#5").html(lasepage1);
+			$("#4").html(parseInt(lasepage1)-parseInt(1));
+			$("#3").html(parseInt(lasepage1)-parseInt(2));
+			$("#2").html(parseInt(lasepage1)-parseInt(3));
+			$("#1").html(parseInt(lasepage1)-parseInt(4));
+		}else{
+
+
+
+			$("#1").html(1);
+			$("#2").html(2);
+			$("#3").html(3);
+			$("#4").html(4);
+			$("#5").html(5);
+			if(pageNum==5){
+
+				$("#5").html(6);
+				$("#4").html(5);
+				$("#3").html(4);
+				$("#2").html(3);
+				$("#1").html(2);
+			}
+
+			var num=parseInt(5)-parseInt(lasepage1);
+
+			switch(num){
+			case "0":
+				break;
+			case 1:
+
+				$("#5").addClass("qq_active1");
+				$("#5").removeAttr("onclick");
+				$("#5").parent().removeChild($("#5"));
+				$("#5").remove();
+
+				break;
+			case 2:
+
+				$("#4").addClass("qq_active1");
+				$("#5").addClass("qq_active1");
+				$("#4").removeAttr("onclick");
+				$("#5").removeAttr("onclick");
+				$("#5").remove();
+				$("#4").remove();
+				break;
+			case 3:
+
+				$("#3").addClass("qq_active1");
+				$("#4").addClass("qq_active1");
+				$("#5").addClass("qq_active1");
+				$("#3").removeAttr("onclick");
+				$("#4").removeAttr("onclick");
+				$("#5").removeAttr("onclick");
+				$("#5").remove();
+				$("#4").remove();
+				$("#3").remove();
+				break;
+			case 4:
+
+				$("#2").addClass("qq_active1");
+				$("#3").addClass("qq_active1");
+				$("#4").addClass("qq_active1");
+				$("#5").addClass("qq_active1");
+				$("#2").removeAttr("onclick");
+				$("#3").removeAttr("onclick");
+				$("#4").removeAttr("onclick");
+				$("#5").removeAttr("onclick");
+				$("#5").remove();
+				$("#4").remove();
+				$("#3").remove();
+				$("#2").remove();
+				break;
+
+			}
+		}
+
+	}else{
+		if(pageNum>3){
+
+			number=pageNum-3;
+			$("#1").html(parseInt(a1)+parseInt(number));
+			$("#2").html(parseInt(a2)+parseInt(number));
+			$("#3").html(parseInt(a3)+parseInt(number));
+			$("#4").html(parseInt(a4)+parseInt(number));
+			$("#5").html(parseInt(a5)+parseInt(number));
+
+		}else{
+			$("#1").html(1);
+			$("#2").html(2);
+			$("#3").html(3);
+			$("#4").html(4);
+			$("#5").html(5);
+		}
+	}
+	if(pageNum==lasepage1){
+		$("#last").addClass("qq_active1");
+		$("#last").removeAttr("onclick");
+		$("#next").addClass("qq_active1");
+		$("#next").removeAttr("onclick");
+
+	}
+	if(pageNum==1){
+		$("#previous").addClass("qq_active1");
+		$("#previous").removeAttr("onclick");
+		$("#first").addClass("qq_active1");
+		$("#first").removeAttr("onclick");
+
+	}
+
+	$.each($("#pageC a"),function(i){
+
+		if(i==0||i==1||i==$("#pageC a").length||i==$("#pageC a").length-1){
+
+			return true;
+		}else{
+			console.log($(this).text());
+			$(this).attr("pageNum",$(this).text());
+		}
+});
+
+
+
+
+	if(pageNum!=null){
+
+	var a=pageNum;
+
+	$.each($("#pageC a"),function(i){
+
+		if(i==0||i==1||i==$("#pageC a").length||i==$("#pageC a").length-1){
+
+			return true;
+		}else{
+		//	console.log($(this).text());
+			var b=$(this).attr("pageNum");
+
+			if(a==b){
+			//	console.log($(this));
+				$(this).addClass("wk_active1");
+			}
+		}
+});
+
+}
+
+});
+function page(obj){
+	var id=$(obj).html();
+	var url="/index/news?page="+id;
+	window.location.href=url;
+}
+
+function nextpage(){
+	var pagesize="2";
+	var nowpage="1";
+	var nextpage=parseInt(nowpage)+parseInt("1");
+	var url="";
+	if(nextpage<parseInt(pagesize)){
+		 url="/index/news?page="+nextpage;
+		 window.location.href=url;
+	}else{
+		url="/index/news?page="+pagesize;
+		window.location.href=url;
+	}
+
+}
+function leftPage(){
+	var pagesize="2";
+	var nowpage="1";
+	var leftpage=parseInt(nowpage)-parseInt("1");
+	var url="";
+	if(leftpage>0){
+		url="/index/news?page="+leftpage;
+		window.location.href=url;
+
+	}else{
+		url="/index/news?page=1";
+		window.location.href=url;
+	}
+
+
+
+}
+
+function indexPage(){
+	url="/index/news?page=1";
+	window.location.href=url;
+
+}
+function lastPage(){
+	var pagesize="2";
+	url="/index/news?page="+pagesize;
+	window.location.href=url;
+}
+$(window).scroll(function() {
+	b()
+});
+</script>
+<style>
+
+.wk_active1{
+color:#d71317 !important;
+border:1px solid #d71317 !important;
+}
+.qq_active1{
+background-color:#F1F1F1;
+color:#CCCCCC !important;
+border:0px solid #d71317 !important
+}
+    .pagination {
+        width: 1200px;
+        text-align: center;
+        font-size: 12px;
+        display: inline-block;
+        border-radius: 4px;
+}
+    .pagination>li {
+        display: inline-block;
+        margin-right: 6px;
+        color: #675151;
+        background: #e4dede;
+    }
+    .pagination>li>a {
+        display: block;
+        width: 30px;
+         height: 30px;
+         line-height:30px;
+        text-align: center;
+    }
+    .new-tittime{
+    color: #dd9896;
+    float: right;
+    line-height: 30px;
+    display: block;
+    height: 26px;
+    margin-right: 86px;
+    font-size:14px;
+    }
+    .pagination>li.active{ background: #ea4234;}
+    #pageC{
+    padding-top:24px;
+    padding-bottom:43px;
+    }
+</style>
+</head>
+
+<body class="i-body">
+
+<script type="text/javascript">
+
+
+function getKey()  
+{  
+    if(event.keyCode==13){  
+    	$("#searchleft1").click();
+    }     
+}  
+			$.ajax({
+				url : "/order/statecount",
+				type:"post",
+				dataType:"json", 
+				//async:false,
+				data : "",
+				success:function(data){
+					if(data.status == "success"){
+						//console.log(data.data);
+						//console.log(data.data.sta_all);
+						//全部订单数量
+						$("#sta_all").text("("+data.data.sta_all+")");
+						//待付款订单数量
+						$("#sta_0").text("("+data.data.sta_0+")");
+						//待发货订单数量
+						$("#sta_1").text("("+data.data.sta_1+")");
+						//待收货订单数量
+						$("#sta_2").text("("+data.data.sta_2+")");
+						//已完成订单数量
+						$("#sta_3").text("("+data.data.sta_3+")");
+						//已取消订单数量
+						$("#sta_4").text("("+data.data.sta_4+")");
+						//已退货订单数量
+						$("#sta_7").text("("+data.data.sta_7+")");
+					}
+			   } 
+			});
+			
+		
+
+	function searchGoodLeft1() {
+		window.event.returnValue=false;
+		var ids = [];
+		var good = document.getElementById("goodName").value;
+		if (good == null || good == "" || good == "请输入关键字"||good=="Please enter a keyword") {
+			ids.push("{'goodsName':'','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href  = ctxpath + "/pro/list?" + encodedUrl;
+		} else {
+			ids.push("{'goodsName':'" + good + "','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'" + good
+					+ "','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href = ctxpath + "/pro/list?" + encodedUrl;
+		}
+	}
+	function post(URL, PARAMS) {
+		var temp = document.createElement("form");
+		temp.action = URL;
+		temp.method = "post";
+		temp.style.display = "none";
+		for ( var x in PARAMS) {
+			var opt = document.createElement("textarea");
+			opt.name = x;
+			opt.value = PARAMS[x];
+			// alert(opt.name)        
+			temp.appendChild(opt);
+		}
+		document.body.appendChild(temp);
+		temp.submit();
+		return temp;
+	}
+	
+	
+</script>
+    <!-- 头部所有 -->
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\commons\header.css">
+
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script src="..\static\js\commons\header.js" type="text/javascript"></script>
+
+
+<div class="i-topwrap w100p border-b-1">
+    <div class="i-top w">
+        <div class="fl i-top-left">
+    		<span class="mr-10 fl">
+                 <!-- 迪信云聚商城 -->
+迪信云聚商城            </span>
+            <div class="date">
+                <span>
+                	<!-- -->
+                </span>
+                <span>
+                    <script type="text/javascript">
+                    	
+                    	document.write(new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日')
+                    </script>
+                </span>
+            </div>
+
+        </div>
+        <input type="hidden" id="status" value="">
+        <div class="fr i-top-right">
+            <ul>
+
+
+
+
+
+
+                    <li id="login">
+                        <a href="..\user\indexlogin.html">
+                            <!-- 登录 -->
+登录                        </a>
+                    </li>
+                    <li id="login4" class="space"></li>
+                    <li id="login3">
+                        <a href="..\user\indexregister.html" class="active">
+                            <!-- 注册 -->
+注册                        </a>
+                    </li>    
+
+
+
+
+
+
+                    <li style="display:none">
+                        <a>
+                            <!-- 消息 -->
+消息                        </a>
+                    </li>
+                <li class="space"></li>
+                <li class="dropdown">
+                    <a href="#"><!-- 云聚APP -->云聚APP</a>
+                    <div class="drop-ewm">
+                        <p><!-- 扫一扫，下载云聚客户端 -->扫一扫，下载云聚客户端</p>
+                        <img src="..\static\images\i-ewm_04.png">
+                    </div>
+                </li>
+                <li class="space"></li>
+                <li><a href="http://old.dixinyunju.com"><!-- 旧版入口 -->旧版入口</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="register-pop">
+    <h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a>
+    </h3>
+    <div class="reg-pop-con">
+        <span class="reg-pop-bg"></span>
+        <p class="mt-20"><!-- 您已成为云聚注册会员 -->您已成为云聚注册会员</p>
+        <p><!-- 签约会员可享受更多服务~ -->签约会员可享受更多服务~</p>
+    </div>
+    <div class="reg-btnbox">
+        <a href="javascript:void(0);" onclick="closebtn();"><!-- 以后再说 -->以后再说</a>
+        <a href="..\user\register.html?tzbz=0" class="reg-btn2">
+            <!-- 马上签约预订 -->马上签约预订</a>
+    </div>
+</div>
+
+
+
+<div class="ny-header-wrap w100p per-header-wrap">
+	<header class="i-header w">
+		
+		<h1 class=" fl ny-logo mt-30">
+			<a href="..\index.html"><img src="..\static\images\per-logo.png"></a>
+		</h1>
+		<!--  
+		<div class="per-logo2 fl"><a href="/">返回首页</a></div>
+		-->
+		<div class="i-header-r fr">
+			
+			<div class="i-header-rtop cl">
+				<div class="i-search-box fl">
+					<div class="i-search">
+						<form>
+							<!-- <input type="text" id="goodName" name="goodName"value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();"/> -->
+						<input type="text" id="goodName" name="goodName" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();">
+							<a href="#"><input type="button" value="" id="searchleft1" class="i-search-btn fr" onclick="searchGoodLeft1();"></a>
+						</form>
+					</div>
+				</div><!--i-search-box end-->
+<script src="..\static\js\commons\shop.js" type="text/javascript"></script>	
+												
+<div class="i-shopping fl">
+
+
+	<a href="/shop/tocart"><!-- 我的购物车 -->我的购物车</a> <span id="shopNum" hidden="">0</span>
+</div>			</div>
+		</div>	
+			
+	</header>
+</div>
+
+<main class="ny-main w mb-60 mt-20">
+	<div class="per-con cl">
+		<div class="per-left fl">
+			<div class="per-left-menu">
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-order.png"></i><!-- 全部订单 -->全部订单</h3>
+				<ul>
+				
+				<li><a href="/order/queryorderpage"><!-- 全部订单 -->全部订单<font id="sta_all"></font></a></li>
+				<li><a href="/order/queryorderpage?s=0"><!-- 待付款订单 -->待付款订单<font id="sta_0"></font></a></li>
+				<li><a href="/order/queryorderpage?s=1"><!-- 待发货订单 -->待发货订单<font id="sta_1"></font></a></li>
+				<li><a href="/order/queryorderpage?s=2"><!-- 待收货订单 -->待收货订单<font id="sta_2"></font></a></li>
+				<li><a href="/order/queryorderpage?s=7"><!-- 已退货订单 -->已退货订单<font id="sta_7"></font></a></li>
+				<li><a href="/order/queryorderpage?s=3"><!-- 已完成订单 -->已完成订单<font id="sta_3"></font></a></li>
+				<li><a href="/order/queryorderpage?s=4"><!-- 已取消订单 -->已取消订单<font id="sta_4"></font></a></li>
+				
+					
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-user.png"></i><!-- 账户管理 -->账户管理</h3>
+				<ul>
+					<li><a href="/user/personal"><!-- 个人信息 -->个人信息</a></li>
+					
+					
+					<li><a href="/user/decorate"><!-- 店铺装修 -->我的店铺</a></li>
+					<li><a href="..\business\myClass.html"><!-- 我的课程 -->我的课程</a></li>
+					<li><a href="..\user\voucherl.html"><!-- 我的抵用券 -->我的抵用券</a></li>
+					<li><a href="..\user\security.html"><!-- 账户安全 -->账户安全</a></li>
+					<li><a href="/order/sysinfo"><!-- 系统消息 -->系统消息</a></li>
+
+				
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-service.png"></i><!-- 售后服务 -->售后服务</h3>
+				<ul>
+				<!-- 	<li><a href="#">返修退换货</a></li>
+					<li><a href="#">咨询服务</a></li> -->
+					<li><a href="..\user\proposal.html"><!-- 意见建议 -->意见建议</a></li>
+					
+				</ul>
+			</div>
+			
+		</div><!--per-left end-->
+
+		<div class="per-right fr" style="width:100%;">
+			<h2 class="per-r-tit mt-15"><!-- 新闻中心 -->新闻中心</h2>
+			 <div class="content">
+                <!-- 今日要闻 -->
+                <div class="section1" id="today-news">
+
+                    <h4 class="sec-tit"><!-- 今日要闻 -->今日要闻</h4>
+
+                    <div class="today-newbox clear">
+                        <div class="imgbox">
+                            <img height="336" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/text/image/2017/09/IMG_7927_11.jpg" width="515">
+                        </div>
+                        <div class="rightbox">
+                            <p class="today-newtit">
+                                <a href="newsDetail.html?id=a4fb8f59e0a846adb2698eaae88a74f1" target="_blank">湖南手机圈变天了？！迪信云聚成颠覆者！</a>
+                            </p>
+                            <p class="today-newinfo">
+							迪信云聚搞了个大新闻！见证湖南手机圈大变天！！！
+                            </p>
+                            <p class="today-newtime">2017-08-29</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 新闻排行榜 -->
+                <div class="newslistbox">
+                    <h4 class="sec-tit2"><!-- 新闻排行榜 -->新闻排行榜</h4>
+                    <!-- 新闻排行榜滚动盒子 -->
+                    <div class="newlistbox">
+                        <ul class="newlist">
+                                <li>
+                                    <a href="newsDetail-1.html?id=2098529572434ac6b7315f42ff471c3f" target="_blank" class="clear">
+                                        <div class="imgbox">
+                                            <img height="132" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/text/image/2017/08/1.jpg" width="172">
+                                        </div>
+                                        <div class="rightbox">
+                                            <p class="newtit clear">
+                                                <span class="new-listnum">1</span>
+                                                <span class="new-titinfo">携手中国电信，迪信云聚甘肃站盛大启动</span>
+
+                                            </p>
+                                            <p class="newinfo">
+											2017年6月7日，迪信云聚携手中国电信在甘肃兰州盛大举办了“甘肃电信·迪信云聚签约会”，共同宣布甘肃迪信云聚的正式启动。超过500家兰州手机零售商代表来到现场，了解项目并签约成为云聚合作伙伴。迪信通总裁兼迪信云聚总策划师金鑫，迪信通集团甘肃分公司总经理代丽，中国电信甘肃分公司副总经理孙岩、销售及渠道拓展副总经理李晓敢，中国电信兰州分公司总经理徐正桥、副总经理魏东仪等领导受邀出席。
+                                            </p>
+                                             <span class="new-tittime">2017-06-09</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="newsDetail-2.html?id=dfd7a0e85aef44538840d6b4516937c5" target="_blank" class="clear">
+                                        <div class="imgbox">
+                                            <img height="132" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/text/image/2017/08/640%20(2).jpg" width="172">
+                                        </div>
+                                        <div class="rightbox">
+                                            <p class="newtit clear">
+                                                <span class="new-listnum">1</span>
+                                                <span class="new-titinfo">迪信云聚&联想MOTO Z新品启动会引爆潮流新生活</span>
+
+                                            </p>
+                                            <p class="newinfo">
+											近日，迪信通+迪信云聚&联想MOTO Z新品启动会在北京新兴宾馆顺利举行。
+迪信通集团董事长刘东海和联想集团高级副总裁、移动业务集团联席总裁乔健做主题发言，迪信通集团副总裁胡平、联想集团副总裁、MBG中国业务常务副总裁马道杰、联想集团副总裁、MBG中国区销售总经理虞杲和集团副总裁、MBG品牌营销副总裁陆旻轩等人均到场参会。
+                                            </p>
+                                             <span class="new-tittime">2017-06-22</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="newsDetail-3.html?id=f240b6bfc04a4db4aed7a2a364bf38a9" target="_blank" class="clear">
+                                        <div class="imgbox">
+                                            <img height="132" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/text/image/2017/08/640.jpg" width="172">
+                                        </div>
+                                        <div class="rightbox">
+                                            <p class="newtit clear">
+                                                <span class="new-listnum">1</span>
+                                                <span class="new-titinfo">迪信云聚&荣耀2017战略合作协议正式签署</span>
+
+                                            </p>
+                                            <p class="newinfo">
+											6月15日上午，迪信通及迪信云聚与荣耀2017年TCO战略合作协议签约仪式在北京新兴宾馆顺利举行。在荣耀中国区总裁倪嘉悦与迪信通集团董事长刘东海的见证下，荣耀渠道销售部部长高铭与迪信通集团总裁兼迪信云聚总策划师金鑫正式签署了合作文件，荣耀核心零售商总监杜国辉、迪信通集团副董事长兼北京分公司总经理齐峰、高级副总裁刘文萃、高级副总裁裴启迪、副总裁胡平等领导也共同出席了签约仪式。
+                                            </p>
+                                             <span class="new-tittime">2017-06-16</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="newsDetail-4.html?id=06e41d3f1acd4fa5b0e8d2381f93773d" target="_blank" class="clear">
+                                        <div class="imgbox">
+                                            <img height="132" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/text/image/2017/07/512fc3bf-d915-4074-bd15-ac55602da6e4.jpg" width="172">
+                                        </div>
+                                        <div class="rightbox">
+                                            <p class="newtit clear">
+                                                <span class="new-listnum">1</span>
+                                                <span class="new-titinfo">打造共享经济，迪信云聚河北发布会盛大启航</span>
+
+                                            </p>
+                                            <p class="newinfo">
+											2017年4月7日，迪信云聚-“探索手机新零售”河北首场发布会在石家庄弘谷国际酒店盛大举行，超过1000家河北中小手机零售商来到现场，了解项目并签约成为云聚合作伙伴。三大运营商代表，华为、VIVO、OPPO等十余家知名手机厂商均应邀出席，表示对云聚项目的大力支持。平安银行，物流公司，金融机构等多家单位及媒体、业内知名人士共同参加了该次发布会，一起探讨手机零售行业的机遇与挑战。
+                                            </p>
+                                             <span class="new-tittime">2017-04-20</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="newsDetail-5.html?id=cca368b081254220880060fda98fe1b1" target="_blank" class="clear">
+                                        <div class="imgbox">
+                                            <img height="132" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/text/image/2017/07/a406ce49-31a6-4121-b066-6ffe3dc1065a.jpg" width="172">
+                                        </div>
+                                        <div class="rightbox">
+                                            <p class="newtit clear">
+                                                <span class="new-listnum">1</span>
+                                                <span class="new-titinfo">电子货柜真的来啦！迪信云聚开创通讯业新局面</span>
+
+                                            </p>
+                                            <p class="newinfo">
+											2月21日，迪信云聚与东方时代战略合作签约会在北京金融工厂顺利举行。迪信通总裁兼迪信云聚总策划师金鑫，东方时代董事长魏薇等人出席了本次签约会会并代表双方签约。签约会上双方正式达成战略合作，将在供应链金融领域展开深度合作。
+                                            </p>
+                                             <span class="new-tittime">2017-03-06</span>
+                                        </div>
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            <div class="ny-page" id="pageC" style="background: #f9f7f7;">
+			<a href="javascript:void(0)" onclick="indexPage()" id="first"><!-- 首页 -->首页</a>
+
+			<a href="javascript:void(0)" onclick="leftPage()" id="previous"><!-- 上一页 -->上一页</a>
+
+			<a href="javascript:void(0)" onclick="page(this)" id="1">1</a>
+			<a href="javascript:void(0)" onclick="page(this)" id="2">2</a>
+			<a href="javascript:void(0)" onclick="page(this)" id="3">3</a>
+			<a href="javascript:void(0)" onclick="page(this)" id="4">4</a>
+			<a href="javascript:void(0)" onclick="page(this)" id="5">5</a>
+
+
+
+			 <a href="javascript:void(0)" onclick="nextpage();" id="next"><!-- 下一页 -->下一页</a>
+				<a href="javascript:void(0)" onclick="lastPage()" id="last"><!-- 尾页 -->尾页</a>
+
+		</div>
+
+
+    </div>
+
+
+		</div><!--per-right end-->
+
+
+
+
+
+
+
+</div></main>
+
+<!-- 底部所有 -->
+<script src="..\static\js\commons\footer.js" type="text/javascript"></script>
+
+<footer class="mt-40 i-footer w100p">
+	<div class="i-ensure-wrap w100p">
+		<div class="i-ensure w cl">
+			<ul>
+				<li>
+					<i class="i-ensure-ico1"></i>
+					<h4><!-- 正品保障 -->正品保障</h4>
+					<p><!-- 正规代理，行货保障 -->正规代理，行货保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico2"></i>
+					<h4><!-- 品种齐全 -->品种齐全</h4>
+					<p><!-- 配货齐全，品类丰富 -->配货齐全，品类丰富</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico3"></i>
+					<h4><!-- 闪电发货 -->闪电发货</h4>
+					<p><!-- 当天下单，次日到达 -->当天下单，次日到达</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico4"></i>
+					<h4><!-- 款到发货 -->款到发货</h4>
+					<p><!-- 款到发货，安全便捷 -->款到发货，安全便捷</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico5"></i>
+					<h4><!-- 售后保障 -->售后保障</h4>
+					<p><!-- 快速售后，服务保障 -->快速售后，服务保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico6"></i>
+					<h4><!-- 贴心服务 -->贴心服务</h4>
+					<p><!-- 在线客服，专属服务 -->在线客服，专属服务</p>
+				</li>
+			</ul>
+		</div>
+	</div><!--i-ensure-wrop end-->
+	<div class="footer-link w cl">
+		<div class="footer-menu fl">
+			<ul>
+				<li>
+					<h4><!-- 订货指南 -->订货指南</h4>
+					<p><a href="text.html?sort=1"><!-- 订货流程 -->订货流程</a></p>
+					<p><a href="text-1.html?sort=2"><!-- 物流方式 -->物流方式</a></p>
+					<p><a href="text-2.html?sort=3"><!-- 常见问题 -->常见问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 合作权益 -->合作权益</h4>
+					<p><a href="text-3.html?sort=4"><!-- 入驻政策 -->入驻政策</a></p>
+					<p><a href="text-4.html?sort=5"><!-- 会员权益 -->会员权益</a></p>
+					<p><a href="text-5.html?sort=6"><!-- 特色服务 -->特色服务</a></p>
+				</li>
+				<li>
+					<h4><!-- 支付方式 -->支付方式</h4>
+					<p><a href="text-6.html?sort=7"><!-- 公司转账 -->公司转账</a></p>
+					<p><a href="text-7.html?sort=8"><!-- 在线支付 -->在线支付</a></p>
+					<p><a href="text-8.html?sort=9"><!-- 发票问题 -->发票问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 联系我们 -->联系我们</h4>
+					<p><a href="text-9.html?sort=10"><!-- 云聚介绍 -->云聚介绍</a></p>
+					<p><a href="news.html" target="_blank"><!-- 云聚新闻 -->云聚新闻</a></p>
+					<p><a href="text-10.html?sort=11"><!-- 联系客服 -->联系客服</a></p>
+				</li>
+			</ul>
+		</div><!--footer-menu end-->
+		<div class="footer-ewm fl">
+			<span>
+				<img src="..\static\images\i-ewm_04.png">
+				<p><!-- 云聚APP -->云聚APP</p>
+			</span>
+			<span>
+				<img src="..\static\images\i-ewm_05.png">
+				<p style="font-size:12px;"><!-- 关注微信公众号 -->关注微信公众号</p>
+			</span>
+		</div>
+		<div class="footer-contact fr">
+			<div class="footer-phonebox">
+				<i></i>
+				<h3><!-- 全国统一服务热线 -->全国统一服务热线</h3>
+				<p><!-- 周一至周五上午9:00-下午18:00 -->周一至周五上午9:00-下午18:00
+</p>
+			</div>
+			<div class="footer-phone">400-700-8800</div>
+		</div>
+	
+	</div><!--footer-link end-->
+	
+	<div class="footer-copy w100p">
+		<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+	</div>
+	
+</footer>
+<div class="topbar-show w100p">
+	<div class="w top-show">
+		<h1 class="top-show-logo fl mt-5">
+			<a href="..\index.html"><img src="..\static\images\top-show-logo.png"></a>
+		</h1>
+	</div>
+	<div class="i-search top-show-search fl">
+		<!-- <input type="text" id="goodNames" name="goodNames" value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" /> -->
+		<input type="text" id="goodNames" name="goodNames" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl">
+							<input type="button" value="" class="i-search-btn fr" id="globelSearch2" onclick="searchGoods();">
+	</div>
+
+<script>
+        $(".newlist li").hover(function(){
+            $(".newlist li a").removeClass("active");
+            $(this).find("a").addClass("active");
+        })
+</script>
+<!-- 侧面 -->
+<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)"><div class="moquu_wxinh"></div></a></div>
+<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)"><div class="moquu_wshareh"></div></a></div>
+<div id="moquu_wmaps"><a href="https://www.sojump.hk/jq/13147871.aspx" target="blank_"></a></div>
+<a id="moquu_top" href="javascript:void(0)"></a>
+<!-- 侧面 -->
+<input type="hidden" id="ctxpath" value="">
+</div></body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        var id = 'NewsIndex';
+        $(".navlist li").removeClass("active");
+        $("#" + id).addClass("active");
+    })
+	var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?94e89c1b533f092bfd6442bb2f5ed967";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+

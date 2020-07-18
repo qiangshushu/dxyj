@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>迪信云聚 -注册详情- 最大的通讯零售生态圈</title>
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<!--[if IE]>
+	<script type="text/javascript" src="/static/js/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">	
+
+<style>
+	.add-boxwrap{
+		font-size:17px;
+		color:#999999;
+	}
+	.wk_se{
+		border:1px solid #dddddd;
+		font-size:14px;
+		height:43px;
+		width:111px;
+		color:#666666;
+		font-family: "微软雅黑";
+		
+	}
+	.wk_se option{
+		width:111px;
+	}
+		
+	.d-left{
+		position:relative;
+	}
+	.error_msg{
+	margin-left:85px;
+	font-size:14px !important;
+	
+	}
+	.error_msg1{
+	font-size:14px !important;
+	}
+		
+</style>
+
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script src="..\static\js\from.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function knowService(){
+	 window.open("/index/text?sort=10");
+} 
+window.onbeforeunload = function()
+{
+	 
+	 delCookie("CSESSIONID");
+   
+}
+
+Date.prototype.format = function(format)
+{
+var o = {
+"M+" : this.getMonth()+1, //month
+"d+" : this.getDate(),   //day
+"h+" : this.getHours(),  //hour
+"m+" : this.getMinutes(), //minute
+"s+" : this.getSeconds(), //second
+"q+" : Math.floor((this.getMonth()+3)/3), //quarter
+"S" : this.getMilliseconds() //millisecond
+}
+if(/(y+)/.test(format)) format=format.replace(RegExp.$1,
+(this.getFullYear()+"").substr(4 - RegExp.$1.length));
+for(var k in o)if(new RegExp("("+ k +")").test(format))
+format = format.replace(RegExp.$1,
+RegExp.$1.length==1 ? o[k] :
+("00"+ o[k]).substr((""+ o[k]).length));
+return format;
+}
+
+//删除cookies  
+function delCookie(name)  
+{  
+    var exp = new Date();  
+    exp.setTime(exp.getTime() - 1);  
+    var cval=getCookie(name);  
+    if(cval!=null)  
+        document.cookie= name + "="+cval+";expires="+exp.toGMTString();  
+}  
+function wadddp(){
+	$("#add-boxwrap").empty();
+	$("#qyprice").empty();
+	var num = $("#shopNum").val();
+	$("#shopNumerror").empty();
+	if(num == ""){
+		$("#shopNumerror").text("请输入店铺数量！");
+		return false;
+	}
+	var reg=/^[1-9]\d*$/;    
+	if(reg.test(num)){  
+		$("#add").empty( );
+		var price = $("#price").val();
+		var total = (parseFloat(price)*num);
+		$("#qyprice").append(total);
+		for(var n =1;n<num;n++){
+			$("#add-boxwrap").append('<dl class="d-dl1"><dt>店铺名称</dt><dd><i class="ico-2"></i><input type="text" name="shopName'+n+'" id="shopName'+n+'" value="" onblur="checkshopName(\'shopNameerror'+n+'\',this);"/></dd><span id="shopNameerror'+n+'" class="error_msg" style="color: red;"></span> </dl><div class="add-boxwrap"><dl class="d-dl2 cl"><dt>店铺区域</dt><dd><select name="province'+n+'"  id="provinceVal'+n+'" onchange="ejld('+n+')"  class="wk_se"><option value="">请选择</option><option value="a5bdb9fd-051c-11e5-9fcd-5cc5d4d2ce03" >天津市</option><option value="a5bdbc04-051c-11e5-9fcd-5cc5d4d2ce03" >河北省</option><option value="a5bdbdda-051c-11e5-9fcd-5cc5d4d2ce03" >山西省</option><option value="a5bdbfaa-051c-11e5-9fcd-5cc5d4d2ce03" >内蒙古自治区</option><option value="a5bdc191-051c-11e5-9fcd-5cc5d4d2ce03" >辽宁省</option><option value="a5bdc326-051c-11e5-9fcd-5cc5d4d2ce03" >吉林省</option><option value="a5bdc4d0-051c-11e5-9fcd-5cc5d4d2ce03" >黑龙江省</option><option value="a5bdc660-051c-11e5-9fcd-5cc5d4d2ce03" >上海市</option><option value="a5bdc7f0-051c-11e5-9fcd-5cc5d4d2ce03" >江苏省</option><option value="a5bdc995-051c-11e5-9fcd-5cc5d4d2ce03" >浙江省</option><option value="a5bdcb56-051c-11e5-9fcd-5cc5d4d2ce03" >安徽省</option><option value="a5bdcce5-051c-11e5-9fcd-5cc5d4d2ce03" >福建省</option><option value="a5bdd1b0-051c-11e5-9fcd-5cc5d4d2ce03" >江西省</option><option value="a5bdd345-051c-11e5-9fcd-5cc5d4d2ce03" >山东省</option><option value="a5bdd4c4-051c-11e5-9fcd-5cc5d4d2ce03" >河南省</option><option value="a5bdd623-051c-11e5-9fcd-5cc5d4d2ce03" >湖北省</option><option value="a5bdd788-051c-11e5-9fcd-5cc5d4d2ce03" >湖南省</option><option value="a5bdd8e7-051c-11e5-9fcd-5cc5d4d2ce03" >广东省</option><option value="a5bdda67-051c-11e5-9fcd-5cc5d4d2ce03" >广西壮族自治区</option><option value="a5bddbe6-051c-11e5-9fcd-5cc5d4d2ce03" >海南省</option><option value="a5bddd5b-051c-11e5-9fcd-5cc5d4d2ce03" >重庆市</option><option value="a5bdded0-051c-11e5-9fcd-5cc5d4d2ce03" >四川省</option><option value="a5bde05a-051c-11e5-9fcd-5cc5d4d2ce03" >贵州省</option><option value="a5bde205-051c-11e5-9fcd-5cc5d4d2ce03" >云南省</option><option value="a5bde38a-051c-11e5-9fcd-5cc5d4d2ce03" >西藏自治区</option><option value="a5bde504-051c-11e5-9fcd-5cc5d4d2ce03" >陕西省</option><option value="a5bde69e-051c-11e5-9fcd-5cc5d4d2ce03" >甘肃省</option><option value="a5bde808-051c-11e5-9fcd-5cc5d4d2ce03" >青海省</option><option value="a5bde967-051c-11e5-9fcd-5cc5d4d2ce03" >宁夏回族自治区</option><option value="a5bdeae2-051c-11e5-9fcd-5cc5d4d2ce03" >新疆维吾尔自治区</option><option value="a5bdee01-051c-11e5-9fcd-5cc5d4d2ce03" >香港特别行政区</option><option value="a5bdf49c-051c-11e5-9fcd-5cc5d4d2ce03" >澳门特别行政区</option></select><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><select name="city'+n+'" id="cityVal'+n+'" onchange="sjld('+n+')" class="wk_se"><option  value=""  class="wk_se">请选择</option></select><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><select name="county'+n+'" id="countyVal'+n+'"  class="wk_se"><option  value="">请选择</option></select></dd><span id="selecterror'+n+'" class="error_msg1" style="color: red;"></span> </dl><dl class="d-dl1"><dt>详细地址</dt><dd><i class="ico-5"></i><input type="text" name="xxdz'+n+'" id="xxdz'+n+'" value="" onblur="checkxxdz(\'xxdzerror'+n+'\',this);"/> </dd><span id="xxdzerror'+n+'" class="error_msg" style="color: red;"></span></dl>');
+			
+		}
+	}
+
+}
+
+//校验
+function require_validate(){
+	
+	var mobile = $("#mobile").val(); 
+	var idCard = $("#idCard").val();
+	console.log(idCard);
+	var name = $("#name").val();
+	console.log(name);
+	
+	
+	var provinceb = $("#provinceVal").val();
+	var cityb = $("#cityVal").val();
+	var countyb = $("#countyVal").val();
+	if(mobile==""){
+		////alert("请输入手机号码");
+		//$("#mobilejy").text("请输入手机号码");
+		return false;
+	}
+	
+	if(name==""){
+		//alert("请输入商户姓名");
+		//$("#nameerror").text("请输入商户姓名");
+		layer.msg("请输入商户姓名");
+		return false;
+	}
+	
+	if(idCard == ""){
+	//	alert("请输入身份证号码");
+	//$("#idCarderror").text("请输入身份证号码");
+		layer.msg("请输入身份证号码");
+		return false;
+	}else{
+		var leg = idCard.length;
+		var tel;
+		if(leg==15){
+		    tel = /^[1-9]\d{5}\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{2}$/;
+		}else if(leg==18){
+		    tel = /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/;
+		}else{
+			////alert("请输入正确的身份证号码");
+			//$("#idCarderror").text("身份证号码格式不正确！");
+			layer.msg("身份证号码格式不正确！");
+			return false;
+		}
+		if(!tel.test(idCard)){
+			////alert("请输入正确的身份证号码");
+			//$("#idCarderror").text("身份证号码格式不正确！");
+			layer.msg("身份证号码格式不正确！");
+			return false;
+		}
+	}
+	
+	var names = document.getElementsByName("sname");
+	var nameLength = names.length;
+	if(nameLength == 0){
+		//$("#shoperror").text("请先添加店铺");
+		layer.msg("请先添加店铺");
+		return false;
+	}
+	console.log(names.length);	
+	
+	var lightCount = 0;
+	console.log(lightCount);
+	for(var i=1;i<=nameLength;i++){
+		var sname = $("#sname"+i).val();
+		if(sname == ""){
+			//$("#snametip"+i).text("请输入店铺名称");
+			layer.msg("请输入店铺名称");
+			return false;
+		}
+		var ssheng = $("#sel-sheng"+i).val();
+		var sshi = $("#sel-shi"+i).val();
+		var squ = $("#sel-qu"+i).val();
+		if(ssheng == ""||sshi == ""||squ == ""){
+			//$("#areatip"+i).text("请输入店铺区域");
+			layer.msg("请输入店铺区域");
+			return false;
+		}
+		var sdetail = $("#sdetail"+i).val();
+		if(sdetail == ""){
+			//$("#sdetailtip"+i).text("请输入详细地址");
+			layer.msg("请输入详细地址");
+			return false;
+		}
+		var slight = $("#slight"+i).val();
+		lightCount = lightCount + parseInt(slight);
+		console.log(lightCount);
+	}
+	if(lightCount == 0){
+		//$("#shoperror").text("签约店铺总数量最少为一个");
+		layer.msg("签约店铺总数量最少为一个");
+		return false;
+	}else{
+		$("#shoperror").empty();
+	}
+	
+	//return false;
+	
+	return true;
+}
+
+function qjld(){
+	$("#countyb").val($("#countyVal").val());
+}
+
+function checkName(spanid,obj) {
+	var name = $(obj).val();
+	$("#"+spanid).empty();
+	console.log(name);
+	if(name == ""){
+		//$("#"+spanid).text("请输入商户姓名");
+		layer.msg("请输入商户姓名");
+	}
+}
+function checkIdCard(spanid,obj) {
+	var idCard = $(obj).val();
+	$("#"+spanid).empty();
+	if(idCard == ""){
+		//$("#"+spanid).text("请输入身份证号码");
+		layer.msg("请输入身份证号码");
+	}
+}
+
+
+
+
+
+function submit(form){
+	 form.ajaxSubmit();
+	 //setTimeout(function(){reload()},2000);
+	
+} 
+
+
+
+</script>
+
+</head>
+
+<body>
+<header class="d-header-wrap w100p1">
+	<div class="w1 d-header cl">
+		<h1 class="d-header-logo fl">
+			<a href="..\index.html"><img src="..\static\images\ny-logo.png"></a>
+		</h1>
+		<div class="d-header-r fr"><i class="ico-wh"></i><a onclick="knowService()"><!-- 了解云聚服务 -->了解云聚服务</a></div>
+	</div>
+</header>
+<main class="d-main w100p1 mt-5">
+	<div class="data-step w1">
+		<a href="#"><img src="..\static\images\data-lc_03.png"></a>
+	</div>
+	
+	<div class="data-con w1">
+		
+		<div class="d-left fl">
+			<form action="/user/shopSign" method="post" onsubmit="return require_validate()">
+					<input type="hidden" id="id" name="id" value="">
+					<input type="hidden" id="tzbz" name="tzbz" value="1">
+				<dl class="d-dl1">
+					<dt><!-- 手机号 -->手机号</dt>
+					<dd>
+						<i class="ico-1"></i>
+						 <input type="text" name="mobile" id="mobile" value="" readonly="readonly">
+					</dd>
+				</dl>
+				<dl class="d-dl1">
+					<dt><font style="color:red">*</font><!-- 商户姓名 -->商户姓名</dt>
+					<dd>
+						<i class="ico-2"></i>
+						<input type="text" name="name" id="name" value="" onblur="checkName('nameerror',this);">
+						
+					</dd>
+					<span id="nameerror" class="error_msg" style="color: red;"></span>
+				</dl>
+				
+				<dl class="d-dl1">
+					<dt><font style="color:red">*</font><!-- 身份证号 -->身份证号</dt>
+					<dd>
+						<i class="ico-3"></i>
+						<input type="text" name="idCard" id="idCard" value="" onblur="checkIdCard('idCarderror',this);">
+						
+					</dd>
+					<span id="idCarderror" class="error_msg" style="color: red;"></span>
+				</dl>
+					
+				<div class="add-boxwrap">
+					<div id="add-boxwrap">	
+				</div>
+				
+				</div><!--add-boxwrap end-->
+				
+				<dl class="d-dl1">
+					<dt>&nbsp;&nbsp;&nbsp;&nbsp;</dt>
+					<a href="javascript:void(0);" style="color:blue;" id="addShop">添加店铺</a>
+					<span id="shoperror" class="error_msg" style="color: red;"></span>
+				</dl>
+				<div class="d-btnbox">
+					<input id="toIndex" name="toIndex" type="button" value="以后再说" class="d-btn-pass">
+					<input name="" type="submit" value="提交" class="d-btn-submit">
+				</div>
+				
+			</form>
+			
+			
+		</div><!--d-left end-->
+		<div class="d-right fr">
+			<div class="d-r-top">
+				<h3><!-- 已有我要订货网账号？ -->已有云聚商城帐号？</h3>
+				<p><!--迪信云聚的本质是一个共享体系，是以产品为核心、培训为辅助、整合运营商政策及多元服务的大平台。-->迪信云聚的本质是一个共享体系，是以产品为核心、培训为辅助、整合运营商政策及多元服务的大平台。</p>
+				
+				<a href="indexlogin.html" class="d-r-login"><!-- 立即登录 -->登录</a>
+			</div>
+			<div class="d-r-phone mt-60">
+			
+				<h3><!-- 如有疑问请拨打 -->如有疑问请拨打</h3>
+				<p><i></i>400-700-8800</p>
+			
+			</div>
+		</div><!--d-right end-->
+		
+		
+	</div><!--data-con end-->
+	
+
+</main>
+
+
+<footer class="d-footer w1 border-t-1">
+	<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+</footer>
+
+<script type="text/javascript">
+
+
+$(document).ready(function() {
+	$(".data-addbox-btn").hide();
+	var msg = $("#msg").val();
+	if("" != msg){
+		////alert(msg);
+	}
+	//返回修改跳转数据处理
+	var data="";
+	if(data!=""){
+		$("#mobile").val("");
+		$("#name").val("");
+		$("#idCard").val("");
+		$("#shopNum").val("");
+		var flag = 0;
+		var num = $("#shopNum").val();
+		if(num!=""){
+			wadddp();
+		}
+		var shop = "".split(",");
+		var pro= "".split(",");
+		var ci= "".split(",");
+		var cou= "".split(",");
+		var xx= "".split(",");
+		for(var n =0;n<num;n++){
+			if(n==0){
+				$("#shopName").val(shop[n]);
+				$("#provinceVal").val(pro[n]);
+				ejld();
+				$("#cityVal").val(ci[n]);
+				sjld();
+				$("#countyVal").val(cou[n]);
+				qjld();
+				
+				$("#xxdz").val(xx[n]);
+				
+			}else{
+				flag++;
+				$("#shopName"+flag).val(shop[n]);
+				$("#provinceVal"+flag).val(pro[n]);
+				ejld(flag);
+				$("#cityVal"+flag).val(ci[n]);
+				
+				sjld(flag);
+				
+				$("#countyVal"+flag).val(cou[n]);
+				qjld();
+				$("#xxdz"+flag).val(xx[n]);
+				
+			}
+			
+			
+		
+		}
+		
+	}
+	
+	$("#toIndex").click(function(){
+		window.location.href="/";
+	});
+	
+
+});
+
+</script>
+
+<script>
+
+	var i=0;
+	$("#addShop").click(function(){
+	$("#shoperror").text("");
+		i++;
+		$("#add-boxwrap").append(
+			'<dl class="d-dl1"><dt><font style="color:red">*</font>店铺名称'+
+			'</dt>'+
+			'<dd>'+
+			'<i class="ico-2"></i><input name="sname" id="sname'+i+'" type="text" onblur="checkSName(snametip'+i+',this);" /></dd><span id="snametip'+i+'" class="error_msg" style="color: red;">'+
+			'</span>'+
+			'</dl>'+
+			'<div class="add-boxwrap">'+
+			'<dl class="d-dl2 cl">'+
+			'<dt>'+
+			'<font style="color:red">*</font>店铺区域</dt><dd>'+
+			'<select onchange="changeFn(this);" name="sheng" class="wk_se" id="sel-sheng'+i+'" index='+i+'>'+
+			'<option value="">'+
+			'请选择</option>'+
+			''+
+			'<option value="a5bdb9fd-051c-11e5-9fcd-5cc5d4d2ce03" >天津市</option>'+
+			'<option value="a5bdbc04-051c-11e5-9fcd-5cc5d4d2ce03" >河北省</option>'+
+			'<option value="a5bdbdda-051c-11e5-9fcd-5cc5d4d2ce03" >山西省</option>'+
+			'<option value="a5bdbfaa-051c-11e5-9fcd-5cc5d4d2ce03" >内蒙古自治区</option>'+
+			'<option value="a5bdc191-051c-11e5-9fcd-5cc5d4d2ce03" >辽宁省</option>'+
+			'<option value="a5bdc326-051c-11e5-9fcd-5cc5d4d2ce03" >吉林省</option>'+
+			'<option value="a5bdc4d0-051c-11e5-9fcd-5cc5d4d2ce03" >黑龙江省</option>'+
+			'<option value="a5bdc660-051c-11e5-9fcd-5cc5d4d2ce03" >上海市</option>'+
+			'<option value="a5bdc7f0-051c-11e5-9fcd-5cc5d4d2ce03" >江苏省</option>'+
+			'<option value="a5bdc995-051c-11e5-9fcd-5cc5d4d2ce03" >浙江省</option>'+
+			'<option value="a5bdcb56-051c-11e5-9fcd-5cc5d4d2ce03" >安徽省</option>'+
+			'<option value="a5bdcce5-051c-11e5-9fcd-5cc5d4d2ce03" >福建省</option>'+
+			'<option value="a5bdd1b0-051c-11e5-9fcd-5cc5d4d2ce03" >江西省</option>'+
+			'<option value="a5bdd345-051c-11e5-9fcd-5cc5d4d2ce03" >山东省</option>'+
+			'<option value="a5bdd4c4-051c-11e5-9fcd-5cc5d4d2ce03" >河南省</option>'+
+			'<option value="a5bdd623-051c-11e5-9fcd-5cc5d4d2ce03" >湖北省</option>'+
+			'<option value="a5bdd788-051c-11e5-9fcd-5cc5d4d2ce03" >湖南省</option>'+
+			'<option value="a5bdd8e7-051c-11e5-9fcd-5cc5d4d2ce03" >广东省</option>'+
+			'<option value="a5bdda67-051c-11e5-9fcd-5cc5d4d2ce03" >广西壮族自治区</option>'+
+			'<option value="a5bddbe6-051c-11e5-9fcd-5cc5d4d2ce03" >海南省</option>'+
+			'<option value="a5bddd5b-051c-11e5-9fcd-5cc5d4d2ce03" >重庆市</option>'+
+			'<option value="a5bdded0-051c-11e5-9fcd-5cc5d4d2ce03" >四川省</option>'+
+			'<option value="a5bde05a-051c-11e5-9fcd-5cc5d4d2ce03" >贵州省</option>'+
+			'<option value="a5bde205-051c-11e5-9fcd-5cc5d4d2ce03" >云南省</option>'+
+			'<option value="a5bde38a-051c-11e5-9fcd-5cc5d4d2ce03" >西藏自治区</option>'+
+			'<option value="a5bde504-051c-11e5-9fcd-5cc5d4d2ce03" >陕西省</option>'+
+			'<option value="a5bde69e-051c-11e5-9fcd-5cc5d4d2ce03" >甘肃省</option>'+
+			'<option value="a5bde808-051c-11e5-9fcd-5cc5d4d2ce03" >青海省</option>'+
+			'<option value="a5bde967-051c-11e5-9fcd-5cc5d4d2ce03" >宁夏回族自治区</option>'+
+			'<option value="a5bdeae2-051c-11e5-9fcd-5cc5d4d2ce03" >新疆维吾尔自治区</option>'+
+			'<option value="a5bdee01-051c-11e5-9fcd-5cc5d4d2ce03" >香港特别行政区</option>'+
+			'<option value="a5bdf49c-051c-11e5-9fcd-5cc5d4d2ce03" >澳门特别行政区</option></select>'+
+			'<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>'+
+			'<select onchange="changeFn1(this);" name="shi" class="wk_se " id="sel-shi'+i+'" index='+i+'><option  value=""  class="wk_se">请选择</option></select>'+
+			'<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>'+
+			'<select onchange="changeFn2(this);" name="qu" class="wk_se " id="sel-qu'+i+'" index='+i+'><option  value="">请选择</option></select>'+
+			'</dd><span id="areatip'+i+'" class="error_msg1" style="color: red;"></span> '+
+			'</dl><dl class="d-dl1"><dt><font style="color:red">*</font>详细地址</dt>'+
+			'<dd>'+
+			'<i class="ico-5"></i>'+
+			'<input name="sdetail" id="sdetail'+i+'" type="text" onblur="checkDetail(sdetailtip'+i+',this);"/> </dd>'+
+			'<span id="sdetailtip'+i+'" class="error_msg" style="color: red;"></span>'+
+			'</dl>'+
+			'<dl class="d-dl1">'+
+			'<dt ><font style="color:red">*</font>灯箱数量</dt>'+
+			'<select onchange="changeFn3(this);" name="lampCount" id="slight'+i+'" style="width:33%;height:40px;margin-top:5px;border:1px solid #CCCCCC;"><option value="0">0</option><option value="1" selected = "selected" >1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select>'+
+			'<span id="slighttip'+i+'" class="error_msg" style="color: red;"></span>'+
+			'</dl>'+
+			'<dl ">'+
+			'<dd>&nbsp;&nbsp;店铺图片'+
+			'</dd>'+
+			'<input type="hidden" value="" name="image" id="imgId'+i+'">'+
+			'<form id="upForm1'+i+'" action="" method="post" enctype="multipart/form-data">'+
+			'<input name="userId" type="hidden" value="""">'+
+			'<div style="width:385px;height:100px; #000;margin-left:85px;">'+
+			'<div id="photo1'+i+'" style="width:100px;height:100px;float:left;margin-right:30px;background:url(/static/images/pro-pic_10.png) no-repeat;background-size:100%;background-position:center;"><input type="file" name="file" onchange="change()" style="filter:alpha(opacity:0);opacity: 0;width:100%;height:100%;overflow:hidden;" accept="image/gif,image/jpeg,image/jpg,image/png" index='+i+' /></div>'+
+			'</form>'+
+			'<form id="upForm2'+i+'" action="" method="post" enctype="multipart/form-data">'+
+			'<input name="userId" type="hidden" value="""">'+
+			'<div style="width:385px;height:100px; #000;margin-left:85px;">'+
+			'<div id="photo2'+i+'" style="width:100px;height:100px;float:left;margin-right:30px;background:url(/static/images/pro-pic_10.png) no-repeat;background-size:100%;background-position:center;"><input type="file" name="file" onchange="change()" style="filter:alpha(opacity:0);opacity: 0;width:100%;height:100%;overflow:hidden;" accept="image/gif,image/jpeg,image/jpg,image/png" index='+i+' /></div>'+
+			'</form>'+
+			'</form>'+
+			'<form id="upForm3'+i+'" action="" method="post" enctype="multipart/form-data">'+
+			'<input name="userId" type="hidden" value="""">'+
+			'<div style="width:385px;height:100px; #000;margin-left:85px;">'+
+			'<div id="photo3'+i+'" style="width:100px;height:100px;float:left;margin-right:30px;background:url(/static/images/pro-pic_10.png) no-repeat;background-size:100%;background-position:center;"><input type="file" name="file" onchange="change()" style="filter:alpha(opacity:0);opacity: 0;width:100%;height:100%;overflow:hidden;" accept="image/gif,image/jpeg,image/jpg,image/png" index='+i+' /></div>'+
+			'</form>'+
+			'</div>'+
+			'</dl>'
+			);
+			
+							
+});
+var a='';
+function changeFn(o){
+	var $this=$(o);
+
+	ejld($this.val(),$this.attr("index"));
+}
+
+function changeFn1(o){
+	var $this=$(o);
+	sjld($this.val(),$this.attr("index"));
+}
+
+function changeFn2(o){
+	var $this=$(o);
+	var index = $this.attr("index");
+
+	var ssheng = $("#sel-sheng"+index).val();
+	var sshi = $("#sel-shi"+index).val();
+	var squ = $("#sel-qu"+index).val();
+	if(ssheng != ""&&sshi != ""&&squ != ""){
+		$("#areatip"+index).empty();
+		return false;
+	}
+}
+
+function changeFn3(o){
+	var lights = document.getElementsByName("lampCount");
+	var lightLength = lights.length;
+	console.log("lightLength+"+lightLength);
+	var lightCount = 0;
+	console.log(lightCount);
+	for(var i=1;i<=lightLength;i++){
+		var slight = $("#slight"+i).val();
+		lightCount = lightCount + parseInt(slight);
+		console.log(lightCount);
+	}
+	if(lightCount == 0){
+		//$("#shoperror").text("签约店铺总数量最少为一个");
+		layer.msg("签约店铺总数量最少为一个");
+		return false;
+	}else{
+		$("#shoperror").empty();
+	}
+}
+
+
+//根据省查出所有的市
+function ejld(id,k){
+	var k=parseInt(k); 
+	var pid = id;
+	$.ajax({
+		async: false,
+		url:"/user/findarea",
+		data:{json:"{'pid':'"+pid+"'}"},
+		type:"POST",
+        success:function(data){  
+            $("#sel-shi"+k).empty( );
+ 			$("#sel-shi"+k).append("<option value=''>请选择</option>");
+            $("#sel-qu"+k).empty( );
+ 			$("#sel-qu"+k).append("<option value=''>请选择</option>");
+            $.each(data.data, function(i,item){ 
+				$("#sel-shi"+k).append("<option value="+item.id+">"+item.name+"</option>");
+ 			}); 
+        }  
+	});
+} 
+//根据市查出所有的区
+function sjld(id,k){
+	var pid = id;
+	$.ajax({
+		async: false,
+		url:"/user/findarea",
+		data:{json:"{'pid':'"+pid+"'}"},
+		type:"POST",
+		success:function(data){
+			$("#sel-qu"+k).empty( );
+			$("#sel-qu"+k).append("<option value=''>请选择</option>");
+			jQuery.each(data.data, function(i,item){ 
+				$("#sel-qu"+k).append("<option value="+item.id+">"+item.name+"</option>");
+			});
+		}
+	});
+} 
+
+
+function checkSName(spanid,obj) {
+	var shopName = $(obj).val();
+	var stipid = $(spanid).attr("id");
+	$("#"+stipid).empty();
+	if(shopName == ""){
+		//$("#"+stipid).text("请输入店铺名称");
+		layer.msg("请输入店铺名称");
+	}
+}
+function checkDetail(spanid,obj) {
+	var xxdz = $(obj).val();
+	var dtipid = $(spanid).attr("id");
+	$("#"+dtipid).empty();
+	if(xxdz == ""){
+		//$("#"+dtipid).text("请输入详细地址");
+		layer.msg("请输入详细地址");
+	}
+}
+
+
+
+function change(e){
+	 	var e=e||event;
+	    var target=$(e.target);
+	    var i=target.attr("index");
+	    console.log(i);
+	    var file1 = $(target)[0].files[0];
+	    var imgUrl = window.URL.createObjectURL(file1);
+	    
+	    var str=$("#imgId"+i).val()||'';
+	    var options = {
+			url : "https://www.dixinyunju.com/web//shop/photo/photoUploadNew",
+				type : "post",
+				dataType : "json",
+				async:false,
+				success : function(data){
+					
+					target.parent().css("background","url("+imgUrl+") no-repeat").css("background-size","100%").css("background-position","center");
+					console.log(data);
+					target.remove();
+					var Img=data.image;
+					str+='|/'+Img;
+				},
+				error:function(){
+					//alert("fail");
+				}
+		 	}
+		 	console.log(target.parent().parent());
+		target.parent().parent().parent().ajaxSubmit(options);
+		$("#imgId"+i).attr("value",str);
+		return false;
+}
+
+</script>
+
+
+
+</body>
+</html>
+

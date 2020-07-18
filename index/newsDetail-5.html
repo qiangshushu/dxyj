@@ -1,0 +1,569 @@
+﻿<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<title>迪信云聚 - 电子货柜真的来啦！迪信云聚开创通讯业新局面 - 最大的通讯零售生态圈</title>
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link href="..\static\css\basic1.css" rel="stylesheet">
+<link href="..\static\css\common1.css" rel="stylesheet">
+<link href="..\static\css\newsinfo.css" rel="stylesheet">
+<link href="..\static\css\share.min.css" rel="stylesheet">
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script type="text/javascript">
+function b() {
+	h = $(window).height(),
+	t = $(document).scrollTop(),
+	t > h ? $("#moquu_top").show() : $("#moquu_top").hide()
+}
+$(document).ready(function() {
+	b();
+	$("#moquu_top").click(function() {
+		$(document).scrollTop(0);
+	});
+	$(".per-left").css("display","none");
+});
+$(window).scroll(function() {
+	b()
+});
+</script>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};
+with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style type="text/css">
+.bdsFather{
+width:140px;
+position:relative;
+border-right:none !important;
+}
+.bds{
+width:200px;
+position:absolute;
+left:18px;
+top:-7px;
+}
+.newsdesclist1 {
+    padding-left: 110px;
+}
+
+</style>
+</head>
+
+<body class="i-body">
+  
+<script type="text/javascript">
+
+
+function getKey()  
+{  
+    if(event.keyCode==13){  
+    	$("#searchleft1").click();
+    }     
+}  
+			$.ajax({
+				url : "/order/statecount",
+				type:"post",
+				dataType:"json", 
+				//async:false,
+				data : "",
+				success:function(data){
+					if(data.status == "success"){
+						//console.log(data.data);
+						//console.log(data.data.sta_all);
+						//全部订单数量
+						$("#sta_all").text("("+data.data.sta_all+")");
+						//待付款订单数量
+						$("#sta_0").text("("+data.data.sta_0+")");
+						//待发货订单数量
+						$("#sta_1").text("("+data.data.sta_1+")");
+						//待收货订单数量
+						$("#sta_2").text("("+data.data.sta_2+")");
+						//已完成订单数量
+						$("#sta_3").text("("+data.data.sta_3+")");
+						//已取消订单数量
+						$("#sta_4").text("("+data.data.sta_4+")");
+						//已退货订单数量
+						$("#sta_7").text("("+data.data.sta_7+")");
+					}
+			   } 
+			});
+			
+		
+
+	function searchGoodLeft1() {
+		window.event.returnValue=false;
+		var ids = [];
+		var good = document.getElementById("goodName").value;
+		if (good == null || good == "" || good == "请输入关键字"||good=="Please enter a keyword") {
+			ids.push("{'goodsName':'','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href  = ctxpath + "/pro/list?" + encodedUrl;
+		} else {
+			ids.push("{'goodsName':'" + good + "','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'" + good
+					+ "','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href = ctxpath + "/pro/list?" + encodedUrl;
+		}
+	}
+	function post(URL, PARAMS) {
+		var temp = document.createElement("form");
+		temp.action = URL;
+		temp.method = "post";
+		temp.style.display = "none";
+		for ( var x in PARAMS) {
+			var opt = document.createElement("textarea");
+			opt.name = x;
+			opt.value = PARAMS[x];
+			// alert(opt.name)        
+			temp.appendChild(opt);
+		}
+		document.body.appendChild(temp);
+		temp.submit();
+		return temp;
+	}
+	
+	
+</script>
+    <!-- 头部所有 -->
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\commons\header.css">
+
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script src="..\static\js\commons\header.js" type="text/javascript"></script>
+
+
+<div class="i-topwrap w100p border-b-1">
+    <div class="i-top w">
+        <div class="fl i-top-left">
+    		<span class="mr-10 fl">
+                 <!-- 迪信云聚商城 -->
+迪信云聚商城            </span>
+            <div class="date">
+                <span>
+                	<!-- -->
+                </span>
+                <span>
+                    <script type="text/javascript">
+                    	
+                    	document.write(new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日')
+                    </script>
+                </span>
+            </div>
+
+        </div>
+        <input type="hidden" id="status" value="">
+        <div class="fr i-top-right">
+            <ul>
+
+
+
+
+
+
+                    <li id="login">
+                        <a href="..\user\indexlogin.html">
+                            <!-- 登录 -->
+登录                        </a>
+                    </li>
+                    <li id="login4" class="space"></li>
+                    <li id="login3">
+                        <a href="..\user\indexregister.html" class="active">
+                            <!-- 注册 -->
+注册                        </a>
+                    </li>    
+
+
+
+
+
+
+                    <li style="display:none">
+                        <a>
+                            <!-- 消息 -->
+消息                        </a>
+                    </li>
+                <li class="space"></li>
+                <li class="dropdown">
+                    <a href="#"><!-- 云聚APP -->云聚APP</a>
+                    <div class="drop-ewm">
+                        <p><!-- 扫一扫，下载云聚客户端 -->扫一扫，下载云聚客户端</p>
+                        <img src="..\static\images\i-ewm_04.png">
+                    </div>
+                </li>
+                <li class="space"></li>
+                <li><a href="http://old.dixinyunju.com"><!-- 旧版入口 -->旧版入口</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="register-pop">
+    <h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a>
+    </h3>
+    <div class="reg-pop-con">
+        <span class="reg-pop-bg"></span>
+        <p class="mt-20"><!-- 您已成为云聚注册会员 -->您已成为云聚注册会员</p>
+        <p><!-- 签约会员可享受更多服务~ -->签约会员可享受更多服务~</p>
+    </div>
+    <div class="reg-btnbox">
+        <a href="javascript:void(0);" onclick="closebtn();"><!-- 以后再说 -->以后再说</a>
+        <a href="..\user\register.html?tzbz=0" class="reg-btn2">
+            <!-- 马上签约预订 -->马上签约预订</a>
+    </div>
+</div>
+
+
+
+<div class="ny-header-wrap w100p per-header-wrap">
+	<header class="i-header w">
+		
+		<h1 class=" fl ny-logo mt-30">
+			<a href="..\index.html"><img src="..\static\images\per-logo.png"></a>
+		</h1>
+		<!--  
+		<div class="per-logo2 fl"><a href="/">返回首页</a></div>
+		-->
+		<div class="i-header-r fr">
+			
+			<div class="i-header-rtop cl">
+				<div class="i-search-box fl">
+					<div class="i-search">
+						<form>
+							<!-- <input type="text" id="goodName" name="goodName"value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();"/> -->
+						<input type="text" id="goodName" name="goodName" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();">
+							<a href="#"><input type="button" value="" id="searchleft1" class="i-search-btn fr" onclick="searchGoodLeft1();"></a>
+						</form>
+					</div>
+				</div><!--i-search-box end-->
+<script src="..\static\js\commons\shop.js" type="text/javascript"></script>	
+												
+<div class="i-shopping fl">
+
+
+	<a href="/shop/tocart"><!-- 我的购物车 -->我的购物车</a> <span id="shopNum" hidden="">0</span>
+</div>			</div>
+		</div>	
+			
+	</header>
+</div>
+
+<main class="ny-main w mb-60 mt-20">
+	<div class="per-con cl">
+		<div class="per-left fl">
+			<div class="per-left-menu">
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-order.png"></i><!-- 全部订单 -->全部订单</h3>
+				<ul>
+				
+				<li><a href="/order/queryorderpage"><!-- 全部订单 -->全部订单<font id="sta_all"></font></a></li>
+				<li><a href="/order/queryorderpage?s=0"><!-- 待付款订单 -->待付款订单<font id="sta_0"></font></a></li>
+				<li><a href="/order/queryorderpage?s=1"><!-- 待发货订单 -->待发货订单<font id="sta_1"></font></a></li>
+				<li><a href="/order/queryorderpage?s=2"><!-- 待收货订单 -->待收货订单<font id="sta_2"></font></a></li>
+				<li><a href="/order/queryorderpage?s=7"><!-- 已退货订单 -->已退货订单<font id="sta_7"></font></a></li>
+				<li><a href="/order/queryorderpage?s=3"><!-- 已完成订单 -->已完成订单<font id="sta_3"></font></a></li>
+				<li><a href="/order/queryorderpage?s=4"><!-- 已取消订单 -->已取消订单<font id="sta_4"></font></a></li>
+				
+					
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-user.png"></i><!-- 账户管理 -->账户管理</h3>
+				<ul>
+					<li><a href="/user/personal"><!-- 个人信息 -->个人信息</a></li>
+					
+					
+					<li><a href="/user/decorate"><!-- 店铺装修 -->我的店铺</a></li>
+					<li><a href="..\business\myClass.html"><!-- 我的课程 -->我的课程</a></li>
+					<li><a href="..\user\voucherl.html"><!-- 我的抵用券 -->我的抵用券</a></li>
+					<li><a href="..\user\security.html"><!-- 账户安全 -->账户安全</a></li>
+					<li><a href="/order/sysinfo"><!-- 系统消息 -->系统消息</a></li>
+
+				
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-service.png"></i><!-- 售后服务 -->售后服务</h3>
+				<ul>
+				<!-- 	<li><a href="#">返修退换货</a></li>
+					<li><a href="#">咨询服务</a></li> -->
+					<li><a href="..\user\proposal.html"><!-- 意见建议 -->意见建议</a></li>
+					
+				</ul>
+			</div>
+			
+		</div><!--per-left end-->
+
+		<div class="per-right fr" style="width:100%;">
+			 <div class="content">
+        <div class="w994">
+            <!-- 面包屑导航 -->
+            <p class="breadnav">
+                <span><!-- 当前位置： -->当前位置：</span>
+                <a href="news.html"><!-- 新闻中心 -->新闻中心&gt;</a>
+                <a href="javascript:void(0)">
+             
+                
+              
+              	  <!-- 今日要闻 -->今日要闻
+                
+                </a>
+            </p>
+            <h3 class="newstit">电子货柜真的来啦！迪信云聚开创通讯业新局面</h3>
+            <div class="w996">
+                <ul class="newsdesclist  newsdesclist1 clear">
+                    <li class="nopl"><!-- 时间： -->时间：2017-03-06</li>
+                    <li><!-- 来源： -->来源：<a style="text-decoration: underline;" target="_blank">迪信云聚</a></li>
+                    <li>
+                        <span class="personlook"><!-- 浏览： -->浏览：936</span>
+                    </li>
+                   <li class="bdsFather">
+				<div class="bdsharebuttonbox bds">
+				<a href="#" class="bds_more" data-cmd="more"></a>
+				<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+				<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+				<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+				</div>
+					</li>
+                </ul>
+            </div>
+            
+            <!-- 新闻内容区 -->
+            <div class="newsbox">
+                <p align="center" font-size:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	&nbsp; &nbsp;&nbsp;<img _src="http://dixinyunju.com/upload/2017-03-06/a406ce49-31a6-4121-b066-6ffe3dc1065a.jpg" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/07/a406ce49-31a6-4121-b066-6ffe3dc1065a.jpg" style="width: 777px; height: 545px;">&nbsp; &nbsp;&nbsp;&nbsp;</p>
+<p font-size:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	&nbsp;</p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	&nbsp;</p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	&nbsp;</p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<span style="font-size: 16px;"><span calibri="" font-size:="" style="font-family: ">2<span style="font-family: 微软雅黑;">月</span></span><span style="font-family: 微软雅黑; font-size: 15px;">21日，迪信云聚与东方时代</span><span style="font-family: 微软雅黑;">战略合作签约会在北京金融工厂顺利举行。迪信通总裁兼迪信云聚总策划师金鑫，东方时代董事长魏薇等人出席了本次签约会会并代表双方签约。签约会上双方正式达成战略合作，将在供应链金融领域展开深度合作。</span></span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	&nbsp;</p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<span style="font-size: 16px;"><span style="font-family: 微软雅黑; font-size: 15px;">据悉，迪信云聚作为以通讯设备O2O为核心的移动互联生态平台，与金融咨询行业先驱东方时代的此次合作，将打开供应链金融新的大门。双方合作的第一步便是通过云聚门店</span><span style="font-family: 微软雅黑;"><span style="font-size: 15px;">引入电子货柜，不断完善不断优化并完成复制扩张。专业人士指出，在人工智能大举迈进的今天，人的参与度越来越低，而迪信云聚电子货柜的引入为通讯行业开创了一种新局面。</span></span></span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<span style="font-family: 微软雅黑; font-size: 15px;">&nbsp;</span><span calibri="" font-size:="" style="font-family: ">&nbsp;&nbsp;</span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<strong><span style="font-family: 微软雅黑; font-size: 15px;">解决线下实体渠道&ldquo;痛点&rdquo;，迪信云聚</span></strong><strong><span calibri="" style="font-family: ">引入</span></strong><strong><span style="font-family: 黑体; line-height: 18px;">新引擎</span></strong></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<span style="font-size: 16px;"><span style="font-family: 微软雅黑; font-size: 15px;">通讯类权威研究机构GFK数据表明，<span calibri="" style="font-family: ">2015</span>年到<span calibri="" style="font-family: ">2016</span>年中国智能手机线上销量份额在<span calibri="" style="font-family: ">20%-25%</span>之间，而<span calibri="" style="font-family: ">2016</span>年第一季度为<span calibri="" style="font-family: ">22%</span>，线上销售占比经过两年的猛涨进入平缓期，已然遭遇天花板，手机厂商也逐渐把角力场转移到线下。据统计，除了运营商渠道之外，包括实体门店在内的社会公开渠道成为各大手机厂商发力的重点。</span></span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<span style="font-size: 16px;"><span style="font-family: 微软雅黑; font-size: 15px;">&nbsp;</span></span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<span style="font-size: 16px;"><span style="font-family: 微软雅黑;">与此同时</span><span calibri="" style="font-family: ">，</span><span style="font-family: 微软雅黑; font-size: 15px;">全国中小型通讯零售门店倍感压力。&ldquo;没有了运营商的补贴，加之线上渠道的</span><span calibri="" style="font-family: ">冲击</span><span style="font-family: 微软雅黑; font-size: 15px;">，这些线下零售商产品结构单一、议价能力不高、抗风险能力弱等痛点集中暴露出来。&rdquo;迪信云聚金鑫表示，通过迪信云聚，让小型线下渠道及终端能够稳定手机供应链、获取增值资源、丰富服务业务并提升销售和管理能力，这对于当前陷入困局的小型专业手机线下渠道来说，是一个新的机会。</span></span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<span style="font-size: 16px;"><span style="font-family: 微软雅黑; font-size: 15px;">&nbsp;</span></span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 16px 0px 4px; padding: 0px; border: none; font-family: " white-space:="">
+	<span style="font-size: 16px;"><span style="font-family: 微软雅黑;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: 微软雅黑;">对于电子货柜的引入金鑫解释道：&ldquo;手机成为人的额外器官，我们在做买卖器官的事，让消费成本不会有风险。&rdquo;迪信云聚模式升级和平台化提供了新的引擎。解决了门店资金占用大、周转慢、库存利用率低、配送难及时等实质性问题。此外，致力于渠道下沉的品牌厂商，一直困惑于无法管理零售价格等数据问题，迪信云聚电子货柜的推广，提供了完整可控的解决方案，得到了众多一线厂商的大力支持。由此看来，从上游资源到下游端口，迪信云聚必将为整个通讯行业带来重大突破。</span></span></p>
+<p align="center" font-size:="" line-height:="" microsoft="" style="margin: 16px 0px 4px; padding: 0px; border: none; font-family: " white-space:="">
+	<strong><span style="font-family: 黑体; line-height: 24px; font-size: 16px;"><img _src="http://dixinyunju.com/upload/2017-03-06/c94f7462-6337-4b5d-924f-705877893934.jpg" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/07/c94f7462-6337-4b5d-924f-705877893934.jpg" style="width: 777px; height: 442px;">&nbsp;</span></strong></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 16px 0px 4px; padding: 0px; border: none; font-family: " white-space:="">
+	<strong><span style="font-family: 黑体; line-height: 18px;">&nbsp;&nbsp;&nbsp;</span></strong></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 16px 0px 4px; padding: 0px; border: none; font-family: " white-space:="">
+	<strong><span style="font-family: 黑体; line-height: 18px;">双方共创零售业</span></strong><strong><span style="font-family: 黑体; line-height: 18px;">新经济</span></strong><strong><span style="font-family: 黑体; line-height: 18px;">，</span></strong><strong><span style="font-family: 黑体; line-height: 18px;">新金融，新科技</span></strong></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<span style="font-family: 微软雅黑;">迪信云聚具备为通讯行业生态价值链提供服务的体量与能力，</span><span calibri="" style="font-family: ">时代东方</span><span style="font-family: 微软雅黑;">提供</span><span calibri="" style="font-family: ">专业</span><span style="font-family: 微软雅黑;">金融</span><span calibri="" style="font-family: ">的一站式解决方案，</span><span style="font-family: 微软雅黑;">加上应运而生</span><span calibri="" style="font-family: ">的消费需求，</span><span style="font-family: 微软雅黑;">这成为</span><span calibri="" style="font-family: ">了</span><span style="font-family: 微软雅黑;">双方战略</span><span calibri="" style="font-family: ">合作的三点基石</span><span style="font-family: 微软雅黑;">，</span><span calibri="" style="font-family: ">并达成电子货柜是最好</span><span style="font-family: 微软雅黑;">下沉</span><span calibri="" style="font-family: ">方式的共识。</span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	&nbsp;</p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " text-indent:="" white-space:="">
+	<span style="font-family: 微软雅黑;">据记者</span><span calibri="" style="font-family: ">了解到，</span><span style="font-family: 微软雅黑;">迪信云聚</span><span calibri="" style="font-family: ">电子货柜这种方式将</span><span style="font-family: 微软雅黑;">很快</span><span calibri="" style="font-family: ">投入试点，</span><span style="font-family: 微软雅黑;">根据</span><span calibri="" style="font-family: ">后台数据</span><span style="font-family: 微软雅黑;">分析，</span><span calibri="" style="font-family: ">逐渐完善建立模型，</span><span style="font-family: 微软雅黑;">并在</span><span calibri="" style="font-family: ">短时间内</span><span style="font-family: 微软雅黑;">迅速</span><span calibri="" style="font-family: ">复制扩张</span><span style="font-family: 微软雅黑; font-size: 15px;">。对此，东方时代魏薇谈到，&ldquo;我们</span><span calibri="" style="font-family: ">可以成为</span><span style="font-family: 微软雅黑;">行业</span><span calibri="" style="font-family: ">的</span><span style="font-family: 微软雅黑;">先行者，共创</span><span calibri="" style="font-family: ">新经济，新金融，新科技</span><span style="font-family: 微软雅黑; font-size: 15px;">。&rdquo;</span><span calibri="" font-size:="" style="font-family: ">&nbsp;</span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	<span calibri="" font-size:="" style="font-family: ">&nbsp;</span></p>
+<p align="center" font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	<strong><span style="font-family: 黑体; line-height: 24px; font-size: 16px;">&nbsp;<img _src="http://dixinyunju.com/upload/2017-03-06/e8179473-6993-433b-93be-65dbe0aa8905.jpg" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/07/e8179473-6993-433b-93be-65dbe0aa8905.jpg" style="width: 777px; height: 553px;"></span></strong></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	&nbsp;</p>
+<p font-size:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	&nbsp;</p>
+<p font-size:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	<strong><span style="font-family: 黑体; line-height: 18px;"><strong><span style="line-height: 18px;">&nbsp;&nbsp; 或将</span></strong><strong><span style="line-height: 18px;">改变手机行业</span></strong><strong><span style="line-height: 18px;">格局</span></strong></span></strong></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	<span style="font-family: 微软雅黑;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 近年来，消费者消费行为已有</span><span calibri="" style="font-family: ">很大变化，</span><span style="font-family: 微软雅黑;">导致了近两年各大电商都纷纷布局线下，线上线下相融合并充分一体化运营已成趋势。同时，</span><span calibri="" style="font-family: ">三、四、五线城市</span><span style="font-family: 微软雅黑;">将</span><span calibri="" style="font-family: ">是成长最快的市场</span><span style="font-family: 微软雅黑;">这</span><span calibri="" style="font-family: ">已</span><span style="font-family: 微软雅黑;">是共识</span><span calibri="" style="font-family: ">，</span><span style="font-family: 微软雅黑;">包括</span><span calibri="" style="font-family: ">天猫、京东都在</span><span style="font-family: 微软雅黑;">乡镇</span><span calibri="" style="font-family: ">一级发力，谁最先获得渠道与供应链的下沉</span><span style="font-family: 微软雅黑;">，</span><span calibri="" style="font-family: ">并获得用户认可，谁就是</span><span style="font-family: 微软雅黑;">这一轮的</span><span calibri="" style="font-family: ">胜者<span style="font-family: 黑体;"><strong>。</strong></span></span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	&nbsp;</p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	<span style="font-family: 微软雅黑;">&nbsp;&nbsp;&nbsp;&nbsp; 作为</span><span calibri="" style="font-family: ">行业开拓</span><span style="font-family: 微软雅黑;">者</span><span calibri="" style="font-family: ">的迪信云聚</span><span style="font-family: 微软雅黑;">，首发采用</span><span calibri="" style="font-family: ">电子货柜的形式进行</span><span style="font-family: 微软雅黑;">广泛而深度下沉，为终端用户提供更多元的服务，驱动了</span><span calibri="" style="font-family: ">行业</span><span style="font-family: 微软雅黑;">的</span><span calibri="" style="font-family: ">模式创新</span><span style="font-family: 微软雅黑;">与</span><span calibri="" style="font-family: ">渠道进化</span><span style="font-family: 微软雅黑;">。据悉，迪信云聚电子货柜模式已经得到了业内多数巨头的认可</span><span calibri="" style="font-family: ">，</span><span style="font-family: 微软雅黑;">下一步</span><span calibri="" style="font-family: ">将积极推进与</span><span style="font-family: 微软雅黑;">苹果公司的</span><span calibri="" style="font-family: ">合作洽谈，</span><span style="font-family: 微软雅黑; font-size: 15px;">若顺利今年Apple8将全面</span><span calibri="" style="font-family: ">入驻电子货柜</span><span style="font-family: 微软雅黑;">。</span></p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	&nbsp;</p>
+<p font-size:="" line-height:="" microsoft="" style="margin: 0px; padding: 0px; border: none; font-family: " white-space:="">
+	<span style="font-family: 微软雅黑;">&nbsp;&nbsp;&nbsp; 不可置否，未来的通讯零售</span><span calibri="" style="font-family: ">行业</span><span style="font-family: 微软雅黑;">将</span><span calibri="" style="font-family: ">发生巨大的</span><span style="font-family: 微软雅黑;">变化，迪信云聚电子</span><span calibri="" style="font-family: ">货柜开创了</span><span style="font-family: 微软雅黑;">的</span><span calibri="" style="font-family: ">一种新局面</span><span style="font-family: 微软雅黑;">。业内普遍认为，这或许是手机行业新格局的分水岭。</span></p>
+<div>
+	&nbsp;</div>
+            </div>
+        </div>
+    </div>
+			
+			
+		</div><!--per-right end-->
+		
+		
+	
+	
+
+
+
+</div></main>
+
+<!-- 底部所有 -->
+<script src="..\static\js\commons\footer.js" type="text/javascript"></script>
+
+<footer class="mt-40 i-footer w100p">
+	<div class="i-ensure-wrap w100p">
+		<div class="i-ensure w cl">
+			<ul>
+				<li>
+					<i class="i-ensure-ico1"></i>
+					<h4><!-- 正品保障 -->正品保障</h4>
+					<p><!-- 正规代理，行货保障 -->正规代理，行货保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico2"></i>
+					<h4><!-- 品种齐全 -->品种齐全</h4>
+					<p><!-- 配货齐全，品类丰富 -->配货齐全，品类丰富</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico3"></i>
+					<h4><!-- 闪电发货 -->闪电发货</h4>
+					<p><!-- 当天下单，次日到达 -->当天下单，次日到达</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico4"></i>
+					<h4><!-- 款到发货 -->款到发货</h4>
+					<p><!-- 款到发货，安全便捷 -->款到发货，安全便捷</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico5"></i>
+					<h4><!-- 售后保障 -->售后保障</h4>
+					<p><!-- 快速售后，服务保障 -->快速售后，服务保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico6"></i>
+					<h4><!-- 贴心服务 -->贴心服务</h4>
+					<p><!-- 在线客服，专属服务 -->在线客服，专属服务</p>
+				</li>
+			</ul>
+		</div>
+	</div><!--i-ensure-wrop end-->
+	<div class="footer-link w cl">
+		<div class="footer-menu fl">
+			<ul>
+				<li>
+					<h4><!-- 订货指南 -->订货指南</h4>
+					<p><a href="text.html?sort=1"><!-- 订货流程 -->订货流程</a></p>
+					<p><a href="text-1.html?sort=2"><!-- 物流方式 -->物流方式</a></p>
+					<p><a href="text-2.html?sort=3"><!-- 常见问题 -->常见问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 合作权益 -->合作权益</h4>
+					<p><a href="text-3.html?sort=4"><!-- 入驻政策 -->入驻政策</a></p>
+					<p><a href="text-4.html?sort=5"><!-- 会员权益 -->会员权益</a></p>
+					<p><a href="text-5.html?sort=6"><!-- 特色服务 -->特色服务</a></p>
+				</li>
+				<li>
+					<h4><!-- 支付方式 -->支付方式</h4>
+					<p><a href="text-6.html?sort=7"><!-- 公司转账 -->公司转账</a></p>
+					<p><a href="text-7.html?sort=8"><!-- 在线支付 -->在线支付</a></p>
+					<p><a href="text-8.html?sort=9"><!-- 发票问题 -->发票问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 联系我们 -->联系我们</h4>
+					<p><a href="text-9.html?sort=10"><!-- 云聚介绍 -->云聚介绍</a></p>
+					<p><a href="news.html" target="_blank"><!-- 云聚新闻 -->云聚新闻</a></p>
+					<p><a href="text-10.html?sort=11"><!-- 联系客服 -->联系客服</a></p>
+				</li>
+			</ul>
+		</div><!--footer-menu end-->
+		<div class="footer-ewm fl">
+			<span>
+				<img src="..\static\images\i-ewm_04.png">
+				<p><!-- 云聚APP -->云聚APP</p>
+			</span>
+			<span>
+				<img src="..\static\images\i-ewm_05.png">
+				<p style="font-size:12px;"><!-- 关注微信公众号 -->关注微信公众号</p>
+			</span>
+		</div>
+		<div class="footer-contact fr">
+			<div class="footer-phonebox">
+				<i></i>
+				<h3><!-- 全国统一服务热线 -->全国统一服务热线</h3>
+				<p><!-- 周一至周五上午9:00-下午18:00 -->周一至周五上午9:00-下午18:00
+</p>
+			</div>
+			<div class="footer-phone">400-700-8800</div>
+		</div>
+	
+	</div><!--footer-link end-->
+	
+	<div class="footer-copy w100p">
+		<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+	</div>
+	
+</footer>
+<div class="topbar-show w100p">
+	<div class="w top-show">
+		<h1 class="top-show-logo fl mt-5">
+			<a href="..\index.html"><img src="..\static\images\top-show-logo.png"></a>
+		</h1>
+	</div>
+	<div class="i-search top-show-search fl">
+		<!-- <input type="text" id="goodNames" name="goodNames" value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" /> -->
+		<input type="text" id="goodNames" name="goodNames" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl">
+							<input type="button" value="" class="i-search-btn fr" id="globelSearch2" onclick="searchGoods();">
+	</div>
+
+<script>
+$('#share-3').share();    
+</script>
+<!-- 侧面 -->
+<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)"><div class="moquu_wxinh"></div></a></div>
+<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)"><div class="moquu_wshareh"></div></a></div>
+<div id="moquu_wmaps"><a href="https://www.sojump.hk/jq/13147871.aspx" target="blank_"></a></div>
+<a id="moquu_top" href="javascript:void(0)"></a>
+<!-- 侧面 -->
+<input type="hidden" id="ctxpath" value="">
+</div></body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        var id = 'NewsIndex';
+        $(".navlist li").removeClass("active");
+        $("#" + id).addClass("active");
+    })
+	var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?94e89c1b533f092bfd6442bb2f5ed967";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+

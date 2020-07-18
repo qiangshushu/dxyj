@@ -1,0 +1,854 @@
+﻿<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<title>迪信云聚 - 湖南手机圈变天了？！迪信云聚成颠覆者！ - 最大的通讯零售生态圈</title>
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link href="..\static\css\basic1.css" rel="stylesheet">
+<link href="..\static\css\common1.css" rel="stylesheet">
+<link href="..\static\css\newsinfo.css" rel="stylesheet">
+<link href="..\static\css\share.min.css" rel="stylesheet">
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script type="text/javascript">
+function b() {
+	h = $(window).height(),
+	t = $(document).scrollTop(),
+	t > h ? $("#moquu_top").show() : $("#moquu_top").hide()
+}
+$(document).ready(function() {
+	b();
+	$("#moquu_top").click(function() {
+		$(document).scrollTop(0);
+	});
+	$(".per-left").css("display","none");
+});
+$(window).scroll(function() {
+	b()
+});
+</script>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};
+with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style type="text/css">
+.bdsFather{
+width:140px;
+position:relative;
+border-right:none !important;
+}
+.bds{
+width:200px;
+position:absolute;
+left:18px;
+top:-7px;
+}
+.newsdesclist1 {
+    padding-left: 110px;
+}
+
+</style>
+</head>
+
+<body class="i-body">
+  
+<script type="text/javascript">
+
+
+function getKey()  
+{  
+    if(event.keyCode==13){  
+    	$("#searchleft1").click();
+    }     
+}  
+			$.ajax({
+				url : "/order/statecount",
+				type:"post",
+				dataType:"json", 
+				//async:false,
+				data : "",
+				success:function(data){
+					if(data.status == "success"){
+						//console.log(data.data);
+						//console.log(data.data.sta_all);
+						//全部订单数量
+						$("#sta_all").text("("+data.data.sta_all+")");
+						//待付款订单数量
+						$("#sta_0").text("("+data.data.sta_0+")");
+						//待发货订单数量
+						$("#sta_1").text("("+data.data.sta_1+")");
+						//待收货订单数量
+						$("#sta_2").text("("+data.data.sta_2+")");
+						//已完成订单数量
+						$("#sta_3").text("("+data.data.sta_3+")");
+						//已取消订单数量
+						$("#sta_4").text("("+data.data.sta_4+")");
+						//已退货订单数量
+						$("#sta_7").text("("+data.data.sta_7+")");
+					}
+			   } 
+			});
+			
+		
+
+	function searchGoodLeft1() {
+		window.event.returnValue=false;
+		var ids = [];
+		var good = document.getElementById("goodName").value;
+		if (good == null || good == "" || good == "请输入关键字"||good=="Please enter a keyword") {
+			ids.push("{'goodsName':'','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href  = ctxpath + "/pro/list?" + encodedUrl;
+		} else {
+			ids.push("{'goodsName':'" + good + "','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'" + good
+					+ "','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href = ctxpath + "/pro/list?" + encodedUrl;
+		}
+	}
+	function post(URL, PARAMS) {
+		var temp = document.createElement("form");
+		temp.action = URL;
+		temp.method = "post";
+		temp.style.display = "none";
+		for ( var x in PARAMS) {
+			var opt = document.createElement("textarea");
+			opt.name = x;
+			opt.value = PARAMS[x];
+			// alert(opt.name)        
+			temp.appendChild(opt);
+		}
+		document.body.appendChild(temp);
+		temp.submit();
+		return temp;
+	}
+	
+	
+</script>
+    <!-- 头部所有 -->
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\commons\header.css">
+
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script src="..\static\js\commons\header.js" type="text/javascript"></script>
+
+
+<div class="i-topwrap w100p border-b-1">
+    <div class="i-top w">
+        <div class="fl i-top-left">
+    		<span class="mr-10 fl">
+                 <!-- 迪信云聚商城 -->
+迪信云聚商城            </span>
+            <div class="date">
+                <span>
+                	<!-- -->
+                </span>
+                <span>
+                    <script type="text/javascript">
+                    	
+                    	document.write(new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日')
+                    </script>
+                </span>
+            </div>
+
+        </div>
+        <input type="hidden" id="status" value="">
+        <div class="fr i-top-right">
+            <ul>
+
+
+
+
+
+
+                    <li id="login">
+                        <a href="..\user\indexlogin.html">
+                            <!-- 登录 -->
+登录                        </a>
+                    </li>
+                    <li id="login4" class="space"></li>
+                    <li id="login3">
+                        <a href="..\user\indexregister.html" class="active">
+                            <!-- 注册 -->
+注册                        </a>
+                    </li>    
+
+
+
+
+
+
+                    <li style="display:none">
+                        <a>
+                            <!-- 消息 -->
+消息                        </a>
+                    </li>
+                <li class="space"></li>
+                <li class="dropdown">
+                    <a href="#"><!-- 云聚APP -->云聚APP</a>
+                    <div class="drop-ewm">
+                        <p><!-- 扫一扫，下载云聚客户端 -->扫一扫，下载云聚客户端</p>
+                        <img src="..\static\images\i-ewm_04.png">
+                    </div>
+                </li>
+                <li class="space"></li>
+                <li><a href="http://old.dixinyunju.com"><!-- 旧版入口 -->旧版入口</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="register-pop">
+    <h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a>
+    </h3>
+    <div class="reg-pop-con">
+        <span class="reg-pop-bg"></span>
+        <p class="mt-20"><!-- 您已成为云聚注册会员 -->您已成为云聚注册会员</p>
+        <p><!-- 签约会员可享受更多服务~ -->签约会员可享受更多服务~</p>
+    </div>
+    <div class="reg-btnbox">
+        <a href="javascript:void(0);" onclick="closebtn();"><!-- 以后再说 -->以后再说</a>
+        <a href="..\user\register.html?tzbz=0" class="reg-btn2">
+            <!-- 马上签约预订 -->马上签约预订</a>
+    </div>
+</div>
+
+
+
+<div class="ny-header-wrap w100p per-header-wrap">
+	<header class="i-header w">
+		
+		<h1 class=" fl ny-logo mt-30">
+			<a href="..\index.html"><img src="..\static\images\per-logo.png"></a>
+		</h1>
+		<!--  
+		<div class="per-logo2 fl"><a href="/">返回首页</a></div>
+		-->
+		<div class="i-header-r fr">
+			
+			<div class="i-header-rtop cl">
+				<div class="i-search-box fl">
+					<div class="i-search">
+						<form>
+							<!-- <input type="text" id="goodName" name="goodName"value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();"/> -->
+						<input type="text" id="goodName" name="goodName" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();">
+							<a href="#"><input type="button" value="" id="searchleft1" class="i-search-btn fr" onclick="searchGoodLeft1();"></a>
+						</form>
+					</div>
+				</div><!--i-search-box end-->
+<script src="..\static\js\commons\shop.js" type="text/javascript"></script>	
+												
+<div class="i-shopping fl">
+
+
+	<a href="/shop/tocart"><!-- 我的购物车 -->我的购物车</a> <span id="shopNum" hidden="">0</span>
+</div>			</div>
+		</div>	
+			
+	</header>
+</div>
+
+<main class="ny-main w mb-60 mt-20">
+	<div class="per-con cl">
+		<div class="per-left fl">
+			<div class="per-left-menu">
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-order.png"></i><!-- 全部订单 -->全部订单</h3>
+				<ul>
+				
+				<li><a href="/order/queryorderpage"><!-- 全部订单 -->全部订单<font id="sta_all"></font></a></li>
+				<li><a href="/order/queryorderpage?s=0"><!-- 待付款订单 -->待付款订单<font id="sta_0"></font></a></li>
+				<li><a href="/order/queryorderpage?s=1"><!-- 待发货订单 -->待发货订单<font id="sta_1"></font></a></li>
+				<li><a href="/order/queryorderpage?s=2"><!-- 待收货订单 -->待收货订单<font id="sta_2"></font></a></li>
+				<li><a href="/order/queryorderpage?s=7"><!-- 已退货订单 -->已退货订单<font id="sta_7"></font></a></li>
+				<li><a href="/order/queryorderpage?s=3"><!-- 已完成订单 -->已完成订单<font id="sta_3"></font></a></li>
+				<li><a href="/order/queryorderpage?s=4"><!-- 已取消订单 -->已取消订单<font id="sta_4"></font></a></li>
+				
+					
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-user.png"></i><!-- 账户管理 -->账户管理</h3>
+				<ul>
+					<li><a href="/user/personal"><!-- 个人信息 -->个人信息</a></li>
+					
+					
+					<li><a href="/user/decorate"><!-- 店铺装修 -->我的店铺</a></li>
+					<li><a href="..\business\myClass.html"><!-- 我的课程 -->我的课程</a></li>
+					<li><a href="..\user\voucherl.html"><!-- 我的抵用券 -->我的抵用券</a></li>
+					<li><a href="..\user\security.html"><!-- 账户安全 -->账户安全</a></li>
+					<li><a href="/order/sysinfo"><!-- 系统消息 -->系统消息</a></li>
+
+				
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-service.png"></i><!-- 售后服务 -->售后服务</h3>
+				<ul>
+				<!-- 	<li><a href="#">返修退换货</a></li>
+					<li><a href="#">咨询服务</a></li> -->
+					<li><a href="..\user\proposal.html"><!-- 意见建议 -->意见建议</a></li>
+					
+				</ul>
+			</div>
+			
+		</div><!--per-left end-->
+
+		<div class="per-right fr" style="width:100%;">
+			 <div class="content">
+        <div class="w994">
+            <!-- 面包屑导航 -->
+            <p class="breadnav">
+                <span><!-- 当前位置： -->当前位置：</span>
+                <a href="news.html"><!-- 新闻中心 -->新闻中心&gt;</a>
+                <a href="javascript:void(0)">
+             
+                
+              
+              	  <!-- 今日要闻 -->今日要闻
+                
+                </a>
+            </p>
+            <h3 class="newstit">湖南手机圈变天了？！迪信云聚成颠覆者！</h3>
+            <div class="w996">
+                <ul class="newsdesclist  newsdesclist1 clear">
+                    <li class="nopl"><!-- 时间： -->时间：2017-08-29</li>
+                    <li><!-- 来源： -->来源：<a style="text-decoration: underline;" target="_blank">伽利略先生</a></li>
+                    <li>
+                        <span class="personlook"><!-- 浏览： -->浏览：1,058</span>
+                    </li>
+                   <li class="bdsFather">
+				<div class="bdsharebuttonbox bds">
+				<a href="#" class="bds_more" data-cmd="more"></a>
+				<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+				<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+				<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+				</div>
+					</li>
+                </ul>
+            </div>
+            
+            <!-- 新闻内容区 -->
+            <div class="newsbox">
+                <section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				2017年8月28日，&ldquo;迪信云聚发布会暨合作伙伴签约仪式&middot;湖南站&rdquo;在湖南永州盛大启航，众多永州及湖南各地手机零售商代表来到现场，了解项目并签约成为云聚合作伙伴。</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				中国移动永州分公司冷水滩营销中心经理蒋英明、胡小薇，中国移动终端公司永州分公司经理曹先文等领导受邀出席。零售门店代表新九州通讯有限公司总经理吴路频及oppo、vivo、等手机厂商高管参加了此次签约会，表示对云聚项目的大力支持。</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<p style="margin: 0px; padding: 0px; clear: both;">
+		&nbsp;</p>
+	<p style="margin: 0px; padding: 0px; clear: both; text-align: center;">
+		<span style="margin: 0px; padding: 0px; color: rgb(112, 109, 109); font-size: 12px;"><img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/IMG_7927_%E5%89%AF%E6%9C%AC.jpg" style="width: 497px; height: 497px;"></span></p>
+	<p style="margin: 0px; padding: 0px; clear: both; text-align: center;">
+		<span style="margin: 0px; padding: 0px; color: rgb(112, 109, 109); font-size: 12px;">众多商户代表、领导及嘉宾签名留影</span></p>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<strong style="margin: 0px; padding: 0px; box-sizing: border-box;">全国最大的通讯零售服务平台</strong></p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				此次湖南发布会，是迪信云聚继河南、河北、甘肃、山西等全国十余个省市深度落地后，再度启航的又一省市。迪信云聚通过输出迪信通自有的零售经营经验，加上强大的上游资源整合能力，最终带领手机零售门店做新零的转型。</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 10px 0px; padding: 0px; text-align: center; box-sizing: border-box;">
+		<p>
+			<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/IMG_8010_%E5%89%AF%E6%9C%AC.jpg" style="width: 800px; height: 445px;"></p>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; font-size: 12px; text-align: center; color: rgb(112, 109, 109); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				迪信云聚发布会暨合作伙伴签约仪式&middot;湖南站现场</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">迪信云聚全国运营总监王亮在发布会上指出，我们的零售商经历了从实体经济到虚拟经济的转型，而现在是共享经济的时代。迪信云聚打造的资源共享平台，正是在大环境下符合时代的运营模式。所谓的新零售，并不是口号。</span><span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">手机实体店的新零售，就是立足线下，整合既有资源，运用互联网、大数据和新运营方法的实体品牌再造和升级。</span></p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">就整个手机零售业来说，竞争不再仅仅局限于地段和产品资源，而开始回归零售的本质&mdash;&mdash;客户需求满足和个性化服务。谁能更高效地服务消费者，谁就能准确抓住变革的机会。</span></p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 10px 0px; padding: 0px; text-align: center; box-sizing: border-box;">
+		<p>
+			<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/IMG_8001_%E5%89%AF%E6%9C%AC.jpg" style="width: 800px; height: 533px;"></p>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; font-size: 12px; text-align: center; color: rgb(112, 109, 109); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				迪信云聚全国运营总监王亮现场发言</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<strong style="margin: 0px; padding: 0px; box-sizing: border-box;">输出手机零售巨头迪信通24年的零售经验</strong></p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box; line-height: 2em;">
+				在现场的培训环节中，迪信云聚商学院院长王玺直指痛点：&ldquo;小店缺产品、政策，中店缺坪效最大化、缺产品结构最佳化，大店缺人才缺、机制。&rdquo;现场的零售商们纷纷表示，迪信云聚刚好解决了这些痛点，并且对于大中型综合门店的吸引力同样不可小觑。</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box; line-height: 2em;">
+				&nbsp;</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<p style="margin: 0px; padding: 0px; clear: both; text-align: center; line-height: 2em;">
+		<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/IMG_8001_%E5%89%AF%E6%9C%AC.jpg" style="width: 800px; height: 533px;"><span style="margin: 0px; padding: 0px; color: rgb(112, 109, 109); font-size: 12px;">迪信云聚商学院院长王玺先生亲自授课</span></p>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; font-size: 12px; text-align: center; color: rgb(112, 109, 109); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/IMG_8066_%E5%89%AF%E6%9C%AC.jpg" style="color: rgb(51, 51, 51); font-size: 14px;"></p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; font-size: 12px; text-align: center; color: rgb(112, 109, 109); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				气氛活跃的培训现场</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<p style="margin: 0px; padding: 0px; clear: both; text-align: center;">
+		<span style="margin: 0px; padding: 0px; color: rgb(112, 109, 109); font-size: 12px;"><img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/IMG_8040_%E5%89%AF%E6%9C%AC.jpg">商户边做笔记边录视频不愿错过任何一丝细节</span></p>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<strong style="margin: 0px; padding: 0px; box-sizing: border-box;">云聚现象持续蔓延</strong></p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">迪信云聚带着完全成熟的平台运作模式和手机零售巨头迪信通24年的零售经验，为广大通讯零售商带来了可操作的经营方案和资源，受到各大零售商的追捧。</span></p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">作为成为国内最大的零售行业资源共享平台，云聚现象早已深入人心，并仍然在持续蔓延。</span></p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; font-size: 12px; text-align: center; color: rgb(112, 109, 109); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170829224348_%E5%89%AF%E6%9C%AC.jpg" style="width: 800px; height: 600px;"></p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				火爆的签约会现场</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">输出共享资源、互利双赢，努力搭建与合作伙伴健康发展的新平台，进一步深化资源利用，业务整合，全流程服务等全方位的合作与交流，提升协同层次和水平，迪信云聚终将实现平台化运营的新跨越！</span></p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; text-align: center; color: rgb(255, 93, 93); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<strong style="margin: 0px; padding: 0px; box-sizing: border-box;">注意！</strong></p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<strong style="margin: 0px; padding: 0px; box-sizing: border-box;">前方彩蛋！！！</strong></p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				众所周知，做活动是吸引客流很重要的方式。</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				活动做得好不仅可以为门店带来大量的客流、带动整体销量的提升，还可以提升品牌知名度，加深印象！</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				但是，很多朋友都苦恼&ldquo;活动&rdquo;到底该怎么做？办什么活动？怎么宣传？前期如何准备？</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				对此，迪信云聚就为湖南永州的商户带来了可实操落地的引流方案！</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 10px 0px; padding: 0px; text-align: center; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; display: inline-block; box-sizing: border-box;">
+			<img data-ratio="1" data-type="png" data-w="152" src="https://mmbiz.qlogo.cn/mmbiz_png/hkODFS8pY6dRt0CCy9y1iaC156Z4iaARFbb35pyudVExWaKlRVUZLFobibQKuKWpT7PV7DtRNqGbvct8iaHPJ1Acpw/0?wx_fmt=png" style="margin: 0px -2em 0px 0px; padding: 0px; box-sizing: border-box; width: 2em; float: left; text-align: start;" width="2em">
+			<section style="margin: 0.2em 0.5em -1.8em; padding: 0px 5px; text-align: left; box-sizing: border-box;">
+				<p style="margin: 0px; padding: 0px; clear: none; box-sizing: border-box;">
+					&nbsp;</p>
+				<p style="margin: 0px; padding: 0px; clear: none; box-sizing: border-box;">
+					<strong style="margin: 0px; padding: 0px; box-sizing: border-box;">就在发布会举行的前一天，由迪信云聚指导的一场<span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">七夕内购会活动就悄然拉开序幕。。。</span></strong></p>
+			</section>
+			<img data-ratio="1" data-type="png" data-w="152" src="https://mmbiz.qlogo.cn/mmbiz_png/hkODFS8pY6dRt0CCy9y1iaC156Z4iaARFbicgxaNibv9QAcXjn3V0vJUgFWXZcBXPKQ6W0R2kAJxOWvbY81C22q7PA/0?wx_fmt=png" style="margin: 0px; padding: 0px; box-sizing: border-box; width: 2em; float: right; text-align: start;" width="2em"></section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">内购会活动开展当天，是七夕节的前晚，活动从下午5点30开始，直到晚上10点，店内依然门庭若市，与友商形成鲜明对比。</span></p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 10px 0px; padding: 0px; text-align: center; box-sizing: border-box;">
+		<p>
+			<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170829224806_%E5%89%AF%E6%9C%AC.jpg"></p>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; font-size: 12px; text-align: center; color: rgb(112, 109, 109); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				人潮涌动的门店</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				迪信云聚全国运营总监王亮、迪信云聚商学院院长王玺等一行亲自来到永州九州宏手机连锁了解此次活动的实施过程，感受现场火爆气氛。</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 10px 0px; padding: 0px; text-align: center; box-sizing: border-box;">
+		<p>
+			<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170830191445_%E5%89%AF%E6%9C%AC.jpg" style="width: 800px; height: 600px;"></p>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; text-align: center; font-size: 12px; color: rgb(112, 109, 109); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				迪信云聚全国运营总监王亮到店交流</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 10px 0px; padding: 0px; text-align: center; box-sizing: border-box;">
+		<p>
+			<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170830191455_%E5%89%AF%E6%9C%AC.jpg" style="width: 800px; height: 600px;"></p>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; text-align: center; box-sizing: border-box;">
+				<span style="margin: 0px; padding: 0px; color: rgb(112, 109, 109); box-sizing: border-box;"><span style="margin: 0px; padding: 0px; font-size: 12px; box-sizing: border-box;">商户认真聆听迪信云聚高层建议</span></span></p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				<span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">此</span><span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">次活动现场围观观众约<strong style="margin: 0px; padding: 0px; box-sizing: border-box;"><span style="margin: 0px; padding: 0px; letter-spacing: 0px; color: rgb(255, 93, 93); box-sizing: border-box;">400</span></strong>人，活动累计影响人数约万余人，线上宣传影响人次约<span style="margin: 0px; padding: 0px; letter-spacing: 0px; color: rgb(255, 93, 93); box-sizing: border-box;"><strong style="margin: 0px; padding: 0px; box-sizing: border-box;">6000</strong></span>人次。为湖南永州九州宏手机连锁带来了庞大的客流进店，对门店宣传起到了很好的带动性，更加稳固了该门店品牌在其消费群体心中的地位。</span></p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				活动期间销量达到<strong style="margin: 0px; padding: 0px; box-sizing: border-box;"><span style="margin: 0px; padding: 0px; color: rgb(255, 93, 93); box-sizing: border-box;">312</span></strong>台，是上周同期销量的<strong style="margin: 0px; padding: 0px;">10<strong style="margin: 0px; padding: 0px; box-sizing: border-box;">.7</strong></strong>倍，此次活动主推的VIVO品牌周末产生毛利是上周的<strong style="margin: 0px; padding: 0px;">10<strong style="margin: 0px; padding: 0px; box-sizing: border-box;">.35</strong></strong>倍。</p>
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<p style="margin: 0px; padding: 0px; clear: both; text-align: center;">
+		<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170830182042_%E5%89%AF%E6%9C%AC.jpg" style="width: 1008px; height: 756px;"></p>
+	<p style="margin: 0px; padding: 0px; clear: both; text-align: center;">
+		<span style="margin: 0px; padding: 0px; color: rgb(112, 109, 109); font-size: 12px;">抽奖活动广受消费者好评</span></p>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; text-align: center; font-size: 12px; color: rgb(112, 109, 109); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				&nbsp;</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 10px 0px; padding: 0px; text-align: center; box-sizing: border-box;">
+		<p>
+			<img alt="" src="/images/userfiles/e7242ebfece0400db9d25bfea8db848f/images/news/news/2017/09/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170830182537_%E5%89%AF%E6%9C%AC.jpg" style="height: 600px; width: 800px;"></p>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; font-size: 12px; text-align: center; color: rgb(112, 109, 109); box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; box-sizing: border-box;">
+				外场舞台拍卖活动将气氛推向高潮</p>
+		</section>
+	</section>
+</section>
+<section class="Powered-by-XIUMI V5" powered-by="xiumi.us" style="margin: 0px; padding: 0px; box-sizing: border-box;">
+	<section style="margin: 0px; padding: 0px; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; line-height: 2; box-sizing: border-box;">
+			<p style="margin: 0px; padding: 0px; clear: both; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; box-sizing: border-box;">
+				<span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">同</span><span style="margin: 0px; padding: 0px; letter-spacing: 0px; box-sizing: border-box;">样一条街上的实体店，同样是充满活力的员工，同样的促销活动，人家生意爆满，而你的店却冷冷清清！</span></p>
+			<p style="margin: 0px; padding: 0px; clear: both; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; box-sizing: border-box;">
+				实际情况是：90%的顾客只选择了5%的门店消费，你的门店的位置并不差，你的员工的销售积极性也很高，为什么门店业绩不好，是因为你没有用对方法！</p>
+			<p style="margin: 0px; padding: 0px; clear: both; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; box-sizing: border-box;">
+				&nbsp;</p>
+			<p style="margin: 0px; padding: 0px; clear: both; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; box-sizing: border-box;">
+				迪信云聚真正可执行可操作的培训内容，及市场方案广受商户好评。未来，迪信云聚将持续为全国的云聚伙伴输出更多成熟的方案和资源，请期待平台的力量！</p>
+			<div>
+				&nbsp;</div>
+		</section>
+	</section>
+</section>
+            </div>
+        </div>
+    </div>
+			
+			
+		</div><!--per-right end-->
+		
+		
+	
+	
+
+
+
+</div></main>
+
+<!-- 底部所有 -->
+<script src="..\static\js\commons\footer.js" type="text/javascript"></script>
+
+<footer class="mt-40 i-footer w100p">
+	<div class="i-ensure-wrap w100p">
+		<div class="i-ensure w cl">
+			<ul>
+				<li>
+					<i class="i-ensure-ico1"></i>
+					<h4><!-- 正品保障 -->正品保障</h4>
+					<p><!-- 正规代理，行货保障 -->正规代理，行货保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico2"></i>
+					<h4><!-- 品种齐全 -->品种齐全</h4>
+					<p><!-- 配货齐全，品类丰富 -->配货齐全，品类丰富</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico3"></i>
+					<h4><!-- 闪电发货 -->闪电发货</h4>
+					<p><!-- 当天下单，次日到达 -->当天下单，次日到达</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico4"></i>
+					<h4><!-- 款到发货 -->款到发货</h4>
+					<p><!-- 款到发货，安全便捷 -->款到发货，安全便捷</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico5"></i>
+					<h4><!-- 售后保障 -->售后保障</h4>
+					<p><!-- 快速售后，服务保障 -->快速售后，服务保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico6"></i>
+					<h4><!-- 贴心服务 -->贴心服务</h4>
+					<p><!-- 在线客服，专属服务 -->在线客服，专属服务</p>
+				</li>
+			</ul>
+		</div>
+	</div><!--i-ensure-wrop end-->
+	<div class="footer-link w cl">
+		<div class="footer-menu fl">
+			<ul>
+				<li>
+					<h4><!-- 订货指南 -->订货指南</h4>
+					<p><a href="text.html?sort=1"><!-- 订货流程 -->订货流程</a></p>
+					<p><a href="text-1.html?sort=2"><!-- 物流方式 -->物流方式</a></p>
+					<p><a href="text-2.html?sort=3"><!-- 常见问题 -->常见问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 合作权益 -->合作权益</h4>
+					<p><a href="text-3.html?sort=4"><!-- 入驻政策 -->入驻政策</a></p>
+					<p><a href="text-4.html?sort=5"><!-- 会员权益 -->会员权益</a></p>
+					<p><a href="text-5.html?sort=6"><!-- 特色服务 -->特色服务</a></p>
+				</li>
+				<li>
+					<h4><!-- 支付方式 -->支付方式</h4>
+					<p><a href="text-6.html?sort=7"><!-- 公司转账 -->公司转账</a></p>
+					<p><a href="text-7.html?sort=8"><!-- 在线支付 -->在线支付</a></p>
+					<p><a href="text-8.html?sort=9"><!-- 发票问题 -->发票问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 联系我们 -->联系我们</h4>
+					<p><a href="text-9.html?sort=10"><!-- 云聚介绍 -->云聚介绍</a></p>
+					<p><a href="news.html" target="_blank"><!-- 云聚新闻 -->云聚新闻</a></p>
+					<p><a href="text-10.html?sort=11"><!-- 联系客服 -->联系客服</a></p>
+				</li>
+			</ul>
+		</div><!--footer-menu end-->
+		<div class="footer-ewm fl">
+			<span>
+				<img src="..\static\images\i-ewm_04.png">
+				<p><!-- 云聚APP -->云聚APP</p>
+			</span>
+			<span>
+				<img src="..\static\images\i-ewm_05.png">
+				<p style="font-size:12px;"><!-- 关注微信公众号 -->关注微信公众号</p>
+			</span>
+		</div>
+		<div class="footer-contact fr">
+			<div class="footer-phonebox">
+				<i></i>
+				<h3><!-- 全国统一服务热线 -->全国统一服务热线</h3>
+				<p><!-- 周一至周五上午9:00-下午18:00 -->周一至周五上午9:00-下午18:00
+</p>
+			</div>
+			<div class="footer-phone">400-700-8800</div>
+		</div>
+	
+	</div><!--footer-link end-->
+	
+	<div class="footer-copy w100p">
+		<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+	</div>
+	
+</footer>
+<div class="topbar-show w100p">
+	<div class="w top-show">
+		<h1 class="top-show-logo fl mt-5">
+			<a href="..\index.html"><img src="..\static\images\top-show-logo.png"></a>
+		</h1>
+	</div>
+	<div class="i-search top-show-search fl">
+		<!-- <input type="text" id="goodNames" name="goodNames" value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" /> -->
+		<input type="text" id="goodNames" name="goodNames" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl">
+							<input type="button" value="" class="i-search-btn fr" id="globelSearch2" onclick="searchGoods();">
+	</div>
+
+<script>
+$('#share-3').share();    
+</script>
+<!-- 侧面 -->
+<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)"><div class="moquu_wxinh"></div></a></div>
+<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)"><div class="moquu_wshareh"></div></a></div>
+<div id="moquu_wmaps"><a href="https://www.sojump.hk/jq/13147871.aspx" target="blank_"></a></div>
+<a id="moquu_top" href="javascript:void(0)"></a>
+<!-- 侧面 -->
+<input type="hidden" id="ctxpath" value="">
+</div></body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        var id = 'NewsIndex';
+        $(".navlist li").removeClass("active");
+        $("#" + id).addClass("active");
+    })
+	var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?94e89c1b533f092bfd6442bb2f5ed967";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+

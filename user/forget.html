@@ -1,0 +1,570 @@
+﻿<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>迪信云聚 -忘记密码- 最大的通讯零售生态圈</title>
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<!--[if IE]>
+	<script type="text/javascript" src="/static/js/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<style>
+/* 	.wk_button{
+		width:70px;
+		height:100%;
+		background-color: #eba92b;
+		float: right;
+		color:#fff;
+		font-size: 12px;
+		border-radius:3px;
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+		border:none;
+		
+	} */
+		.login-from{
+		position:relative;
+	}
+	.wk_a1,.wk_a2,.wk_a3,.wk_a4{
+		position: absolute;
+		
+		width:200px;
+		height:20px;
+		color:red;
+		font-size:13px;
+	}
+	.wk_a1{
+		right:135px;
+		top:110px;
+	}
+	.wk_a2{
+		right:135px;
+		top:190px;
+	}
+	.wk_a3{
+		right:135px;
+		top:270px;
+	}
+	.wk_a4{
+		right:135px;
+		top:350px;
+	}
+	#codeBox div:hover{
+	background:#F1F1F1;
+	}
+</style>
+<script type="text/javascript">
+
+function knowService(){
+	 window.open("/index/text?sort=10");
+} 
+ $(document).ready(function() {
+	 $(".wk_a1").empty();
+		$(".wk_a2").empty();
+		$(".wk_a3").empty();
+		$(".wk_a4").empty();
+	var mobile = $("#mobile").val();
+	var msg = $("#msg").val();
+	if("" != msg){
+		if(msg == "0"){
+			location.href="/user/indexlogin";
+		}
+	}
+	
+	 /* $("#yzm").click(function (){
+			$(".wk_a1").empty();
+		 var mobile = $("#mobile").val();
+		  var code=$("#mobileCode").val();
+			if(code=="86"||code==""){
+					var myreg = /^1\d{10}$/;
+					}else{
+					var myreg = /^\d{10}$/; 
+					}
+			if(mobile == ""){
+				$(".wk_a1").append("请输入手机号码!");
+			}else if(!myreg.test(mobile)){ 
+				$(".wk_a1").append("手机格式有误！");
+		    }else{
+		    	$.ajax({
+		    		url :"/user/checkPhone",
+		    		type:"post",
+		    		dataType:"json", 
+		    		data :{json:"{'mobile':"+mobile+"}"}, 
+		    		error:function(data){
+		    			//$("#yzmjy").text("请您输入正确的验证码！");
+		    		},
+		    		success:function(data){
+		    			if(data.status == "0"){
+		    				$(".wk_a1").append(data.msg);
+		    			}else if(data.status == "1"){
+					        sendCode($("#yzm"));
+		    			}else{	
+		    				$(".wk_a1").append(data.msg);
+		    			}
+		    		}
+		    	});
+		    }
+		 
+	    }); */
+/* 	 v = getCookieValue("secondsremained");//获取cookie值
+	 if(v>0){
+	     settime($("#yzm"));//开始倒计时
+	 } */
+	
+}) 
+ //验证两次输入的密码一致
+function equalPass(){
+	$(".wk_a4").empty();
+	var pass1 = $("#password").val();
+	var pass2 = $("#confirmNewPassword").val();
+	if("" == pass2){
+		$(".wk_a4").append("请输入确认密码！")
+	}else
+	if(pass1 != pass2){
+		$(".wk_a4").append("两次密码输入不一致！")
+	}else{
+	    	//$("#mobilejy2").append("√");
+	}
+}
+
+ //验证验证码	
+ function yzyzm(){
+ 	$(".wk_a2").empty();
+ 	var mobile = $("#mobile").val();
+ 	$(".wk_a2").empty();
+ 	var yzm = $("#sryzm").val();
+ 	if(yzm == ""){
+ 		$(".wk_a2").append("请输入手机验证码！");
+ 	}else{
+ 		$.ajax({
+ 			url :"/user/verifyAuthCode",
+ 			type:"post",
+ 			dataType:"json", 
+ 			data :{json:"{'phone':"+mobile+",'authCode':"+yzm+"}"}, 
+ 			error:function(data){
+ 				//$("#yzmjy").text("请您输入正确的验证码！");
+ 			},
+ 			success:function(data){
+ 				if(data.status == "0"){
+ 			    	//$("#mobilejy3").append("√");
+ 					//$(".wk_a2").append("验证码正确！");
+ 					$("#flag").val("true");
+ 				}else{	
+ 					//$("#mobilejy3").append('×');
+ 					$(".wk_a2").append("请您输入正确的验证码！");
+ 					//$("#yzmjy").text("请您输入正确的验证码！");
+ 				}
+ 			}
+ 		});
+ 	}
+ }
+
+ //校验
+function require_validate(){
+	$(".wk_a1").empty();
+	$(".wk_a2").empty();
+	$(".wk_a3").empty();
+	$(".wk_a4").empty();
+	 
+	var mobile = $("#mobile").val(); 
+	var yzm = $("#sryzm").val();
+	var password = $("#password").val();
+	var flag = $("#flag").val();
+	var pass1 = $("#password").val();
+	var pass2 = $("#confirmNewPassword").val();
+	if(mobile == ""){
+		$(".wk_a1").append("请输入手机号码！");
+		return false;
+	}
+	 var code=$("#mobileCode").val();
+	if(code=="86"||code==""){
+	var myreg = /^1\d{10}$/;
+	}else{
+	var myreg = /^\d{10}$/; 
+	}
+    if(!myreg.test(mobile)){ 
+    	$(".wk_a1").append("请您输入正确的手机号！");
+		return false;
+    }
+    if(yzm == ""){
+		$(".wk_a2").append("请输入手机验证码！");
+		return false;
+	}
+   	if(flag == "false"){
+   		$(".wk_a2").append("请您输入正确的验证码！");
+ 		return false;
+ 	}    
+	if(password == ""){
+		$(".wk_a3").append("请输入密码");
+		return false;
+	}
+	
+	if(pass2 == ""){
+		$(".wk_a4").append("请输入确认密码！");
+		return false;
+	}
+	if(pass1 != pass2){
+		$(".wk_a4").append("两次密码输入不一致！");
+		return false;
+	}
+	
+	
+	return true;
+} 
+
+
+
+//倒计时
+
+ //发送验证码时添加cookie
+function addCookie(name,value,expiresHours){ 
+    var cookieString=name+"="+escape(value); 
+    //判断是否设置过期时间,0代表关闭浏览器时失效
+    if(expiresHours>0){ 
+        var date=new Date(); 
+        date.setTime(date.getTime()+expiresHours*1000); 
+        cookieString=cookieString+";expires=" + date.toUTCString(); 
+    } 
+        document.cookie=cookieString; 
+} 
+ //修改cookie的值
+function editCookie(name,value,expiresHours){ 
+    var cookieString=name+"="+escape(value); 
+    if(expiresHours>0){ 
+      var date=new Date(); 
+      date.setTime(date.getTime()+expiresHours*1000); //单位是毫秒
+      cookieString=cookieString+";expires=" + date.toGMTString(); 
+    } 
+      document.cookie=cookieString; 
+} 
+ //根据名字获取cookie的值
+function getCookieValue(name){ 
+      var strCookie=document.cookie; 
+      var arrCookie=strCookie.split("; "); 
+      for(var i=0;i<arrCookie.length;i++){ 
+        var arr=arrCookie[i].split("="); 
+        if(arr[0]==name){
+          return unescape(arr[1]);
+          break;
+        }else{
+             return ""; 
+             break;
+         } 
+      } 
+       
+}
+
+
+ //发送验证码
+function sendCode(obj){
+	var mobileCode = $("#mobileCode").val();
+    var mobile = $("#mobile").val();
+    //var result = isPhoneNum();
+    //if(result){
+    if(true){
+        doPostBack('/user/authCode',backFunc1,{json:"{'phone':"+mobile+",'mobileCode':"+mobileCode+"}"});
+        addCookie("secondsremained",60,60);//添加cookie记录,有效时间60s
+        settime(obj);//开始倒计时
+    }
+} 
+ //将手机利用ajax提交到后台的发短信接口
+function doPostBack(url,backFunc,queryParam) {
+    $.ajax({
+        async : false,
+        cache : false,
+        type : 'POST',
+        url : url,// 请求的action路径
+        data:queryParam,
+        error : function() {// 请求失败处理函数
+        },
+        success : backFunc
+    });
+}
+function backFunc1(data){
+	if(data.status == "0"){
+		//$("#mobilejy").text("请求成功！");
+	}else{	
+		$("#mobilejy").text("请您输入正确的手机号！");
+	}
+} 
+
+//校验手机号是否合法
+function isPhoneNum(){
+	   $(".wk_a1").empty();
+	    var mobile = $("#mobile").val();
+	     var code=$("#mobileCode").val();
+	   if(code=="86"||code==""){
+		var myreg = /^1\d{10}$/;
+		}else{
+		var myreg = /^\d{10}$/; 
+		}
+	    if(!myreg.test(mobile)){ 
+	    	$(".wk_a1").append("请您输入正确的手机号！");
+	    }else{
+	    	$(".wk_a1").append("");
+	    }
+}
+//校验手机号密码
+function pwd(){
+    $(".wk_a3").empty();
+    var pwd = $("#password").val();
+    if("" == pwd){ 
+    	$(".wk_a3").append("请输入密码");
+    }else{
+    	$(".wk_a3").append("");
+    }
+}
+
+ //开始倒计时
+var countdown;
+function settime(obj) { 
+    countdown=getCookieValue("secondsremained");
+    if (countdown == 0) { 
+        obj.removeAttr("disabled");    
+        obj.val("免费获取验证码"); 
+        return;
+    } else { 
+        obj.attr("disabled", true); 
+        obj.val("重新发送(" + countdown + ")"); 
+        countdown--;
+        editCookie("secondsremained",countdown,countdown+1);
+    } 
+    setTimeout(function() { settime(obj) },1000) //每1000毫秒执行一次
+}   
+
+function register() {
+	$(".wk_a2").empty();
+ 	var mobile = $("#mobile").val();
+ 	$(".wk_a2").empty();
+ 	var yzm = $("#sryzm").val();
+ 	if(yzm == ""){
+ 		$(".wk_a2").append("请输入手机验证码！");
+ 	}else{
+ 		$.ajax({
+ 			url :"/user/verifyAuthCode",
+ 			type:"post",
+ 			dataType:"json", 
+ 			data :{json:"{'phone':"+mobile+",'authCode':"+yzm+"}"}, 
+ 			error:function(data){
+ 				//$("#yzmjy").text("请您输入正确的验证码！");
+ 			},
+ 			success:function(data){
+ 				if(data.status == "0"){
+ 			    	//$("#mobilejy3").append("√");
+ 					//$(".wk_a2").append("验证码正确！");
+ 					$("#flag").val("true");
+ 					$("#f1").submit();
+ 				}else{	
+ 					//$("#mobilejy3").append('×');
+ 					$(".wk_a2").append("请您输入正确的验证码！");
+ 					//$("#yzmjy").text("请您输入正确的验证码！");
+ 				}
+ 			}
+ 		});
+ 	}
+	
+	
+
+	
+	
+} 
+
+</script>
+</head>
+
+<body>
+<header class="d-header-wrap w100p1">
+	<div class="w1 d-header cl">
+		<h1 class="d-header-logo fl">
+			<a href="..\index.html"><img src="..\static\images\ny-logo.png"></a>
+		</h1>
+		<div class="d-header-r fr"><i class="ico-wh"></i><a onclick="knowService()"><!-- 了解云聚服务 -->了解云聚服务</a></div>
+	</div>
+</header>
+<main class="register-main w100p1">
+	<div class="login-con w1">
+		<div class="login-rightbox fr">
+			
+			<div class="register-box mt-30">
+				<h2 class="login-tit"><!-- 忘记密码 -->忘记密码</h2>
+				<div class="login-from" style="position:relative;">
+					<div style="width:310px;height:100px;border:1px solid #cccccc;position:absolute;left:24;top:65px;z-index:10000000;background:#fff;display:none;" id="codeBox">
+					<div style="width:97%;height:49%;border-bottom:1px solid #CCCCCC;padding-left:10px;line-height:49px;"><span class="numSelect">+86</span>&nbsp;&nbsp;china</div>
+					<div style="width:97%;height:49%;padding-left:10px;line-height:49px;"><span class="numSelect">+95</span> &nbsp;&nbsp;Myanmar</div>
+					</div>
+					<div class="wk_a1"></div>
+					<div class="wk_a2"></div>
+					<div class="wk_a3"></div>
+					<div class="wk_a4"></div>
+					<form id="f1" action="/user/forgetPwd" method="post" onsubmit="return require_validate()">
+					
+		<input type="hidden" id="msg" name="msg" value="">
+		<input type="hidden" id="id" name="id" value="">
+		<input type="hidden" id="flag" name="flag" value="false">
+		<input type="hidden" id="mobileCode" name="mobileCode" value="86">
+						<dl class="login-dl">
+							
+							<dt><i class="login-ico-phone"></i></dt>
+							<dd>
+								<input type="text" name="mobile" placeholder="手机号" id="mobile" value="">
+		            			<span class="help-inline"><font color="red" id="mobilejy"></font> </span>
+							</dd>
+						</dl>
+						<dl class="login-dl">
+							<dt><i class="login-ico-code"></i></dt>
+							<dd class="login-dd2">
+								<input name="yzm" type="text" placeholder="验证码" id="sryzm" value="">
+								<span class="help-inline"><font color="red" id="mobilejy3"></font> </span>
+								<a href="#" id="yzm" class="hq-code-btn wk_button"><!-- 获取验证码 -->获取验证码</a>
+								<!-- <button id="yzm" class="wk_button">获取验证码</button> -->
+							</dd>
+						</dl>
+						<dl class="login-dl">
+							<dt><i class="login-ico-pw"></i></dt>
+							<dd>
+								<input id="password" name="password" type="password" placeholder="密码">
+							</dd>
+						</dl>
+						<dl class="login-dl">
+							<dt><i class="login-ico-pw"></i></dt>
+							<dd>
+								<input id="confirmNewPassword" name="" type="password" placeholder="确认密码">
+								<span class="help-inline"><font color="red" id="mobilejy2"></font> </span>
+							</dd>
+						</dl>
+						<div class="login-btn mt-40">
+							<input id="register1" value="确认修改" type="button" onclick="register()">
+						</div>	
+					</form>
+				</div>
+				
+				
+			</div><!--login-box end-->
+			
+		</div>
+	</div>
+	
+
+</main>
+
+
+<footer class="d-footer w1">
+	<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+</footer>
+
+
+</body>
+<script type="text/javascript">
+$("#selectCode").click(function(){
+$("#codeBox").css("display","block");
+});
+$("#codeBox div").click(function(){
+$("#codeBox").css("display","none");
+console.log($(this));
+$("#selectCode").text($(this).children(".numSelect").text());
+$("#mobileCode").val($("#selectCode").text().substr(1));
+});
+
+
+
+</script>
+<script type="text/javascript">
+$(document).keyup(function(event){
+	  if(event.keyCode ==13){
+	    $("#register1").click();
+	  }
+	});
+	
+$(function(){
+	var timer; 
+	var time=60;
+	var timer1=null;
+	function run(){ 
+			timer = setInterval(chat,"1000");
+	};
+	function chat(){
+		time--;
+		$(".wk_button").css("font-size","12px");
+		$(".wk_button").attr("disabled","true");
+		$(".wk_button").html(time+"S后重新获取");
+		if(time===0){
+			clearInterval(timer);
+			time=60;
+			$(".wk_button").css("font-size","14px");
+			$(".wk_button").removeAttr("disabled");
+			$(".wk_button").html("获取验证码");
+
+		};	
+	};
+	$(".wk_button").click(function(){
+		var mobile = $("#mobile").val();
+		if(mobile!=""){
+			clearTimeout(timer1);
+			timer1=setTimeout(function(){
+				if(time==60){
+					console.log(111);
+				//run(); 
+				console.log("2222222222222");
+				//-------------------------------------
+					$(".wk_a1").empty();
+				 var mobile = $("#mobile").val();
+				  var code=$("#mobileCode").val();
+				if(code=="86"||code==""){
+					var myreg = /^1\d{10}$/;
+					}else{
+					var myreg = /^\d{10}$/; 
+					}
+					if(mobile == ""){
+						$(".wk_a1").append("请输入手机号码！");
+					}else if(!myreg.test(mobile)){ 
+						$(".wk_a1").append("请您输入正确的手机号！");
+				    }else{
+				    	$.ajax({
+				    		url :"/user/checkPhone",
+				    		type:"post",
+				    		dataType:"json", 
+				    		data :{json:"{'mobile':"+mobile+"}"}, 
+				    		error:function(data){
+				    			//$("#yzmjy").text("请您输入正确的验证码！");
+				    		},
+				    		success:function(data){
+				    			if(data.status == "0"){
+				    				//未注册
+				    				//console.log("未注册");
+				    				$(".wk_a1").append("手机号未注册！");
+				    			}else if(data.status == "1"){
+				    				//console.log("已注册");
+				    				//已注册
+				    				 sendCode($("#yzm"));
+								        run();
+				    			}else{	
+				    				$(".wk_a1").append(data.msg);
+				    			}
+				    		}
+				    	});
+				    }
+				 
+			}else{
+				return false;
+			}
+			},100);
+		}
+		
+	});
+	
+	
+	
+})
+
+</script>
+
+</html>
+

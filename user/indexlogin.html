@@ -1,0 +1,249 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<title>迪信云聚 -登录- 最大的通讯零售生态圈</title>
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<!--[if IE]>
+	<script type="text/javascript" src="/static/js/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+
+
+
+
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	 $(".wk_pwd").empty();
+	 $(".wk_phone").empty();
+	var msg = $("#msg").val();
+	if("" != msg){
+	}
+	$("#login").click(function(){
+		console.log("111111111111");
+		var flag = true;
+		console.log(flag);
+		$(".wk_phone").empty();
+   	 	var mobile = $("#mobile").val();
+   	 	//console.log(mobile);
+   	 	$(".wk_pwd").empty();
+	 	var password = $("#password").val();
+	 	
+	 	
+	 	checkPhone();
+	 	checkPwd();
+   	 	//console.log(password);
+		$.ajax({
+			 type: "POST",
+			 dataType: "json",
+			 url: "/user/checklogin",
+             data: {
+           	 mobile:mobile,
+           	 password:password
+           	 },
+             success: function(data){
+            		console.log("aaaaa");
+            		console.log(data.status);
+            		console.log(data.msg);
+            		if(data.status == 0){
+            			flag = true;
+            		}else if(data.status == 1){//手机密码格式
+            			$(".wk_phone").empty();
+            			$(".wk_phone").append(data.msg);
+            			flag = false;
+            		}else if(data.status == 9001004){//密码错误
+            			$(".wk_pwd").empty();
+            			$(".wk_pwd").append(data.msg);
+            			flag = false;
+            		}else if(data.status == -1){
+            			//接口调用失败
+            			flag = false;
+            		}else if(data.status == 9){
+            			//账户冻结
+            			$(".wk_phone").empty();
+            			$(".wk_phone").append(data.msg);
+            			flag = false;
+            		}else if(data.status == 9001006){
+            			//用户信息补全
+            			flag = false;
+            			registerbtn();
+            		}
+            	console.log(flag);
+            	if(flag == true){
+            		$("#form").submit();
+            		//console.log("可以提交");
+            	}else{
+            		console.log("不能提交");
+            	}
+            }
+		});
+		
+		 //$("#form").submit();
+	});
+	
+	
+	
+});
+ function knowService(){
+	 window.open("/index/text?sort=10");
+ }    
+     $(document).keyup(function(event){
+    	  if(event.keyCode ==13){
+    	    $("#login").click();
+    	  }
+    	});
+     
+     function checkPhone(){
+    	 $(".wk_phone").empty();
+    	 var mobile = $("#mobile").val();
+			//var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+			var myreg = /^1\d{10}$/;
+			if(mobile == ""){
+				$(".wk_phone").append("请输入手机号码！");
+			}else
+		    if(!myreg.test(mobile)){ 
+		    	$(".wk_phone").append("请您输入正确的手机号！");
+		    }
+     }
+     function checkPwd(){
+    	 $(".wk_pwd").empty();
+    	 var password = $("#password").val();
+			//var password = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+			if(password == ""){
+				$(".wk_pwd").append("请输入密码");
+			}
+		  /*   if(!myreg.test(mobile)){ 
+		    	$(".password").append("手机格式有误！");
+		    } */
+     }
+     
+     function toUserInfoModify(){
+    
+    	 $("#form").attr("action", "/user/toUserInfoModify");
+    	 $("#form").submit();
+     }
+</script>
+<style>
+	.login-box{
+		position: relative;
+	}
+	.wk_phone,.wk_pwd{
+		position: absolute;
+	
+		width:200px;
+		height:20px;
+		color:red;
+		font-size:13px;
+		/*display:none;*/
+	}
+	.wk_pwd{
+		right:134px;
+		top:239px;
+	}
+	.wk_phone{
+		right:134px;
+		top:161px;
+	}
+	
+
+
+</style>
+</head>
+
+<body>
+<header class="d-header-wrap w100p1">
+	<div class="w1 d-header cl">
+		<h1 class="d-header-logo fl">
+			<a href="..\index.html"><img src="..\static\images\ny-logo.png"></a>
+		</h1>
+		<div class="d-header-r fr"><i class="ico-wh"></i><a href="" onclick="knowService()"><!-- 了解云聚服务 -->了解云聚服务</a></div>
+	</div>
+</header>
+<main class="login-main w100p1">
+	<div class="login-con w1">
+		<div class="login-rightbox fr">
+			<input type="hidden" id="msg" value="">
+			<div class="login-box mt-80">
+				<h2 class="login-tit"><!-- 用户登录 -->登录</h2>
+				<div class="login-from">
+							<div class="wk_phone"></div>
+							<div class="wk_pwd"></div>
+					<form id="form" action="/user/login" method="post">
+						<dl class="login-dl">
+							<dt><i class="login-ico-phone"></i></dt>
+							<dd>
+								<input value="" id="mobile" name="mobile" type="text" placeholder="手机号">
+							</dd>
+						</dl>
+					<!-- 	<dl class="login-dl">
+							<dt><i class="login-ico-code"></i></dt>
+							<dd class="login-dd2">
+								<input name="" type="text" placeholder="验证码" />
+								<a href="#" class="hq-code-btn">获取验证码</a>
+							</dd>
+						</dl> -->
+						<dl class="login-dl">
+							<dt><i class="login-ico-pw"></i></dt>
+							<dd>
+								<input id="password" name="password" type="text" onfocus="this.type='password'" placeholder="密码">
+							</dd>
+						</dl>
+					<!-- 	<dl class="login-dl">
+							<dt><i class="login-ico-pw"></i></dt>
+							<dd>
+								<input name="" type="password" placeholder="确认密码"/>
+							</dd>
+						</dl> -->
+						
+						<div class="login-btn mt-30">
+							<!-- <input id="login" type="button"  value="登 录" /> -->
+							<input id="login" type="button" value="登录">
+						</div>	
+						<div class="login-low cl mt-25">
+							<div style="float:left;padding-left:20px;">
+							<label for="rememberMe" title="下次自动填写账号"><input type="checkbox" id="rememberMe" name="rememberMe" value="true" checked="checked"> <!-- 记住用户名 -->记住用户名</label>
+							</div>
+							<a href="forget.html"><!-- 忘记密码 -->忘记密码</a>
+							<a href="indexregister.html" class="login-register"><!-- 立即注册 -->注册</a>
+						
+						</div>
+						
+					</form>
+				</div>
+				
+				
+			</div><!--login-box end-->
+			
+		</div>
+
+	</div>
+	
+
+</main>
+
+<footer class="d-footer w1">
+	<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+</footer>
+<div class="register-pop">
+	<h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a></h3>
+	<div class="reg-pop-con">
+		<span class="reg-pop-bg"></span>
+		<p class="mt-20">您的用户信息不完整</p>
+		<p>完善个人信息后才可以登录</p>
+	</div>
+	<div class="reg-btnbox">
+		<a href="javascript:void(0);" onclick="closebtn();">以后再说</a>
+		<a href="javascript:void(0);" onclick="toUserInfoModify();" class="reg-btn2">马上完善信息</a>
+	</div>
+</div>
+
+</body>
+</html>
+

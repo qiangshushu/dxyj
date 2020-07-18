@@ -1,0 +1,140 @@
+﻿@charset "UTF-8";
+
+/*新闻详情页面*/
+.con{
+    width: 100%;
+    background:#ede8e8 url(../images/banner.png) no-repeat center top;}
+
+.content{
+    width: 1200px;
+    background: #fff;
+    margin:55px auto 0 auto;}
+.w994{
+    width: 994px;
+    margin: 0 auto;
+    padding-top: 60px;}
+.breadnav{
+    font-size:18px;
+    height: 18px;
+    line-height: 18px;
+    color: #751c1b;
+    margin-bottom: 66px;}
+.breadnav span{
+    display: inline-block;
+    }
+.breadnav a{
+    color: #751c1b;
+    display: inline-block;
+    }
+
+.newstit{
+    color: #b43635;
+    font-size:24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 60px;}
+
+.w996{ width: 996px;
+        border-bottom: 1px solid #aeabaa;
+}
+.newsdesclist{
+    width: 580px;
+    height: 12px;
+    padding-bottom: 16px;
+    margin: 0 auto;}
+
+.newsdesclist li{
+    padding:0 14px;
+    height: 12px;
+    
+    line-height: 12px;
+    float: left;
+    border-right: 1px solid #8a7171;}
+.newsdesclist li.nopl{
+    padding-left: 0;}
+.newsdesclist li.nobr{
+    border-right: 0;}
+.newsdesclist li.shareli{
+    position: relative;
+    top: -15px;padding-right: 0;
+}
+
+
+/*新闻内容区*/
+.newsbox{
+    width: 996px;
+    padding-top: 28px;
+    padding-bottom: 66px;}
+.btnbox{
+    margin-top: 58px;
+   }
+.news-likebtn{
+    display: block;
+    width: 59px;
+    padding-left: 45px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    background:#b81f18 url(../images/likebtnbg.png) no-repeat 24px 14px;
+    font-size:14px;
+    float: left;
+    margin-right: 10px;}
+.news-dislikebtn{
+    display: block;
+    width: 59px;
+    padding-left: 45px;
+    height: 40px;
+    color: #fff;
+    float: left;
+    line-height: 40px;
+    background:#d89794 url(../images/dislikebtnbg.png) no-repeat 18px 14px;
+    font-size:14px;}
+
+/*填写留言
+.fillbox{
+    width: 988px;
+    margin:34px auto 0 auto;}
+.fillbox .leftbox{
+    width: 72px;
+    height: 70px;
+    float: left;}
+.fillbox .leftbox img{
+    display: block;
+   width: 72px;
+    height: 70px;}
+.fillbox .leftbox .username{
+    width: 72px;
+    overflow: hidden;
+    color: #494949;
+    height: 12px;
+    line-height: 12px;
+    text-overflow: ellipsis;
+    white-space:nowrap;}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

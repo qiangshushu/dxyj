@@ -1,0 +1,817 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<title>迪信云聚 - 云聚商学院- 最大的通讯零售生态圈</title>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/static/js/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\order\orderdetail.css">
+
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<style type="text/css">
+	.rightContent{
+		width:86%;
+		margin:0 auto;
+		margin-bottom: 30px;
+	}
+	.itemTitle{
+		width:100%;
+		height:40px;
+		border-bottom:1px solid #CCCCCC;
+		line-height: 47px;
+		margin-bottom: 10px;
+	}
+	.class-item{
+		width:96%;
+		height:90px;
+		border-bottom: 1px solid #CCCCCC;
+		padding:10px 0 10px 2%;
+	}
+	.ideImg{
+		width:20%;
+		height:90px;
+		float: left;
+		background:url(images/ex-img.png) no-repeat;
+		background-size:100% 100%;
+		background-position:center;
+	}
+	.ideText{
+		width:58%;
+		height: 90px;
+		float: left;
+		padding-left: 2%;
+	}
+	.ideText h3{
+		width:100%;
+		height:35px;
+		line-height: 35px;
+		font-size:15px;
+		
+	}
+	.ideText .timeContent{
+		width:65%;
+		height:55px;
+		line-height:70px;
+		font-size:12px;
+		float: left;
+	}
+	.itemBtn{
+		width:30%;
+		height:55px;
+		float: left;
+	}
+	.yelBtn{
+		width:60px;
+		height:25px;
+		background:#ff9800;
+		color:#fff;
+		border-radius: 3px;
+		margin-top:23px;
+		float: left;
+		font-size:12px;
+	}
+	.greBtn{
+		width:60px;
+		height:25px;
+		color:#fff;
+		border-radius: 3px;
+		margin-top:23px;
+		float: left;
+		font-size:12px;
+		background:#8bc34a;
+	}
+	.gryBtn{
+		width:60px;
+		height:25px;
+		color:#fff;
+		border-radius: 3px;
+		margin-top:23px;
+		float: left;
+		font-size:12px;
+		background:#bbbbbb;
+	}
+	.itemHref{
+		margin-top:28px;
+		font-size:12px;
+		float: left;
+		margin-left: 10px;
+		text-decoration: underline !important;
+		color:#005EAA;
+	}
+	.priceContent-btn{
+		width:20%;
+		height:90px;
+		float: left;
+	}
+	.priceContent-btn button{
+		width:75px;
+		height:25px;
+		float: left;
+		margin-top:32.5px;
+		color:#fff;
+		border-radius: 3px;
+		font-size:12px;
+	}
+	.goPayBtn{
+		background:#e51c23;
+		margin-right: 5%;
+	}
+	.priceContent-btn .canleBtn{
+		color:#666;
+		border:1px solid #CCCCCC;
+		background:#fff;
+	}
+	.priceContent-btn strong{
+		width:80px;
+		height:25px;
+		color:#e51c23;
+		margin-top:32.5px;
+		line-height: 25px;
+	}
+	.canleTime{
+		width:100%;
+		font-size:12px;
+		color:#CCCCCC;
+		margin-top:10px;
+	}
+	.sxyPop{
+		width:700px;
+		height:350px;
+		background:#fff;
+		position:fixed;
+		left: 50%;
+		margin-left:-355px;
+		top:50%;
+		margin-top:-180px;
+		z-index:100001;
+		padding:10px 20px;
+		display: none;
+	}
+	.sxyShadow{
+		position: fixed;
+		left: 0;
+		top:0;
+		width:100%;
+		height:100%;
+		background:rgba(55,55,55,0.5);
+		z-index:100000;
+		display: none;
+	}
+	.sxyPopTitle{
+		width:100%;
+		height:40px;
+		border-bottom: 1px solid #CCCCCC;
+		text-align: center;
+		line-height: 40px;
+	}
+	.sxyPopTable{
+		width:100%;
+		margin-top:10px;
+		height:220px;
+		overflow: auto;
+		border:1px solid #F1F1F1;
+	}
+	.sxyPopTable table{
+		width:100%;
+		border:1px solid #F1F1F1;
+		
+	}
+	.sxyPopTable table tr{
+		height: 40px;
+		font-size:13px;
+		border-bottom: 1px solid #F1F1F1;
+	}
+	.sxyPopTable table tr:first-child{
+		background:#F1F1F1;
+	}
+	.sxyPopTable table td{
+		width:20%;
+		text-align: center;
+		font-size:13px;
+	}
+	.sxyCanle{
+		width:200px;
+		height:40px;
+		border:1px solid #CCCCCC;
+		margin:0 auto;
+		margin-top:20px;
+		line-height:40px;
+		text-align: center;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+</style>
+
+
+</head>
+<body class="i-body">
+<script type="text/javascript">
+
+
+function getKey()  
+{  
+    if(event.keyCode==13){  
+    	$("#searchleft1").click();
+    }     
+}  
+			$.ajax({
+				url : "/order/statecount",
+				type:"post",
+				dataType:"json", 
+				//async:false,
+				data : "",
+				success:function(data){
+					if(data.status == "success"){
+						//console.log(data.data);
+						//console.log(data.data.sta_all);
+						//全部订单数量
+						$("#sta_all").text("("+data.data.sta_all+")");
+						//待付款订单数量
+						$("#sta_0").text("("+data.data.sta_0+")");
+						//待发货订单数量
+						$("#sta_1").text("("+data.data.sta_1+")");
+						//待收货订单数量
+						$("#sta_2").text("("+data.data.sta_2+")");
+						//已完成订单数量
+						$("#sta_3").text("("+data.data.sta_3+")");
+						//已取消订单数量
+						$("#sta_4").text("("+data.data.sta_4+")");
+						//已退货订单数量
+						$("#sta_7").text("("+data.data.sta_7+")");
+					}
+			   } 
+			});
+			
+		
+
+	function searchGoodLeft1() {
+		window.event.returnValue=false;
+		var ids = [];
+		var good = document.getElementById("goodName").value;
+		if (good == null || good == "" || good == "请输入关键字"||good=="Please enter a keyword") {
+			ids.push("{'goodsName':'','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href  = ctxpath + "/pro/list?" + encodedUrl;
+		} else {
+			ids.push("{'goodsName':'" + good + "','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'" + good
+					+ "','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href = ctxpath + "/pro/list?" + encodedUrl;
+		}
+	}
+	function post(URL, PARAMS) {
+		var temp = document.createElement("form");
+		temp.action = URL;
+		temp.method = "post";
+		temp.style.display = "none";
+		for ( var x in PARAMS) {
+			var opt = document.createElement("textarea");
+			opt.name = x;
+			opt.value = PARAMS[x];
+			// alert(opt.name)        
+			temp.appendChild(opt);
+		}
+		document.body.appendChild(temp);
+		temp.submit();
+		return temp;
+	}
+	
+	
+</script>
+    <!-- 头部所有 -->
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\commons\header.css">
+
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script src="..\static\js\commons\header.js" type="text/javascript"></script>
+
+
+<div class="i-topwrap w100p border-b-1">
+    <div class="i-top w">
+        <div class="fl i-top-left">
+    		<span class="mr-10 fl">
+                 <!-- 迪信云聚商城 -->
+迪信云聚商城            </span>
+            <div class="date">
+                <span>
+                	<!-- -->
+                </span>
+                <span>
+                    <script type="text/javascript">
+                    	
+                    	document.write(new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日')
+                    </script>
+                </span>
+            </div>
+
+        </div>
+        <input type="hidden" id="status" value="">
+        <div class="fr i-top-right">
+            <ul>
+
+
+
+
+
+
+                    <li id="login">
+                        <a href="..\user\indexlogin.html">
+                            <!-- 登录 -->
+登录                        </a>
+                    </li>
+                    <li id="login4" class="space"></li>
+                    <li id="login3">
+                        <a href="..\user\indexregister.html" class="active">
+                            <!-- 注册 -->
+注册                        </a>
+                    </li>    
+
+
+
+
+
+
+                    <li style="display:none">
+                        <a>
+                            <!-- 消息 -->
+消息                        </a>
+                    </li>
+                <li class="space"></li>
+                <li class="dropdown">
+                    <a href="#"><!-- 云聚APP -->云聚APP</a>
+                    <div class="drop-ewm">
+                        <p><!-- 扫一扫，下载云聚客户端 -->扫一扫，下载云聚客户端</p>
+                        <img src="..\static\images\i-ewm_04.png">
+                    </div>
+                </li>
+                <li class="space"></li>
+                <li><a href="http://old.dixinyunju.com"><!-- 旧版入口 -->旧版入口</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="register-pop">
+    <h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a>
+    </h3>
+    <div class="reg-pop-con">
+        <span class="reg-pop-bg"></span>
+        <p class="mt-20"><!-- 您已成为云聚注册会员 -->您已成为云聚注册会员</p>
+        <p><!-- 签约会员可享受更多服务~ -->签约会员可享受更多服务~</p>
+    </div>
+    <div class="reg-btnbox">
+        <a href="javascript:void(0);" onclick="closebtn();"><!-- 以后再说 -->以后再说</a>
+        <a href="..\user\register.html?tzbz=0" class="reg-btn2">
+            <!-- 马上签约预订 -->马上签约预订</a>
+    </div>
+</div>
+
+
+
+<div class="ny-header-wrap w100p per-header-wrap">
+	<header class="i-header w">
+		
+		<h1 class=" fl ny-logo mt-30">
+			<a href="..\index.html"><img src="..\static\images\per-logo.png"></a>
+		</h1>
+		<!--  
+		<div class="per-logo2 fl"><a href="/">返回首页</a></div>
+		-->
+		<div class="i-header-r fr">
+			
+			<div class="i-header-rtop cl">
+				<div class="i-search-box fl">
+					<div class="i-search">
+						<form>
+							<!-- <input type="text" id="goodName" name="goodName"value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();"/> -->
+						<input type="text" id="goodName" name="goodName" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();">
+							<a href="#"><input type="button" value="" id="searchleft1" class="i-search-btn fr" onclick="searchGoodLeft1();"></a>
+						</form>
+					</div>
+				</div><!--i-search-box end-->
+<script src="..\static\js\commons\shop.js" type="text/javascript"></script>	
+												
+<div class="i-shopping fl">
+
+
+	<a href="/shop/tocart"><!-- 我的购物车 -->我的购物车</a> <span id="shopNum" hidden="">0</span>
+</div>			</div>
+		</div>	
+			
+	</header>
+</div>
+
+<main class="ny-main w mb-60 mt-20">
+	<div class="per-con cl">
+		<div class="per-left fl">
+			<div class="per-left-menu">
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-order.png"></i><!-- 全部订单 -->全部订单</h3>
+				<ul>
+				
+				<li><a href="/order/queryorderpage"><!-- 全部订单 -->全部订单<font id="sta_all"></font></a></li>
+				<li><a href="/order/queryorderpage?s=0"><!-- 待付款订单 -->待付款订单<font id="sta_0"></font></a></li>
+				<li><a href="/order/queryorderpage?s=1"><!-- 待发货订单 -->待发货订单<font id="sta_1"></font></a></li>
+				<li><a href="/order/queryorderpage?s=2"><!-- 待收货订单 -->待收货订单<font id="sta_2"></font></a></li>
+				<li><a href="/order/queryorderpage?s=7"><!-- 已退货订单 -->已退货订单<font id="sta_7"></font></a></li>
+				<li><a href="/order/queryorderpage?s=3"><!-- 已完成订单 -->已完成订单<font id="sta_3"></font></a></li>
+				<li><a href="/order/queryorderpage?s=4"><!-- 已取消订单 -->已取消订单<font id="sta_4"></font></a></li>
+				
+					
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-user.png"></i><!-- 账户管理 -->账户管理</h3>
+				<ul>
+					<li><a href="/user/personal"><!-- 个人信息 -->个人信息</a></li>
+					
+					
+					<li><a href="/user/decorate"><!-- 店铺装修 -->我的店铺</a></li>
+					<li><a href="myClass.html"><!-- 我的课程 -->我的课程</a></li>
+					<li><a href="..\user\voucherl.html"><!-- 我的抵用券 -->我的抵用券</a></li>
+					<li><a href="..\user\security.html"><!-- 账户安全 -->账户安全</a></li>
+					<li><a href="/order/sysinfo"><!-- 系统消息 -->系统消息</a></li>
+
+				
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-service.png"></i><!-- 售后服务 -->售后服务</h3>
+				<ul>
+				<!-- 	<li><a href="#">返修退换货</a></li>
+					<li><a href="#">咨询服务</a></li> -->
+					<li><a href="..\user\proposal.html"><!-- 意见建议 -->意见建议</a></li>
+					
+				</ul>
+			</div>
+			
+		</div><!--per-left end-->
+<main class="ny-main w mb-60 mt-20">
+	<div class="per-con cl">
+		
+		<div class="per-right fr">
+		<h2 class="per-r-tit mt-15"><!-- 我的课程 -->我的课程</h2>
+			<div class="rightContent">
+				
+				<div class="itemTitle">我参与的课程</div>	
+			</div>
+			
+		<div class="wk_f2"></div>
+		<!-- 变更支付方式弹框 -->
+				<div class="popBox3">
+					<div class="closeBtn3">X</div>
+					<div class="popSay3">
+						<div class="pop-top3">
+							<h5><!-- 订单支付 -->订单支付：</h5>
+						</div>
+						<div class="pop-bottom3">
+							<form action="/business/goPay" method="post" id="rm2">
+								<span><!-- 请选择支付方式 -->请选择支付方式：</span><br><br>
+										<input type="radio" id="fastP" name="payType" value="2" checked="checked"> 快捷支付（暂时只支持借记卡）
+									<br>
+									<div style="width:100%;height:10px;"></div>
+										<input type="radio" name="payType" value="0"> 微信支付
+									<br>
+									<div style="width:100%;height:10px;"></div>
+										<input type="radio" name="payType" value="1"> 支付宝支付
+									<br>
+									<div style="width:100%;height:10px;"></div>
+										<input type="radio" name="payType" value="3"> 线下支付
+									<br>
+									<div style="width:100%;height:10px;"></div>
+								<input type="hidden" name="orderId" id="changeOid">
+								<input type="hidden" name="title" value="迪信云聚商学院课程">
+								<input type="hidden" name="body" id="body">
+								<input type="hidden" name="total_fee" id="price">
+							</form>
+							<div class="btn-box3">
+								<button id="qd2"><!-- 确定 -->确定</button><button id="qx2"><!-- 取消 -->取消</button>
+							</div>
+						</div>
+					</div>
+				</div>
+		<!-- 退款弹框 -->
+		<div class="popBox2">
+			<div class="closeBtn2">X</div>
+			<div class="popSay2">
+				<div class="pop-top2">
+					<h5><!-- 申请退款 -->申请退款：</h5>
+				</div>
+				<div class="pop-bottom2">
+					<form action="/business/refund" method="post" id="rm">
+						<span><!-- 请输入退款原因 -->请输入退款原因：</span>
+						<span class="reason-right">* <!-- 退款原因不能为空 -->退款原因不能为空 !</span>
+						<textarea name="refundReason" rows="3" cols="20" class="area" id="quitReason"></textarea>
+						<input type="hidden" name="orderId" id="refundId" value="">
+						<input type="hidden" name="classId" id="classId" value="">
+					</form>
+					<div class="btn-box2">
+						<button id="qd"><!-- 确定 -->确定</button><button id="qx"><!-- 取消 -->取消</button>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<div class="wk_f2"></div>
+		<!-- 确定退款窗口 -->
+		<div class="wk_fix1"></div>
+		<div class="wk_fix_pop1">
+			<div class="wk_closebtn111">
+				<div class="wk_ArmtClose1">X</div>
+			</div>
+			<div class="wk_sayS1">
+				<span><!-- 退款理由一旦提交不可更改，是否确认提交退款申请 -->退款理由一旦提交不可更改，是否确认提交退款申请？</span>
+			</div>
+			<button class="wk_agree1"><!-- 确认 -->确定</button>
+			<button class="wk_disagree"><!-- 取消 -->取消</button>
+		</div>		
+		<div class="ny-page mt-50">
+		<!-- 总页数在5以下 -->
+			
+			
+			
+			
+		<!-- 总页数多于5 -->
+			 </div>		
+			
+		</div><!--per-right end-->
+		
+	</div><!--per-con end-->
+	
+	<div class="sxyShadow"></div>
+	<div class="sxyPop">
+	<div class="sxyPopTitle">
+		参与人
+	</div>
+	<div class="sxyPopTable">
+		<table id="sxyPopTable">
+			<tr><td>姓名</td><td>职位</td><td>联系方式</td><td>验证码</td><td>状态</td></tr>
+		</table>
+	</div>
+	
+	<div class="sxyCanle" onclick="closePop();">关闭</div>
+	
+</div>
+</main>
+<script src="..\static\js\commons\footer.js" type="text/javascript"></script>
+
+<footer class="mt-40 i-footer w100p">
+	<div class="i-ensure-wrap w100p">
+		<div class="i-ensure w cl">
+			<ul>
+				<li>
+					<i class="i-ensure-ico1"></i>
+					<h4><!-- 正品保障 -->正品保障</h4>
+					<p><!-- 正规代理，行货保障 -->正规代理，行货保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico2"></i>
+					<h4><!-- 品种齐全 -->品种齐全</h4>
+					<p><!-- 配货齐全，品类丰富 -->配货齐全，品类丰富</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico3"></i>
+					<h4><!-- 闪电发货 -->闪电发货</h4>
+					<p><!-- 当天下单，次日到达 -->当天下单，次日到达</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico4"></i>
+					<h4><!-- 款到发货 -->款到发货</h4>
+					<p><!-- 款到发货，安全便捷 -->款到发货，安全便捷</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico5"></i>
+					<h4><!-- 售后保障 -->售后保障</h4>
+					<p><!-- 快速售后，服务保障 -->快速售后，服务保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico6"></i>
+					<h4><!-- 贴心服务 -->贴心服务</h4>
+					<p><!-- 在线客服，专属服务 -->在线客服，专属服务</p>
+				</li>
+			</ul>
+		</div>
+	</div><!--i-ensure-wrop end-->
+	<div class="footer-link w cl">
+		<div class="footer-menu fl">
+			<ul>
+				<li>
+					<h4><!-- 订货指南 -->订货指南</h4>
+					<p><a href="..\index\text.html?sort=1"><!-- 订货流程 -->订货流程</a></p>
+					<p><a href="..\index\text-1.html?sort=2"><!-- 物流方式 -->物流方式</a></p>
+					<p><a href="..\index\text-2.html?sort=3"><!-- 常见问题 -->常见问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 合作权益 -->合作权益</h4>
+					<p><a href="..\index\text-3.html?sort=4"><!-- 入驻政策 -->入驻政策</a></p>
+					<p><a href="..\index\text-4.html?sort=5"><!-- 会员权益 -->会员权益</a></p>
+					<p><a href="..\index\text-5.html?sort=6"><!-- 特色服务 -->特色服务</a></p>
+				</li>
+				<li>
+					<h4><!-- 支付方式 -->支付方式</h4>
+					<p><a href="..\index\text-6.html?sort=7"><!-- 公司转账 -->公司转账</a></p>
+					<p><a href="..\index\text-7.html?sort=8"><!-- 在线支付 -->在线支付</a></p>
+					<p><a href="..\index\text-8.html?sort=9"><!-- 发票问题 -->发票问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 联系我们 -->联系我们</h4>
+					<p><a href="..\index\text-9.html?sort=10"><!-- 云聚介绍 -->云聚介绍</a></p>
+					<p><a href="..\index\news.html" target="_blank"><!-- 云聚新闻 -->云聚新闻</a></p>
+					<p><a href="..\index\text-10.html?sort=11"><!-- 联系客服 -->联系客服</a></p>
+				</li>
+			</ul>
+		</div><!--footer-menu end-->
+		<div class="footer-ewm fl">
+			<span>
+				<img src="..\static\images\i-ewm_04.png">
+				<p><!-- 云聚APP -->云聚APP</p>
+			</span>
+			<span>
+				<img src="..\static\images\i-ewm_05.png">
+				<p style="font-size:12px;"><!-- 关注微信公众号 -->关注微信公众号</p>
+			</span>
+		</div>
+		<div class="footer-contact fr">
+			<div class="footer-phonebox">
+				<i></i>
+				<h3><!-- 全国统一服务热线 -->全国统一服务热线</h3>
+				<p><!-- 周一至周五上午9:00-下午18:00 -->周一至周五上午9:00-下午18:00
+</p>
+			</div>
+			<div class="footer-phone">400-700-8800</div>
+		</div>
+	
+	</div><!--footer-link end-->
+	
+	<div class="footer-copy w100p">
+		<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+	</div>
+	
+</footer>
+<div class="topbar-show w100p">
+	<div class="w top-show">
+		<h1 class="top-show-logo fl mt-5">
+			<a href="..\index.html"><img src="..\static\images\top-show-logo.png"></a>
+		</h1>
+	</div>
+	<div class="i-search top-show-search fl">
+		<!-- <input type="text" id="goodNames" name="goodNames" value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" /> -->
+		<input type="text" id="goodNames" name="goodNames" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl">
+							<input type="button" value="" class="i-search-btn fr" id="globelSearch2" onclick="searchGoods();">
+	</div>
+
+<script type="text/javascript">
+
+   
+	$(document).ready(function(){
+	var msg="";
+	if(msg!=""){
+	layer.msg(msg);	
+	}
+	});
+	
+	
+	function cancelOrder(id){
+	$.ajax({
+	url:"/business/cancelOrder",
+	data:{json:"{'id':'"+id+"'}"},
+	type:"POST",
+	success:function(data){
+	console.log(data);
+	if(data.status=="0"){
+	 window.location.reload();
+	}else{
+	layer.msg("取消失败，请稍后再试！");
+	}
+	
+    }});
+	
+	}
+	function changeType(orderId,title,price){
+		//变更支付方式弹框
+		$(".popBox3").css("display","block");
+		$(".wk_f2").css("display","block");
+		$("#changeOid").val(orderId);
+		$("#body").val(title);
+		$("#price").val(price/100);
+	}
+	
+	function personDetail(index){
+	}
+	
+	function closePop(){
+		$(".sxyShadow").css("display","none");
+		$(".sxyPop").css("display","none"); 
+		
+		$.each($("#sxyPopTable tr"),function(i){
+		if(i!=0){
+		$(this).remove();
+		}
+		});
+		
+		 
+	}		
+			
+		//支付方式变更弹框
+		//取消
+		$("#qx2").click(function(){
+			$(".popBox3").css("display","none");
+			$(".wk_f2").css("display","none");
+			$("#fastP").prop("checked","checked");
+		});
+		$("#qd2").click(function(){
+			$("#rm2").submit();
+		});
+		
+		//确认退款弹框，同意
+		$(".wk_agree1").click(function(){
+			//点击确认
+			$(".wk_fix_pop1").css("display","none");
+			$(".wk_fix1").css("display","none");
+			console.log("同意");
+			$("#rm").submit();
+		});
+		//确认退款弹框，不同意
+		$(".wk_disagree").click(function(){
+			//点击取消
+			$(".wk_fix_pop1").css("display","none");
+				$(".wk_fix1").css("display","none");
+				console.log("不同意");
+		});
+		//确认退款弹框，X关闭
+		$(".wk_ArmtClose1").click(function(){
+			//点击X
+			$(".wk_fix1").css("display","none");
+			$(".wk_fix_pop1").css("display","none");
+			console.log("不同意");
+		});
+		//退款弹框
+		function refundReq(id,classId){
+			//清空textarea中的内容
+			$("#quitReason").val("");
+			$(".popBox2").css("display","block");
+			$(".wk_f2").css("display","block");
+			$("#refundId").val(id);
+			$("#classId").val(classId);
+		}
+		//退款取消
+		$("#qx").click(function(){
+			$(".popBox2").css("display","none");
+			$(".wk_f2").css("display","none");
+		});
+		//退款确定
+		$("#qd").click(function(){
+			var t = document.getElementById("quitReason");
+			console.log(t.value);
+			if(t.value!=""){
+				$(".reason-right").hide();
+				$(".wk_fix_pop1").css("display","block");
+				$(".wk_fix1").css("display","block");
+				$(".popBox2").css("display","none");
+				$(".wk_f2").css("display","none");
+				return true;
+			}else{
+				$(".reason-right").show();
+				return false;
+			}
+		});
+		
+		$(".closeBtn2").click(function(){
+			$(".popBox2").css("display","none");
+			$(".wk_f2").css("display","none");
+		});
+		$(".closeBtn3").click(function(){
+			$(".popBox3").css("display","none");
+			$(".wk_f2").css("display","none");
+			$("#fastP").prop("checked","checked");
+		});
+		
+</script>
+</div></div></main></body>
+</html>
+

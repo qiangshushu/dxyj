@@ -1,0 +1,140 @@
+.i-ad1 {
+	background: url('images/banner.jpg') no-repeat !important;
+	position: relative;
+}
+
+.wk_font {
+	font-size: 24px;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+
+.wk_pfont-2, .wk_pfont-1 {
+	position: absolute;
+	right: -150px;
+	top: 3px;
+}
+
+.wk_pfont-1 span, .wk_pfont-2 span {
+	margin-right: 10px;
+	float: right;
+	text-align: center;
+	font-size: 24px;
+	background-color: #440106;
+	width: 20px;
+	height: 30px;
+	line-height: 30px;
+	color: rgba(255, 255, 255, 0.4);
+	border-radius: 4px;
+	-o-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	/*font-weight: bold;*/
+}
+
+.abso-1 {
+	position: absolute;
+	left: 70px;
+	top: 30px;
+}
+
+.abso-2 {
+	position: absolute;
+	left: 440px;
+	top: 29px;
+}
+
+.abso-3 {
+	position: absolute;
+	right: 246px;
+	top: 36px;
+	color: #fff;
+	font-size: 13px;
+}
+
+.wk_btn {
+	font-size: 15px;
+	width: 100px;
+	height: 35px;
+	border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border: 1px solid #000;
+	color: #ca1d34;
+	border: 1px solid #ca1d34;
+	position: absolute;
+	right: 13px;
+	top: 27px;
+}
+
+.dlList dl dt a {
+	height: auto;
+}
+.ico-phone a{
+	color:#fff;
+}
+.ico-card a{
+	color:#fff;
+	}
+.ico-system a{
+	color:#fff;
+	}
+.ico-parts a{
+	color:#fff;
+	}
+.wk_y{
+		width:auto;
+		height:77px;
+		background:url(${ctxch}/static/images/i-m2-titbg.png) no-repeat;
+		text-align: center;
+		position: relative;
+	}
+	.wk_y span{
+		position: absolute;
+		font-size:30px;
+		color:#fff;
+		left: 26px;
+		top:16px;
+	}
+	.wk_y span i{
+		display: inline-block;
+		width: 20px;
+		height: 30px;
+		background:url(${ctxch}/static/images/i-spirit.png) -6px -422px no-repeat;
+		position: absolute;
+		right: -20px;
+		top:6px;
+	}
+	.leftBtn,.rightBtn{
+		width:30px;
+		height:100px;
+		background-color:rgba(0,0,0,0.2);
+		line-height: 100px;
+		text-align: center;
+		font-size: 30px;
+		color:#fff;
+		display: none;
+			}
+			.leftBtn{
+				position: absolute;
+				left:0;
+				top:50%;
+				margin-top:-50px;
+			}
+			.rightBtn{
+				position: absolute;
+				right:0;
+				top:50%;
+				margin-top:-50px;
+			}
+			.fullSlide:hover .leftBtn{
+				display: block;
+				color:#fff;
+			}
+			.fullSlide:hover .rightBtn{
+				display: block;
+				color:#fff;
+			}

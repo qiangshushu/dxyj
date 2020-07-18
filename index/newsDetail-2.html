@@ -1,0 +1,711 @@
+﻿<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="keywords" content="迪信通,迪信云聚,云聚,手机零售">
+<meta name="description" content="迪信云聚是由专业手机连锁迪信通发起的通讯零售生态圈建设计划，基于迪信通20余年的零售管理经验、完善的服务体系和强大的资源整合能力，迪信云聚携手厂商、运营商、电商平台、线下零售终端和专业服务机构，整合从上游到终端的产品、内容和服务资源，打造开放互惠的渠道体系。">
+<title>迪信云聚 - 迪信云聚&联想MOTO Z新品启动会引爆潮流新生活 - 最大的通讯零售生态圈</title>
+<link rel="stylesheet" type="text/css" href="..\static\css\pc-reset.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\master.css">
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link href="..\static\css\basic1.css" rel="stylesheet">
+<link href="..\static\css\common1.css" rel="stylesheet">
+<link href="..\static\css\newsinfo.css" rel="stylesheet">
+<link href="..\static\css\share.min.css" rel="stylesheet">
+<script src="..\static\js\jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script type="text/javascript">
+function b() {
+	h = $(window).height(),
+	t = $(document).scrollTop(),
+	t > h ? $("#moquu_top").show() : $("#moquu_top").hide()
+}
+$(document).ready(function() {
+	b();
+	$("#moquu_top").click(function() {
+		$(document).scrollTop(0);
+	});
+	$(".per-left").css("display","none");
+});
+$(window).scroll(function() {
+	b()
+});
+</script>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};
+with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style type="text/css">
+.bdsFather{
+width:140px;
+position:relative;
+border-right:none !important;
+}
+.bds{
+width:200px;
+position:absolute;
+left:18px;
+top:-7px;
+}
+.newsdesclist1 {
+    padding-left: 110px;
+}
+
+</style>
+</head>
+
+<body class="i-body">
+  
+<script type="text/javascript">
+
+
+function getKey()  
+{  
+    if(event.keyCode==13){  
+    	$("#searchleft1").click();
+    }     
+}  
+			$.ajax({
+				url : "/order/statecount",
+				type:"post",
+				dataType:"json", 
+				//async:false,
+				data : "",
+				success:function(data){
+					if(data.status == "success"){
+						//console.log(data.data);
+						//console.log(data.data.sta_all);
+						//全部订单数量
+						$("#sta_all").text("("+data.data.sta_all+")");
+						//待付款订单数量
+						$("#sta_0").text("("+data.data.sta_0+")");
+						//待发货订单数量
+						$("#sta_1").text("("+data.data.sta_1+")");
+						//待收货订单数量
+						$("#sta_2").text("("+data.data.sta_2+")");
+						//已完成订单数量
+						$("#sta_3").text("("+data.data.sta_3+")");
+						//已取消订单数量
+						$("#sta_4").text("("+data.data.sta_4+")");
+						//已退货订单数量
+						$("#sta_7").text("("+data.data.sta_7+")");
+					}
+			   } 
+			});
+			
+		
+
+	function searchGoodLeft1() {
+		window.event.returnValue=false;
+		var ids = [];
+		var good = document.getElementById("goodName").value;
+		if (good == null || good == "" || good == "请输入关键字"||good=="Please enter a keyword") {
+			ids.push("{'goodsName':'','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href  = ctxpath + "/pro/list?" + encodedUrl;
+		} else {
+			ids.push("{'goodsName':'" + good + "','orderBy':'0','pageNo':'1'}");
+
+			var ctxpath = $("#ctxpath").val();
+			if(ctxpath==undefined){
+				ctxpath="";
+			}
+			var url = "json={'goodsName':'" + good
+					+ "','orderBy':'0','pageNo':'1'}";
+			var encodedUrl = encodeURIComponent(url);
+
+			window.location.href = ctxpath + "/pro/list?" + encodedUrl;
+		}
+	}
+	function post(URL, PARAMS) {
+		var temp = document.createElement("form");
+		temp.action = URL;
+		temp.method = "post";
+		temp.style.display = "none";
+		for ( var x in PARAMS) {
+			var opt = document.createElement("textarea");
+			opt.name = x;
+			opt.value = PARAMS[x];
+			// alert(opt.name)        
+			temp.appendChild(opt);
+		}
+		document.body.appendChild(temp);
+		temp.submit();
+		return temp;
+	}
+	
+	
+</script>
+    <!-- 头部所有 -->
+<link rel="stylesheet" type="text/css" href="..\static\layer\mobile\need\layer.css">
+<link rel="stylesheet" type="text/css" href="..\static\css\commons\header.css">
+
+<script src="..\static\js\index-min.js" type="text/javascript"></script>
+<script src="..\static\js\placeholder-jr-min.js" type="text/javascript"></script>
+<script src="..\static\layer\layer.js" type="text/javascript"></script>
+<script src="..\static\js\commons\header.js" type="text/javascript"></script>
+
+
+<div class="i-topwrap w100p border-b-1">
+    <div class="i-top w">
+        <div class="fl i-top-left">
+    		<span class="mr-10 fl">
+                 <!-- 迪信云聚商城 -->
+迪信云聚商城            </span>
+            <div class="date">
+                <span>
+                	<!-- -->
+                </span>
+                <span>
+                    <script type="text/javascript">
+                    	
+                    	document.write(new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() + '日')
+                    </script>
+                </span>
+            </div>
+
+        </div>
+        <input type="hidden" id="status" value="">
+        <div class="fr i-top-right">
+            <ul>
+
+
+
+
+
+
+                    <li id="login">
+                        <a href="..\user\indexlogin.html">
+                            <!-- 登录 -->
+登录                        </a>
+                    </li>
+                    <li id="login4" class="space"></li>
+                    <li id="login3">
+                        <a href="..\user\indexregister.html" class="active">
+                            <!-- 注册 -->
+注册                        </a>
+                    </li>    
+
+
+
+
+
+
+                    <li style="display:none">
+                        <a>
+                            <!-- 消息 -->
+消息                        </a>
+                    </li>
+                <li class="space"></li>
+                <li class="dropdown">
+                    <a href="#"><!-- 云聚APP -->云聚APP</a>
+                    <div class="drop-ewm">
+                        <p><!-- 扫一扫，下载云聚客户端 -->扫一扫，下载云聚客户端</p>
+                        <img src="..\static\images\i-ewm_04.png">
+                    </div>
+                </li>
+                <li class="space"></li>
+                <li><a href="http://old.dixinyunju.com"><!-- 旧版入口 -->旧版入口</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="register-pop">
+    <h3 class="modify-tit"><a href="javascript:void(0);" class="modify-close closebtn fr" onclick="closebtn();"></a>
+    </h3>
+    <div class="reg-pop-con">
+        <span class="reg-pop-bg"></span>
+        <p class="mt-20"><!-- 您已成为云聚注册会员 -->您已成为云聚注册会员</p>
+        <p><!-- 签约会员可享受更多服务~ -->签约会员可享受更多服务~</p>
+    </div>
+    <div class="reg-btnbox">
+        <a href="javascript:void(0);" onclick="closebtn();"><!-- 以后再说 -->以后再说</a>
+        <a href="..\user\register.html?tzbz=0" class="reg-btn2">
+            <!-- 马上签约预订 -->马上签约预订</a>
+    </div>
+</div>
+
+
+
+<div class="ny-header-wrap w100p per-header-wrap">
+	<header class="i-header w">
+		
+		<h1 class=" fl ny-logo mt-30">
+			<a href="..\index.html"><img src="..\static\images\per-logo.png"></a>
+		</h1>
+		<!--  
+		<div class="per-logo2 fl"><a href="/">返回首页</a></div>
+		-->
+		<div class="i-header-r fr">
+			
+			<div class="i-header-rtop cl">
+				<div class="i-search-box fl">
+					<div class="i-search">
+						<form>
+							<!-- <input type="text" id="goodName" name="goodName"value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();"/> -->
+						<input type="text" id="goodName" name="goodName" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" onkeypress="getKey();">
+							<a href="#"><input type="button" value="" id="searchleft1" class="i-search-btn fr" onclick="searchGoodLeft1();"></a>
+						</form>
+					</div>
+				</div><!--i-search-box end-->
+<script src="..\static\js\commons\shop.js" type="text/javascript"></script>	
+												
+<div class="i-shopping fl">
+
+
+	<a href="/shop/tocart"><!-- 我的购物车 -->我的购物车</a> <span id="shopNum" hidden="">0</span>
+</div>			</div>
+		</div>	
+			
+	</header>
+</div>
+
+<main class="ny-main w mb-60 mt-20">
+	<div class="per-con cl">
+		<div class="per-left fl">
+			<div class="per-left-menu">
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-order.png"></i><!-- 全部订单 -->全部订单</h3>
+				<ul>
+				
+				<li><a href="/order/queryorderpage"><!-- 全部订单 -->全部订单<font id="sta_all"></font></a></li>
+				<li><a href="/order/queryorderpage?s=0"><!-- 待付款订单 -->待付款订单<font id="sta_0"></font></a></li>
+				<li><a href="/order/queryorderpage?s=1"><!-- 待发货订单 -->待发货订单<font id="sta_1"></font></a></li>
+				<li><a href="/order/queryorderpage?s=2"><!-- 待收货订单 -->待收货订单<font id="sta_2"></font></a></li>
+				<li><a href="/order/queryorderpage?s=7"><!-- 已退货订单 -->已退货订单<font id="sta_7"></font></a></li>
+				<li><a href="/order/queryorderpage?s=3"><!-- 已完成订单 -->已完成订单<font id="sta_3"></font></a></li>
+				<li><a href="/order/queryorderpage?s=4"><!-- 已取消订单 -->已取消订单<font id="sta_4"></font></a></li>
+				
+					
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-user.png"></i><!-- 账户管理 -->账户管理</h3>
+				<ul>
+					<li><a href="/user/personal"><!-- 个人信息 -->个人信息</a></li>
+					
+					
+					<li><a href="/user/decorate"><!-- 店铺装修 -->我的店铺</a></li>
+					<li><a href="..\business\myClass.html"><!-- 我的课程 -->我的课程</a></li>
+					<li><a href="..\user\voucherl.html"><!-- 我的抵用券 -->我的抵用券</a></li>
+					<li><a href="..\user\security.html"><!-- 账户安全 -->账户安全</a></li>
+					<li><a href="/order/sysinfo"><!-- 系统消息 -->系统消息</a></li>
+
+				
+				</ul>
+				<h3 class="per-left-h"><i><img src="..\static\images\ico-service.png"></i><!-- 售后服务 -->售后服务</h3>
+				<ul>
+				<!-- 	<li><a href="#">返修退换货</a></li>
+					<li><a href="#">咨询服务</a></li> -->
+					<li><a href="..\user\proposal.html"><!-- 意见建议 -->意见建议</a></li>
+					
+				</ul>
+			</div>
+			
+		</div><!--per-left end-->
+
+		<div class="per-right fr" style="width:100%;">
+			 <div class="content">
+        <div class="w994">
+            <!-- 面包屑导航 -->
+            <p class="breadnav">
+                <span><!-- 当前位置： -->当前位置：</span>
+                <a href="news.html"><!-- 新闻中心 -->新闻中心&gt;</a>
+                <a href="javascript:void(0)">
+             
+                
+              
+              	  <!-- 今日要闻 -->今日要闻
+                
+                </a>
+            </p>
+            <h3 class="newstit">迪信云聚&联想MOTO Z新品启动会引爆潮流新生活</h3>
+            <div class="w996">
+                <ul class="newsdesclist  newsdesclist1 clear">
+                    <li class="nopl"><!-- 时间： -->时间：2017-06-22</li>
+                    <li><!-- 来源： -->来源：<a style="text-decoration: underline;" target="_blank">迪信云聚</a></li>
+                    <li>
+                        <span class="personlook"><!-- 浏览： -->浏览：921</span>
+                    </li>
+                   <li class="bdsFather">
+				<div class="bdsharebuttonbox bds">
+				<a href="#" class="bds_more" data-cmd="more"></a>
+				<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+				<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+				<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+				</div>
+					</li>
+                </ul>
+            </div>
+            
+            <!-- 新闻内容区 -->
+            <div class="newsbox">
+                <p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	近日，迪信通+迪信云聚&amp;联想MOTO Z新品启动会在北京新兴宾馆顺利举行。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	迪信通集团董事长刘东海和联想集团高级副总裁、移动业务集团联席总裁乔健做主题发言，迪信通集团副总裁胡平、联想集团副总裁、MBG中国业务常务副总裁马道杰、联想集团副总裁、MBG中国区销售总经理虞杲和集团副总裁、MBG品牌营销副总裁陆旻轩等人均到场参会。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important; text-align: center;">
+	<br>
+	<img alt="" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/08/640(1).jpg" style="width: 640px;"></p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	启动会上，联想MOTO Z新品负责人向迪信通及迪信云聚展示了新一代模块化手机的亮眼特色，双方也在新品渠道、销售思路等方面进行了深入充分的沟通。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	一份份军令状的签署，表明联想与迪信及迪信云聚通均对新一代MOTO Z充满信心与期待。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important; text-align: center;">
+	<img alt="" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/08/640%20(1)(1).jpg" style="width: 640px;"></p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal;">
+	<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+		<section style="margin: 10px 0px; padding: 0px; max-width: 100%; box-sizing: border-box; text-align: center;">
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: middle;">
+				<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; width: 8px; height: 8px; display: inline-block; vertical-align: middle; border: 2px solid rgb(71, 193, 168); transform: rotate(45deg);">
+					&nbsp;</section>
+				<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; width: 3em; border-top-width: 2px; border-top-style: solid; border-top-color: rgb(71, 193, 168); display: inline-block; vertical-align: middle;">
+					&nbsp;</section>
+			</section>
+			<section style="margin: 0px; padding: 0px 5px; max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: middle; font-size: 24px; color: rgb(71, 193, 168); min-width: 1.2em !important;">
+				<p style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; clear: both; min-height: 1em;">
+					<strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">Meet Moto Z</strong></p>
+			</section>
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: middle;">
+				<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; width: 3em; border-top-width: 2px; border-top-style: solid; border-top-color: rgb(71, 193, 168); display: inline-block; vertical-align: middle;">
+					&nbsp;</section>
+				<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; width: 8px; height: 8px; display: inline-block; vertical-align: middle; border: 2px solid rgb(71, 193, 168); transform: rotate(45deg);">
+					&nbsp;</section>
+			</section>
+		</section>
+	</section>
+</section>
+<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal;">
+	<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+		<section style="margin: 10px 0px; padding: 0px; max-width: 100%; box-sizing: border-box; text-align: center;">
+			<p>
+				<img alt="" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/08/640%20(2)(1).jpg" style="width: 640px;"></p>
+		</section>
+	</section>
+	<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; transform: translate3d(0px, 0px, 0px); text-align: center;">
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; display: inline-block; width: 601.188px; vertical-align: top;">
+				<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+					<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+						<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; text-align: left; color: rgb(171, 211, 224); line-height: 1.6; letter-spacing: 5px;">
+							<p style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; clear: both; min-height: 1em;">
+								<span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(95, 156, 239);"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;"><em style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">手机</em></strong></span><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;"><em style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;"><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(255, 223, 111); font-size: 18px;">不只是</span><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(95, 156, 239);">手机 探索</span><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(255, 223, 111); font-size: 18px;">新玩法</span></em></strong></p>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+	<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+		<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; transform: translate3d(0px, 0px, 0px); text-align: center;">
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; display: inline-block; width: 601.188px; vertical-align: top;">
+				<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+					<section style="margin: 0px 0px 10px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+						<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; text-align: right; color: rgb(148, 197, 219); letter-spacing: 5px;">
+							<p style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; clear: both; min-height: 1em;">
+								<em style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(255, 223, 111); font-size: large;">不</strong><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(95, 156, 239);"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">从众</strong></span>&nbsp;<span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(255, 223, 111); font-size: 18px;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">做</strong></span><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(95, 156, 239);"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">自己</strong></span></em></p>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+	</section>
+</section>
+<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal;">
+	<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+		<section style="margin: 10px 0px; padding: 0px; max-width: 100%; box-sizing: border-box; line-height: 1;">
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: top;">
+				&nbsp;</section>
+			<section style="margin: 0px; padding: 0px 0px 0px 3px; max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: top; line-height: 1.2; color: rgb(71, 193, 168);">
+				<p style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; clear: both; min-height: 1em;">
+					<strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">王者归来</strong></p>
+			</section>
+		</section>
+	</section>
+</section>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	2015年，Moto重回中国市场，与众多智能手机品牌展开较量。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	2016年6月，Moto Z模块化手机正式发布。当几乎全部的手机都在努力做减法时，Moto Z另辟蹊径，扛起多模块的大旗。独特的外观与新颖的设计思路在同质化严重的手机市场显得与众不同，迅速吸引了一批科技达人和极客玩家的关注。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	眼下，全新第二代Moto Z模块化手机也将于6月27日登录市场，揭开神秘面纱，引发差异化手机新热潮。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important; text-align: center;">
+	<br>
+	<img alt="" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/08/640%20(3)(1).jpg" style="width: 406px;"></p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	新机面世之际，联想选择与迪信通携手合作，正是看重了Moto Z模块化手机与迪信通的契合之处。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	<strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important;">Moto品牌的回归本身就带有一种王者归来的精神和劲头，</strong><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important;">而迪信通作为中国最大的手机专业连锁企业，多年来凭借快速的门店扩张和管理能力、良好的售后服务水平，占据了国内手机线下渠道的大部分市场，也足够承载这份王者之气。</strong></p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal;">
+	<section powered-by="xiumi.us" style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">
+		<section style="margin: 10px 0px; padding: 0px; max-width: 100%; box-sizing: border-box; line-height: 1;">
+			<section style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: top;">
+				&nbsp;</section>
+			<section style="margin: 0px; padding: 0px 0px 0px 3px; max-width: 100%; box-sizing: border-box; display: inline-block; vertical-align: top; line-height: 1.2; color: rgb(71, 193, 168);">
+				<p style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box; clear: both; min-height: 1em;">
+					<strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box;">更好的手机不是手机</strong></p>
+			</section>
+		</section>
+	</section>
+</section>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	<strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important;">品牌、聚焦、差异化，</strong>是Moto Z模块化手机的重要关键词。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	做好差异化手机的市场销售，正是迪信通与联想共同的目标。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important; text-align: center;">
+	<img alt="" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/08/640%20(4)(1).jpg" style="width: 640px;"></p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	乔健认为，手机不只是手机，更代表一种生活方式、生活态度，Moto Z模块化手机想要给予消费者的，是一个认识生活、感知真实的机会。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	在当前紧张的社会生活节奏下，似乎所有人的生活都被流水线般同化了，每个人都用着相同的手机，吃着相似的食物，过着雷同的生活，紧张而疲惫。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	Moto的存在正是为了将大家从千篇一律的生活中解放出来，玩出个性，玩出精彩，创造自由的移动体验，引领智能手机使用的新潮流。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	多模块是对当下手机生活的一种反思，是一种全新的销售模式和全新服务的转型。随着手机的销售，为商家打开更多与消费者沟通交流的机会，更好的留住客户。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important; text-align: center;">
+	<img alt="" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/08/640%20(5)(1).jpg" style="width: 640px;"></p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	近年来，迪信通与迪信云聚一直紧跟时代与科技发展，积极寻求品牌革新与发展。目前，迪信通及迪信云聚已经搭建了完善的线上平台，形成了完整的O2O闭环，开创了线下体验+服务、线上传播+互动+购买的新型创新模式。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	迪信通集团董事长刘东海认为，求变，是企业与社会的活力来源。Moto Z不只是一款手机，而是一个平台，一种可能性。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	摄影、迷你投影、优质扬声器...Moto Z模块化手机就像手机界的&ldquo;变形金刚&rdquo;，每一个模块的研发，每一次&ldquo;变身&rdquo;都是切实从用户的需求出发，解决用户的困扰。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	同时，Moto Z多模块的设计也为线下门店带来了全新的设计思路，可以在店内看电影，玩音乐...门店不再是一个传统的商店，而是变身顾客的游乐场。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	联想聚焦品牌、聚焦差异化的战略与迪信通的战略规划有高度契合之处，是对圈层文化和极客文化的一次探究与突破。Moto手机的模块化及不断迭代为零售商创造了持续经营客户的价值，深耕差异化手机的销售市场，对迪信通的发展意义深远。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important; text-align: center;">
+	<img alt="" src="/images/userfiles/34fd3dfe7b07418f9e229f19580e8f54/images/news/news/2017/08/640%20(6).jpg" style="width: 640px;"></p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	不随众，做自己。让我们一起期待，Moto与迪信通及迪信云聚一起，为广大消费者重新平衡手机与生活，一起成为科技时代下的大玩家。</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	<strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important;">Moto Z究竟是一款怎样的手机呢？一切将在6月27日揭晓！</strong></p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	&nbsp;</p>
+<p style="margin: 0px; padding: 0px; max-width: 100%; clear: both; min-height: 1em; color: rgb(62, 62, 62); font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif; font-size: 16px; line-height: 25.6px; white-space: normal; box-sizing: border-box !important;">
+	7月初，新一代Moto Z模块化手机也即将登录迪信通各大门店以及迪信云聚门店，关注迪信云聚，查看更多惊喜！</p>
+            </div>
+        </div>
+    </div>
+			
+			
+		</div><!--per-right end-->
+		
+		
+	
+	
+
+
+
+</div></main>
+
+<!-- 底部所有 -->
+<script src="..\static\js\commons\footer.js" type="text/javascript"></script>
+
+<footer class="mt-40 i-footer w100p">
+	<div class="i-ensure-wrap w100p">
+		<div class="i-ensure w cl">
+			<ul>
+				<li>
+					<i class="i-ensure-ico1"></i>
+					<h4><!-- 正品保障 -->正品保障</h4>
+					<p><!-- 正规代理，行货保障 -->正规代理，行货保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico2"></i>
+					<h4><!-- 品种齐全 -->品种齐全</h4>
+					<p><!-- 配货齐全，品类丰富 -->配货齐全，品类丰富</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico3"></i>
+					<h4><!-- 闪电发货 -->闪电发货</h4>
+					<p><!-- 当天下单，次日到达 -->当天下单，次日到达</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico4"></i>
+					<h4><!-- 款到发货 -->款到发货</h4>
+					<p><!-- 款到发货，安全便捷 -->款到发货，安全便捷</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico5"></i>
+					<h4><!-- 售后保障 -->售后保障</h4>
+					<p><!-- 快速售后，服务保障 -->快速售后，服务保障</p>
+				</li>
+				<li>
+					<i class="i-ensure-ico6"></i>
+					<h4><!-- 贴心服务 -->贴心服务</h4>
+					<p><!-- 在线客服，专属服务 -->在线客服，专属服务</p>
+				</li>
+			</ul>
+		</div>
+	</div><!--i-ensure-wrop end-->
+	<div class="footer-link w cl">
+		<div class="footer-menu fl">
+			<ul>
+				<li>
+					<h4><!-- 订货指南 -->订货指南</h4>
+					<p><a href="text.html?sort=1"><!-- 订货流程 -->订货流程</a></p>
+					<p><a href="text-1.html?sort=2"><!-- 物流方式 -->物流方式</a></p>
+					<p><a href="text-2.html?sort=3"><!-- 常见问题 -->常见问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 合作权益 -->合作权益</h4>
+					<p><a href="text-3.html?sort=4"><!-- 入驻政策 -->入驻政策</a></p>
+					<p><a href="text-4.html?sort=5"><!-- 会员权益 -->会员权益</a></p>
+					<p><a href="text-5.html?sort=6"><!-- 特色服务 -->特色服务</a></p>
+				</li>
+				<li>
+					<h4><!-- 支付方式 -->支付方式</h4>
+					<p><a href="text-6.html?sort=7"><!-- 公司转账 -->公司转账</a></p>
+					<p><a href="text-7.html?sort=8"><!-- 在线支付 -->在线支付</a></p>
+					<p><a href="text-8.html?sort=9"><!-- 发票问题 -->发票问题</a></p>
+				</li>
+				<li>
+					<h4><!-- 联系我们 -->联系我们</h4>
+					<p><a href="text-9.html?sort=10"><!-- 云聚介绍 -->云聚介绍</a></p>
+					<p><a href="news.html" target="_blank"><!-- 云聚新闻 -->云聚新闻</a></p>
+					<p><a href="text-10.html?sort=11"><!-- 联系客服 -->联系客服</a></p>
+				</li>
+			</ul>
+		</div><!--footer-menu end-->
+		<div class="footer-ewm fl">
+			<span>
+				<img src="..\static\images\i-ewm_04.png">
+				<p><!-- 云聚APP -->云聚APP</p>
+			</span>
+			<span>
+				<img src="..\static\images\i-ewm_05.png">
+				<p style="font-size:12px;"><!-- 关注微信公众号 -->关注微信公众号</p>
+			</span>
+		</div>
+		<div class="footer-contact fr">
+			<div class="footer-phonebox">
+				<i></i>
+				<h3><!-- 全国统一服务热线 -->全国统一服务热线</h3>
+				<p><!-- 周一至周五上午9:00-下午18:00 -->周一至周五上午9:00-下午18:00
+</p>
+			</div>
+			<div class="footer-phone">400-700-8800</div>
+		</div>
+	
+	</div><!--footer-link end-->
+	
+	<div class="footer-copy w100p">
+		<p>京ICP备17006091号    北京迪信云聚科技有限公司Copyright ©2017</p>
+	</div>
+	
+</footer>
+<div class="topbar-show w100p">
+	<div class="w top-show">
+		<h1 class="top-show-logo fl mt-5">
+			<a href="..\index.html"><img src="..\static\images\top-show-logo.png"></a>
+		</h1>
+	</div>
+	<div class="i-search top-show-search fl">
+		<!-- <input type="text" id="goodNames" name="goodNames" value="请输入关键字"
+								onfocus="if (value =='请输入关键字'){value =''}"
+								onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl" /> -->
+		<input type="text" id="goodNames" name="goodNames" value="请输入关键字" onfocus="if (value =='请输入关键字'){value =''}" onblur="if (value ==''){value='请输入关键字'}" class="i-search-txt fl">
+							<input type="button" value="" class="i-search-btn fr" id="globelSearch2" onclick="searchGoods();">
+	</div>
+
+<script>
+$('#share-3').share();    
+</script>
+<!-- 侧面 -->
+<div id="moquu_wxin" class="moquu_wxin"><a href="javascript:void(0)"><div class="moquu_wxinh"></div></a></div>
+<div id="moquu_wshare" class="moquu_wshare"><a href="javascript:void(0)"><div class="moquu_wshareh"></div></a></div>
+<div id="moquu_wmaps"><a href="https://www.sojump.hk/jq/13147871.aspx" target="blank_"></a></div>
+<a id="moquu_top" href="javascript:void(0)"></a>
+<!-- 侧面 -->
+<input type="hidden" id="ctxpath" value="">
+</div></body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        var id = 'NewsIndex';
+        $(".navlist li").removeClass("active");
+        $("#" + id).addClass("active");
+    })
+	var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?94e89c1b533f092bfd6442bb2f5ed967";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+

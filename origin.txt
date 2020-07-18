@@ -1,0 +1,1292 @@
+Uri: https://www.dixinyunju.com/
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/static/css/pc-reset.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\pc-reset.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/css/master.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\master.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/css/index/index.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\index\index.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/layer/mobile/need/layer.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\layer\mobile\need\layer.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/css/commons/header.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\commons\header.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/user/indexlogin
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\user\indexlogin.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/user/indexregister
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\user\indexregister.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/user/register?tzbz=0
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\user\register.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/news
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\news.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/college
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\college.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/finance
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\finance.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/insurance
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\insurance.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/software
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\software.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/store
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\store.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/old
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\old.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/pro/list
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\pro\list.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=e18aa157494e4f84bac0bf7a0cb36d86
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=8b2f4a08808d48728062bc341cf54624
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-1.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=f341dca1300047bbacef48d7e324782f
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-2.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=63cdfcba02f541aeb5869ad4b6169ad8
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-3.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=3a595b48eb194daa88e82b2ab748b40c
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-4.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=4b67129d2b5b41589b0d0fe93e3ad030
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-5.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=206598b69748426182485245c736934e
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-6.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=85ed918e7c58410aa5428b1ce636067c
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-7.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=b49c2664897a44bebc9b159d01ff6069
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-8.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=8ae81be6138245e69b363fd0caa64361
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-9.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=c9338e48125a4e328b39c78c08c47f81
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-10.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=94b1e95c3ff54ad6ae2e4dcfdfecacea
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-11.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=1a795d665da44c0c9ffd46b030a927cf
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-12.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=97019bf2988c42e5b78a355c42aaf475
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-13.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=b2b870ba86634f42ac03ac66771a7ecd
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-14.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=92f6f818aabe456d9b7e70d4fe5dea91
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-15.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=cd0a6872c9f043b1842c34d2f41168a0
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-16.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=6bfcbcee8361405a923ef69531f90cc1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-17.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=39fa600b44cc42f38ec66c0d41c5b4f2
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-18.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=727ce43afc3c45e3b5479a1b4c81af19
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-19.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=2a393d22ed7f45149ac1a75303ac150e
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-20.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=c552e9e666ae451bbba2b4c989874cd2
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-21.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=33d6a45a01324527a6072232e03e70cc
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-22.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=63f85a32a6514706b8456a4d4326fce1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-23.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=4f783320d3ef4122a3a5549503c1e113
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-24.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=dc8a7090a46748de8d5c7319c42abbb0
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-25.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=9d79640f4dba49729aff1d5b4f7a677e
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-26.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=f4ec75803d734ee59e4dd9ccb03be333
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-27.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=c8476c4361134bd8965965d671e672cf
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-28.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=5cfedf4deb8c4b0188388c47dbae6d37
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-29.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=af940be20965448e81af2e851560146f
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-30.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=34d0f45568c54476b7b31b18b8c85560
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-31.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=0ac39d7c9d43409d9976d4d1525db8a3
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-32.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=c04c533065f9455296e7d847b4f418af
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-33.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=dda3f59f55464b738149d6ec54ec6d65
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-34.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=a1a962f639d341889f952efce0656b38
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-35.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=0c6ca93ec64d40f0bf70af96d4ef51cc
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-36.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=03a3decf0707454cb2bef665b28c2fc8
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-37.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=540156f1ee4a44479506e0ca25abf52e
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-38.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=7d37b91bd387496cad4e8c737ac9bb4c
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-39.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=97c929bac66b45d8a06cd229bd252201
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-40.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=39c5e570afc74f4dac78c9adee8dab1c
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-41.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=df36a794cf624897acbef52b5d56869c
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-42.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=aa905cd6abe6488b92aa67d3fe94aa38
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-43.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=6cddcedf8de84fca9b7f68e9c992af80
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-44.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=1e09fb75258a49c6a58cb1cb720d9f7a
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-45.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=486f2e5ced0245909bad2b27ec40fcf0
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-46.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=158ba46d76a6465481c3a2358f4c62d9
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-47.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=b1257a42c98d478eaefbd48079503d99
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-48.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=9dd88ff4928745f29af42c0547328be0
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-49.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=c50841fa67214349885672a31bb5b600
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-50.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=0099de68e9bc48ddb66b2a841269abe4
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-51.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=1b9466fbeae54569aa9a30e5d550b6ed
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-52.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=6318743bdc0f4804b31d4df85f6c691e
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-53.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=60b8e827d5094aeb84b6e4746a4a311c
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-54.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=02f9b4e8d04343ca9b9ae82792e4dcef
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-55.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=b7c25261095f4e0290a1f2356bbd8984
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-56.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=3e4a4d83f4794916b64a8791b6ca72e2
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-57.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=50571bb3423b4130af69a272f5889084
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-58.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=99eaa9b133874e2bbb48c049da658c61
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-59.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=ed5622abaa8845a281ea05cfdb8a920f
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-60.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=24b51fc6698b4c2eaa25a1a949370552
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-61.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=ff592ef896134033a2960ffb6313ca34
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-62.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=4c61030054634ec5a141d7d1673047b9
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-63.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=7ab181d83991464bbb3ceed4b378f40d
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-64.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=35b71a9ee46e4001adbd3f725475dc13
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-65.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=9675e4f991df4f7dbc99ba6c3a5f7218
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-66.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=835b6bec816b40a88ad80d10faa9ec15
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-67.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=0c55aa5f1c8f4905b73e8196567a55d8
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-68.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=672b5b77c20945df89acc2a0931e725b
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-69.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=56c97ad4d8ed4a50b4c5205a4d32c994
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-70.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=cbb2c452b81742ce9f04fc9db74af429
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-71.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=19dd4834f0824e8698db20bf833647f4
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-72.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=b97243e2617943bea23c044bbfa6c28f
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-73.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=019ef92b08be4c698c05f61c5192b4fd
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-74.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=39c0f81979404ca39af897e09f0191bd
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-75.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=602cb1f3ac2b46d79a396b2c0db83ece
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-76.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=03b594109ad64ce4be70ac9e81c1c37c
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-77.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=1a15d8ff54f64f09bc0fbf32c42ffb17
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-78.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=d14752bef084491e8a35c304955ba2c3
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-79.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=33285926bc1743e6bcbf03fa78b802f5
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-80.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=503620245da3477d8c2c53c582ef9cee
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-81.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=ded583a114754a4b95ffe166a79ed235
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-82.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=685292500eab41669d6068416ee6fd1f
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-83.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=911ec85f175245a3a0e15dcbaaeacbac
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-84.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=53bf2e1ac8f44dd5a92965a38376e691
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-85.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=ed6ef869fd9a49469872040c2d2234e9
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-86.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=e3d83c9fcffa49b5aa7fd50f03c05d0a
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-87.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=dc17594da19241dd813b95011f77ba18
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-88.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=9e5afbf954344c78923166b52b4bc6b7
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-89.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=217355ef43b74a2286fd596108f0b0e1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-90.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=ac1014f109104593ad86fcd7ab1fc464
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-91.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=4a723275752541289832ea431e6c957c
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-92.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=5a6c00cb8740404d99ec607f9b6dc9fe
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-93.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=63405e7531fb46a984a10a602277087a
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-94.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=12b90a8bac72436b823e8c86d826ef9d
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-95.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=fa3368c4b3d1470f823abed6de4627a8
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-96.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=7e9972d33a39415dbc7a8fc2cac3ea03
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-97.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=335db50d4bca4e0fa2338cf121a82a8e
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-98.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=16069c65b790496f96641ba9e7e57347
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-99.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=fb2186bf84c54a089202d581b1408050
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-100.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=2
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-1.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=3
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-2.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=4
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-3.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=5
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-4.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=6
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-5.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=7
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-6.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=8
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-7.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=9
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-8.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=10
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-9.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=11
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-10.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/static/js/jquery-1.9.1.min.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\jquery-1.9.1.min.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/js/index-min.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\index-min.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/js/placeholder-jr-min.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\placeholder-jr-min.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/js/jquery-getui.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\jquery-getui.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/js/jquery.SuperSlide.2.1.1.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\jquery.SuperSlide.2.1.1.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/js/index/index.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\index\index.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/layer/layer.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\layer\layer.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/js/commons/header.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\commons\header.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/images/i-ewm_04.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\i-ewm_04.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/i-logo.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\i-logo.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/js/commons/search.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\commons\search.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/js/commons/shop.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\commons\shop.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/images/ico-wz.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ico-wz.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/js/commons/footer.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\commons\footer.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/images/i-ewm_05.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\i-ewm_05.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/top-show-logo.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\top-show-logo.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/shuidi.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\shuidi.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/i-top-jgf_03.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\i-top-jgf_03.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/logo-bg.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\logo-bg.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/i-spirit.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\i-spirit.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/space-nav_03.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\space-nav_03.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/i-m-titbg.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\i-m-titbg.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/i-m2-titbg.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\i-m2-titbg.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/i-m3-btns.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\i-m3-btns.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ico-jt-x.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ico-jt-x.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ico-search.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ico-search.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/close.gif
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\close.gif
+Content Type: image/gif
+
+Uri: https://www.dixinyunju.com/static/images/20130606B.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\20130606B.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/per-head-bg_02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\per-head-bg_02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/v-li-btn.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\v-li-btn.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ico-delete.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ico-delete.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/dec-careful.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\dec-careful.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/login-banner_02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\login-banner_02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/register-banner_02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\register-banner_02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/or-li-bg.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\or-li-bg.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/or-li-onbg.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\or-li-onbg.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/z-old-tit.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\z-old-tit.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/z-old-titbg.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\z-old-titbg.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/zz-old-m2-box1.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\zz-old-m2-box1.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/zz-old-m2-box2.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\zz-old-m2-box2.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/zz-old-m2-box3.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\zz-old-m2-box3.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/z-old-btn.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\z-old-btn.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/z-old-btnh.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\z-old-btnh.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-listbg.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-listbg.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-jt.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-jt.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-m3bg_03.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-m3bg_03.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/col-m1-bg1.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\col-m1-bg1.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/col-m1-bg2.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\col-m1-bg2.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/col-m1-bg3.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\col-m1-bg3.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/so-icon1.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\so-icon1.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/so-icon2.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\so-icon2.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/so-icon3.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\so-icon3.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/so-icon4.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\so-icon4.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/so-icon5.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\so-icon5.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/so-icon6.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\so-icon6.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-titbg1.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-titbg1.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-titbg2.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-titbg2.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/user/forget
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\user\forget.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/static/images/ny-logo.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ny-logo.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/js/from.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\from.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/images/data-lc_03.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\data-lc_03.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/css/basic1.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\basic1.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/css/common1.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\common1.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/css/news.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\news.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/business/myClass
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\business\myClass.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/user/voucherl
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\user\voucherl.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/user/security
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\user\security.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/user/proposal
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\user\proposal.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/newsDetail?id=a4fb8f59e0a846adb2698eaae88a74f1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\newsDetail.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/newsDetail?id=2098529572434ac6b7315f42ff471c3f
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\newsDetail-1.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/newsDetail?id=dfd7a0e85aef44538840d6b4516937c5
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\newsDetail-2.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/newsDetail?id=f240b6bfc04a4db4aed7a2a364bf38a9
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\newsDetail-3.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/newsDetail?id=06e41d3f1acd4fa5b0e8d2381f93773d
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\newsDetail-4.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/newsDetail?id=cca368b081254220880060fda98fe1b1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\newsDetail-5.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/static/images/per-logo.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\per-logo.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ico-order.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ico-order.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ico-user.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ico-user.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ico-service.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ico-service.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/col-banner_02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\col-banner_02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/PC_01_19.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\PC_01_19.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/PC_01_07.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\PC_01_07.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/pdf/download.pdf
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\pdf\download.pdf
+Content Type: application/pdf
+
+Uri: https://www.dixinyunju.com/static/images/fi-banner_02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\fi-banner_02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/PC_01-02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\PC_01-02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-banner_02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-banner_02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-card1.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-card1.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-card1-1.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-card1-1.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-card2.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-card2.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-card2-1.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-card2-1.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-card3.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-card3.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-card3-1.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-card3-1.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/ins-ad_03.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ins-ad_03.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/so-banner_02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\so-banner_02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/index/text?sort=13
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-11.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/index/text?sort=14
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\index\text-12.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/static/images/st-banner_02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-banner_02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-m3-img1.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-m3-img1.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-01.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-01.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-m3-img2.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-m3-img2.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-02.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-02.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-m3-img3.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-m3-img3.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-03.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-03.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-m3-img4.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-m3-img4.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-04.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-04.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-m3-img5.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-m3-img5.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-05.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-05.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-m3-img6.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-m3-img6.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/st-06.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\st-06.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-listNum.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-listNum.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-listT.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-listT.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_23.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_23.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_26.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_26.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/222.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\222.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_09.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_09.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_10.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_10.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_11.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_11.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_13.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_13.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_15.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_15.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_14.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_14.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_16.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_16.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-banner.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-banner.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_40.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_40.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_24.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_24.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_27.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_27.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/old-new_29.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\old-new_29.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/css/Font-Awesome-3.2.1/css/font-awesome.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\Font-Awesome-3.2.1\css\font-awesome.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=e3ca42d721ab47d99fd0a45e3a813a69
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-101.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=fcd501e68e6b49f7a508bd0b12e499f2
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-102.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=e78889e7a5724aa183f808f323b36cc1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-103.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=3333540575744c618653a00c794cf9e7
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-104.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=6fa6634310254cb9abc0ab53348cdf82
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-105.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/static/images/ico-menu.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\ico-menu.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/css/animate.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\animate.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/js/dd-banner.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\dd-banner.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=5406ed45fb7d466b8a33719cefefa81e
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-106.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=309f2916963c40a5af695cc776c99ad1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-107.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=4f085088c0954834b4ba5212e77fe4ae
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-108.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=203203f01afd4457aacf3673bb1c1d62
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-109.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=073d513a66fb4fb9a3c807d11577c02f
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-110.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=45d49b6580ac4eb898920547f198ebbb
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-111.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=3f2eff3c4e0b4734957b42905f78c6e5
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-112.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=8d58717606a04eb281bad41be645236a
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-113.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=aafb0d987a73427f9e102b088cc91aa9
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-114.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=cc9cc943225d4a4e9103fd5f15c12d51
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-115.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=189449b230de47dfb676c1dd50475434
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-116.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=4c4e1c5405954f30b8f89cce41a066b9
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-117.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=05a6f16fd22e4bb28952a7d5b76fdf1b
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-118.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=c04ffe9e6e474d018f49722ab819b5e9
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-119.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=8363893ae20e4c97aa4f60a97db2629a
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-120.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=862b635afd0a4a268c5415aed0bc8077
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-121.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=1b22b4ea467d48d191b61741b302f262
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-122.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=ab277151943c4b8f87e8ded330c3144a
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-123.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=09bf026544934e13bc41644fefa21066
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-124.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=7b6247c9ce854a6d983c565d8995045a
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-125.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=4a57d09ffa474d9abfb8abe6e25f9040
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-126.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=7628338e03a340609252a65fd20293f0
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-127.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=e3a3f8ddaa4a4a09bb38732c9c6d16b6
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-128.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=f61323bac55b43b9a8463f0d652b84a9
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-129.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=0ef6f669ef344f54ab9b99c9a1f16eb4
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-130.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=682477eea52d4b81816d5dc6a40f8a6f
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-131.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=760dbe03b4ab4ba295b6e842d0c1eabd
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-132.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=89660e46e9604a1caa717c66097409ed
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-133.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=d5bf0e49ee784708886d8670158e9b26
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-134.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=a090c3ad9fbc444883d1e469fb5126cd
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-135.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=5844e684ecd04b0a9d369bdfe04cc249
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-136.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=16e3cf4bda0245e1adfe743edb70d394
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-137.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=c5eee803f20348be8615b6094fc85289
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-138.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=221d4bb3e38b46deb34160282283d6d8
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-139.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=69df598450db4f8191393c1893bc25db
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-140.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=3ea30f8393d74dde83c2d9326385fe92
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-141.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=3661a810adb04bbb9f868aa61146d6b4
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-142.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=371f7371189c47eaaec2851f7857544c
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-143.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=a7bb0d3ad2dc40fa8e11f0e6dbf98646
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-144.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=3e56b8dfeb1f4b36a7daad2105e2fc21
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-145.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=23c46080d1e349c683db02a18f403ac0
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-146.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/goods/goodsDetails?goodsId=d862d9cb613643bba09784e6d8e79a17
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\goods\goodsDetails-147.html
+Content Type: text/html
+
+Uri: https://www.dixinyunju.com/static/images/sbtn.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\sbtn.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/lrtk_weixin.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\lrtk_weixin.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/lrtk_app.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\lrtk_app.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/banner.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\banner.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/sec-titbg.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\sec-titbg.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/images/listnum.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\listnum.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/css/order/orderdetail.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\order\orderdetail.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/js/Popt.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\Popt.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/js/cityJson.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\cityJson.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/js/citySet.js
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\js\citySet.js
+Content Type: application/javascript
+
+Uri: https://www.dixinyunju.com/static/images/p-s-img.png
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\images\p-s-img.png
+Content Type: image/png
+
+Uri: https://www.dixinyunju.com/static/css/newsinfo.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\newsinfo.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/css/share.min.css
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\share.min.css
+Content Type: text/css
+
+Uri: https://www.dixinyunju.com/static/css/Font-Awesome-3.2.1/font/fontawesome-webfont.eot?v=3.2.1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\Font-Awesome-3.2.1\font\fontawesome-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://www.dixinyunju.com/static/css/Font-Awesome-3.2.1/font/fontawesome-webfont.woff?v=3.2.1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\Font-Awesome-3.2.1\font\fontawesome-webfont.woff
+Content Type: application/x-font-woff
+
+Uri: https://www.dixinyunju.com/static/css/Font-Awesome-3.2.1/font/fontawesome-webfont.ttf?v=3.2.1
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\Font-Awesome-3.2.1\font\fontawesome-webfont.ttf
+Content Type: application/x-font-ttf
+
+Uri: https://www.dixinyunju.com/static/css/Font-Awesome-3.2.1/font/fontawesome-webfont.svg
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\Font-Awesome-3.2.1\font\fontawesome-webfont.svg
+Content Type: image/svg+xml
+
+Uri: https://www.dixinyunju.com/static/css/Font-Awesome-3.2.1/font/fontawesome-webfont.eot
+File Name: C:\Users\Administrator\Desktop\dxyj\www.dixinyunju.com\static\css\Font-Awesome-3.2.1\font\fontawesome-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
