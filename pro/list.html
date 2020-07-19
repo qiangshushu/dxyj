@@ -147,7 +147,7 @@
 			<li>
 				<div class="type">
 					<img src="../static/images/icon-pinpai.png" alt="">
-					<span>分类</span>
+					<span>品牌</span>
 				</div>
 				<ul id="category-brand" class="content hidden"> </ul>
 				<a href="javascript:void(0)" class="more" id="brand-more">更多<img src="../static/images/ico-jt-x.png" alt=""></a>
@@ -383,7 +383,7 @@
 				)
 				);
 
-        var timeout = null;
+				var timeout = null;
 				$('#brand-more').on('click', function() {
 					$('#category-brand').toggleClass('hidden');
 				});
@@ -392,38 +392,38 @@
 					clearTimeout(timeout);
 					$('.submenu').hide();
 					var p = $(e.currentTarget).position();
-					$(e.currentTarget).find('.submenu').css({top: p.top + 'px', display: 'flex'}).find('.arrow').css({left: (p.left + 28) + 'px'});
-				},function(e) {
-					$(e.currentTarget).find('.submenu').hover(function(){
+					$(e.currentTarget).find('.submenu').css({ top: p.top + 'px', display: 'flex' }).find('.arrow').css({ left: (p.left + 28) + 'px' });
+				}, function(e) {
+					$(e.currentTarget).find('.submenu').hover(function() {
 						clearTimeout(timeout);
-            $(this).css({display: 'flex'});
-					},function(){
-            $(this).hide();
+						$(this).css({ display: 'flex' });
+					}, function() {
+						$(this).hide();
 					});
-				  timeout = setTimeout(()=>{
-				    $(e.currentTarget).find('.submenu').hide();
+					timeout = setTimeout(() => {
+						$(e.currentTarget).find('.submenu').hide();
 					}, 300);
 				})
 
 				var data = JSON.parse(decodeURIComponent(window.location.search.substr(1)).substr(5));
-				var index = menus.findIndex(item=>item.name === data.menu);
+				var index = menus.findIndex(item => item.name === data.menu);
 				if(data.menu) {
-				   $('#category-products>li').eq(index).addClass('active');
+					$('#category-products>li').eq(index).addClass('active');
 				}
 				if(data.submenu) {
-					var subIndex = menus[index].children.split('、').findIndex(item=>item === data.submenu);
-          $('#category-products>li').eq(index).find('.submenu>li').eq(subIndex).addClass('active');
+					var subIndex = menus[index].children.split('、').findIndex(item => item === data.submenu);
+					$('#category-products>li').eq(index).find('.submenu>li').eq(subIndex).addClass('active');
 				}
 
 				$('#category-products>li>a').on('click', function(e) {
 					e.stopPropagation();
-          $(this).parent().toggleClass('active').siblings().removeClass('active');
+					$(this).parent().toggleClass('active').siblings().removeClass('active');
 				});
 
 				$('#category-products .submenu>li').on('click', function(e) {
 					e.stopPropagation();
 					$(this).parent().parent().addClass('active').siblings().removeClass('active');
-          $(this).toggleClass('active').siblings().removeClass('active');
+					$(this).toggleClass('active').siblings().removeClass('active');
 				});
 			</script>
 	</body>
