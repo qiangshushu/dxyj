@@ -22,22 +22,23 @@ function findbrand1(event) {
 
 function category1(event) {
   var e = event || window.event;
-  var target = e.target || e.srcElement;
+  var target = e.target || e.srcElement; //兼容ie
 
-  //兼容ie	
   var target = $(target) || $(e.srcElement);
-  var menu = target.attr('menu');
-  var submenu = target.attr('submenu');
-  if(!menu) {
+  var categoryId = target.attr("categoryId");
+  var category = target.attr("category");
+
+  if (!categoryId) {
     return;
   }
 
   var data = {
-    menu: menu,
-    submenu: submenu
-  }
-
-  var url = `data=${JSON.stringify(data)}`;
+    categoryId: categoryId,
+    category: category,
+    orderBy: 0,
+    pageNo: 1
+  };
+  var url = "json=".concat(JSON.stringify(data));
   var encodedUrl = encodeURIComponent(url);
   location.href = ctxpath + "/pro/list?" + encodedUrl;
 }
