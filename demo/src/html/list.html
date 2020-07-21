@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/list.js"></script>
+    <script src="../../db?callback=callback"></script>
+    <link rel="stylesheet" href="../css/index.css">
+  </head>
+
+  <body>
+    <ul class="category w">
+      <li>
+        <div class="type">
+          <img src="../images/icon-kinds.png" alt="">
+          <span>分类</span>
+        </div>
+        <ul id="category-products" class="content"> </ul>
+      </li>
+      <li>
+        <div class="type">
+          <img src="../images/icon-pinpai.png" alt="">
+          <span>品牌</span>
+        </div>
+        <ul id="category-brand" class="content hidden"> </ul>
+        <a href="javascript:void(0)" class="more" id="brand-more">更多<img src="../images/ico-jt-x.png" alt=""></a>
+      </li>
+    </ul>
+  </body>
+
+</html>
